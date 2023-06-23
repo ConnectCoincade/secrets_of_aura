@@ -1,0 +1,166 @@
+.sec1 img, .sec3 img{
+    width: 100%;
+}
+.sec3 img {
+    height: 90rem;
+}
+.sec1, .sec2, .sec3 {
+    position: relative;
+}
+.banner-content ,.sec2-content{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.about-bg {
+    /* position: absolute; */
+}
+.chakra-analysis-sec {
+    background: transparent linear-gradient(0deg, #2E2A87 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
+    padding: 5rem;
+    position: absolute;
+    top: 50rem;
+}
+.chakra-analysis-sec .title {
+    font-size: 55px;
+    font: normal normal medium 52px/66px Serling Galleria PERSONAL USE;
+    letter-spacing: 0px;
+    color: #9389E3;
+}
+.Testimonials {
+    background: #5E59A3 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    width: 50%;
+    margin: 5rem auto;
+    padding: 4rem;
+    color: #fff;
+    font: 1.5rem/1.4 Georgia, serif;
+}
+.sec3 .bold {
+    color: #2E2A87;
+    margin-top: -5rem;
+}
+.Testimonials div {
+    text-align: center;
+}
+.Testimonials span {
+    font-size: 40px;
+}
+.Testimonials-img {
+    position: absolute;
+    width: 90%;
+    top: 80rem;
+}
+.chakra-analysis-sec p {
+    color: #FFFFFF;
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+}
+.Testimonial-card {
+    background-color: blue;
+    color: #fff;
+}
+.chakra-analysis-sec button {
+    /* border-color: #6D6FA7 !important; */
+    border-radius: 10px;
+    padding: 10px 100px;
+    border: #9389E3 1px solid;
+    color: white;
+    font-size: 20px;
+    margin: 2rem;
+}
+.chakra-analysis-sec .btn1 {
+    background: transparent;
+}
+.chakra-analysis-sec .btn2 {
+    background: #9389E3 0% 0% no-repeat padding-box !important;
+}
+.bold {
+    font-size: 55px;
+    left: 35%;
+    line-height: initial;
+}
+.sec3 {
+    text-align: center;
+}
+.sec3 video {
+    width: 80%;
+    position: absolute;
+    top: -8rem;
+    left: 10%;
+}
+.banner-content p, .sec2-content p {
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.sec2-content p {
+    color:  #2E2A87;
+}
+.banner-content button {
+    background: #9389E3 0% 0% no-repeat padding-box !important;
+    border-color: #6D6FA7 !important;
+    border-radius: 20px;
+    padding: 20px 40px;
+    border: aliceblue;
+    color: white;
+    font-size: 25px;
+    margin: 6em 0;
+}
+.vertical {
+    border-left: 2px solid white;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 46%;
+  }
+  .sec2 {
+    text-align: center;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 5rem 0;
+  }
+  .sec2 .bold {
+    font-size: 55px;
+    left: 35%;
+    line-height: initial;
+    text-align: center;
+    font: normal normal medium 52px/60px Serling Galleria PERSONAL USE;
+    letter-spacing: 0px;
+    color: #2E2A87;
+    opacity: 1;
+  }
+  @media (max-width: 1065px) {
+    .banner {
+        margin-top: 6em;
+    }
+    .bold {
+        font-size: 20px;
+    }
+    .banner-content {
+        top: 1rem
+    }
+    .banner-content p {
+        font-size: 13px;
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .banner-content button {
+        background: #9389E3 0% 0% no-repeat padding-box !important;
+        border-color: #6D6FA7 !important;
+        border-radius: 20px;
+        padding: 10px 24px;
+        border: aliceblue;
+        color: white;
+        font-size: 10px;
+        margin: 1em 0;
+    }
+    .vertical {
+        display: none;
+    }
+  }
