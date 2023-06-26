@@ -79,7 +79,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand href="/">
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmYoTzFteHro1tJHRgLgfBiRhLu348hWX53j9JVpx3NBvR/logo.png" alt="Secret of aura Logo" className="logo " />
+            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/logo.png" alt="Secret of aura Logo" className="logo " />
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(expanded ? false : "expanded")}

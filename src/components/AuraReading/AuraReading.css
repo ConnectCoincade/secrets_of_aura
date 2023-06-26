@@ -1,0 +1,16 @@
+.aura-reading {
+    background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/about_bg.png") no-repeat;
+    margin-top: 10rem;
+}
+.sec1 {
+    text-align: center;
+}
+.sec1 video {
+    width: 80%;
+}
+.aura-consultation {
+    background: transparent linear-gradient(0deg, #2E2A87 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
+    padding: 5rem;
+    position: absolute;
+    top: 50rem;
+}

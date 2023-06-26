@@ -1,0 +1,77 @@
+.aboutus {
+    background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/about_bg.png") no-repeat;
+    margin-top: 10rem;
+}
+.sec1-para {
+    color: #5E59A3;
+}
+.sec1-para p {
+    padding-right: 6rem;
+}
+.sec2 video {
+    width: 100%;
+}
+.aboutus .sec2 {
+    background: none;
+}
+.aboutus .sec3 .title {
+    color: #2E2A87;
+    font-size: 55px;
+}
+.aboutus .sec3 {
+    padding: 5rem;
+    text-align: center;
+    background: transparent linear-gradient(180deg, #928DCE 0%, #2F2C55 100%) 0% 0% no-repeat padding-box;
+}
+.aboutus .sec3 p {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+}
+.aboutus .sec4 {
+    margin-top: 5rem;
+}
+.aboutus .sec4 .title {
+    text-align: center;
+    font-size: 50px;
+    color: #2E2A87;
+}
+.aboutus .FAQ-heading {
+    text-align: center;
+    font-size: 30px;
+    color: #818181;
+    
+}
+.FAQ {
+    text-align: center;
+    margin: 2rem auto;
+    width: 34%;
+}
+.FAQ .question {
+    color: #5E59A3;
+    font-size: 20px;
+    text-align: left;
+}
+.FAQ .answer {
+    text-align: left;
+    color: #919191;
+    font-size: 17px;
+}
+.sec5 {
+    text-align: center;
+    margin: 4rem;
+}
+.sec5 .ask {
+    color: #2E2A87;
+    font-size: 30px;
+}
+.sec5 button {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    border: #9389E3 1px solid;
+    color: white;
+    background: #9389E3;
+    font-size: 20px;
+    margin: 2rem;
+}
