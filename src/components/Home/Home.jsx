@@ -49,7 +49,7 @@ const Home = () => {
             </div>
         </section>
         <section className="sec2">
-          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/sec2.png"></img>
+          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/sec2.png"></img>
           <div className="sec2-content">
             <div className="bold">
             What Is 
@@ -61,8 +61,8 @@ const Home = () => {
         {/* <img className="Testimonials-img" src={img4}/> */}
 
         <section className="sec3">
-        <video src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/video1.mp4" autoplay="true" controls/>
-          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/Group 8669.png"></img>
+        <video src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/video1.mp4" autoplay="true" controls/>
+          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group 8669.png"></img>
         <div className="chakra-analysis-sec">
           <div className="title">Chakra Analysis</div>
           <p>Uncover the secrets of your energy centers with a comprehensive chakra analysis. Our expert practitioners will guide you through the process, identifying any blockages and imbalances within your chakras. Gain valuable insights and personalized recommendations to empower your personal growth, enhance your well-being, and restore harmonious energy flow. Take this transformative step towards a balanced and fulfilling life today.</p>
