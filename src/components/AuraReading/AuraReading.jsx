@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./AuraReading.css"
 import {Row, Col,Container} from 'react-bootstrap';
 
-const About = () => {
+const AuraReading = () => {
   return (
     <>
      <div className="aura-reading">
@@ -104,4 +104,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AuraReading;
