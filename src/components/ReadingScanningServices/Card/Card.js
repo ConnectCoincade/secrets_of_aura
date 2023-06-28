@@ -14,9 +14,11 @@ const Card = (props) => {
         <p className="card-para">{props.para}</p>
         <p className="card-readmore">Read More</p>
       </div>
-      <button className="card-btn">
-        <span className="btn-text">BOOK SESSION</span>
-      </button>
+      <a href="https://calendly.com/yash-h10/test-meet" target="blank">
+        <button className="card-btn">
+          <span className="btn-text">BOOK SESSION</span>
+        </button>
+      </a>
     </div>
   );
 };
