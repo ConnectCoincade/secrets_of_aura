@@ -39,7 +39,7 @@ const Home = () => {
     <>
      {/* <Container> */}
         <section className="banner sec1">
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/home1.png"></img>
+            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"></img>
             <div className="banner-content">
               <div className="bold">Discover Your Aura</div>
               <div className="bold">With Us!</div>

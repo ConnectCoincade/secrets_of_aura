@@ -58,20 +58,20 @@
     color: #919191;
     font-size: 17px;
 }
-.sec5 {
+.aboutus .sec5 {
     text-align: center;
     margin: 4rem;
 }
-.sec5 .ask {
+.aboutus .sec5 .ask {
     color: #2E2A87;
     font-size: 30px;
 }
-.sec5 button {
+.aboutus .sec5 button {
     border-radius: 10px;
     padding: 1rem 2rem;
-    border: #9389E3 1px solid;
+    border: #6D6FA7 1px solid;
     color: white;
-    background: #9389E3;
+    background: #6D6FA7;
     font-size: 20px;
     margin: 2rem;
 }

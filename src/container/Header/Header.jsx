@@ -123,10 +123,10 @@ function Header() {
               </NavLink>
             </Nav>
             <Nav>
-            <Button
+            {/* <Button
                 className="btn-SOA">
                 Get Started
-              </Button>
+              </Button> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

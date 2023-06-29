@@ -13,12 +13,12 @@ const About = () => {
         <Container>
         <section className="sec1">
         <Row>
-          <Col className="sec1-para">
+          <Col className="sec1-para" md="6" lg="6">
             <p>Growing up, my life was like any other child’s - filled with school, friends, and play. However, there was one aspect that set me apart: I could perceive vibrant colors enveloping individuals, a phenomenon only visible to me. This unique ability was initially perplexing, as it seemed beyond my family and friends’ comprehension. </p>
             <p>Despite the confusion, life continued, and I pursued my ambitions, enjoying a fair degree of success. Yet beneath these achievements, I felt an undercurrent of unfulfillment, a sense of something amiss. Acknowledging this feeling led me to pay closer attention to my inherent ability, exploring its potential to aid those around me. The true worth of this endeavor became evident when I began positively impacting many lives. This affirmed my role as a mind and aura reader.</p>
             <p> Now, I feel grateful for the opportunity to continue facilitating positive change in people’s lives. My goal remains steadfast: to support others in finding their joy and wisdom, fostering their courage, and reinforcing their convictions. My hope is to contribute to their happiness, as we journey together on this path of personal growth.</p>
           </Col>
-          <Col>
+          <Col md="6" lg="6">
             <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"/>
           </Col>
         </Row>
