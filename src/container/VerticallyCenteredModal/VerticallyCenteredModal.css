@@ -1,0 +1,29 @@
+.modal-open {
+    overflow: hidden;
+}
+.SOA-modal {
+    text-align: center;
+}
+.SOA-modal .title {
+    color: #2E2A87;
+    font-size: 40px;
+}
+.SOA-modal img {
+    width: 30%;
+}
+.Q-div {
+    color: #2E2A87;
+    font-size: 25px;
+    font-weight: 500;
+}
+.question {
+    color: #5E59A3;
+    font-size: 25px;
+}
+.SOA-modal .form-check {
+    display: inline-block;
+}
+.form-check-input {
+    font-size: 30px;
+    margin: 0 1rem !important;
+}

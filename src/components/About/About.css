@@ -75,3 +75,8 @@
     font-size: 20px;
     margin: 2rem;
 }
+@media (max-width: 576px) {
+    .sec1-para p {
+        padding-right: 0rem;
+    }
+}

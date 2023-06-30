@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./ChakraAnalysis.css"
-import {Row, Col,Container} from 'react-bootstrap';
+import {Row, Col,Container, Modal} from 'react-bootstrap';
+import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal'
 
 const ChakraAnalysis = () => {
+    const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
         <div className="chakra-analysis">
             <section className="sec1">
                 <p className="title1">Unlock the potential for balance,</p>
                 <p className="title2"> healing, and personal growth!</p>
-                <button className="sec1-btn">TAKE QUIZ</button>
+                <button className="sec1-btn" onClick={() => setModalShow(true)}>TAKE QUIZ</button>
             </section>
             <section className="sec2">
                 <div className="title">What is Chakra Analysis?</div>
@@ -113,6 +115,10 @@ const ChakraAnalysis = () => {
                 <button className="whatsapp">Get In Touch On WhatsApp</button>
             </section>
         </div>
+        <VerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </>
     );
 };

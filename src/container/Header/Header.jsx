@@ -79,7 +79,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand href="/">
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/logo.png" alt="Secret of aura Logo" className="logo " />
+            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo.png" alt="Secret of aura Logo" className="logo " />
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(expanded ? false : "expanded")}
@@ -105,14 +105,22 @@ function Header() {
               >
                 AURA READING
               </NavLink>
-              <NavLink
-                activeclassname="navbar__link active"
-                className="navbar__link nav-link"
-                to="/services"
-                onClick={() => setExpanded(false)}
+              <NavDropdown
+                id="nav-dropdown-SOA"
+                title="SERVICES"
               >
-                SERVICES
-              </NavLink>
+                  <NavDropdown.Item href="/reading-n-scanning-service">Reading & Scanning Service</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/healing-n-therapy-service">
+                    Healing & Therapy Service
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/aura-reading">Aura Reading Service</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Holistic Plan
+                  </NavDropdown.Item>
+              </NavDropdown>
               <NavLink
                 activeclassname="navbar__link active"
                 className="navbar__link nav-link"
@@ -122,12 +130,7 @@ function Header() {
                 CHAKRA ANALYSIS
               </NavLink>
             </Nav>
-            <Nav>
-            {/* <Button
-                className="btn-SOA">
-                Get Started
-              </Button> */}
-            </Nav>
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>

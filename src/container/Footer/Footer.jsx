@@ -16,7 +16,7 @@ const Footer = () => {
         <Nav>
           <Row className="Row">
             <Col xs={12} md={4} className="footer-col" onClick={gotoHome}>
-              <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/logo-soa.png" alt="logo" className="footer-logo" />
+              <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo-soa.png" alt="logo" className="footer-logo" />
             </Col>
             <Col xs={12} md={2} className="footer-col footer-links">
               <p>

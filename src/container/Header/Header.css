@@ -69,6 +69,12 @@
   .btn-connectWallet:hover {
     box-shadow: 1px 1px 1px 1px #f9e007;
   }
+  .dropdown-menu {
+    background-color: #F0E7F4 !important;
+  }
+  .dropdown-item {
+    background-color: #F0E7F4 !important;
+  }
   @media (max-width: 1065px) {
     .logo {
       /* width: 20%; */
