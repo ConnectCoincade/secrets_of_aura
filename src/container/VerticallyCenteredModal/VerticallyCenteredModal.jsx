@@ -1,8 +1,15 @@
 import {Form, Button, Modal} from 'react-bootstrap';
 import "./VerticallyCenteredModal.css";
+import React, { useState } from 'react';
 
 function VerticallyCenteredModal(props) {
+  const [selectedOption, setSelectedOption] = useState('1');
   const options = [1,2,3,4,5,6,7]
+
+  function handleChange(event) {
+    setSelectedOption(event.target.value);
+    console.log('selectedOption->', selectedOption);
+  }
   return (
     <Modal
       {...props}
@@ -21,20 +28,83 @@ function VerticallyCenteredModal(props) {
         </div>
         <div className='Q-div'>Question 1</div>
         <p className='question'>
-        Do u feel a very strong spiritual connect?
+        Do you feel a very strong spiritual connect?
         </p>
-        <div>
+        <div className='radio-div'>
+            <Form.Check 
+                value='1'
+                checked={selectedOption === '1'}
+                type="radio"
+                id={`default-radio-1`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='2'
+                checked={selectedOption === '2'}
+                type="radio"
+                id={`default-radio-2`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='3'
+                checked={selectedOption === '3'}
+                type="radio"
+                id={`default-radio-3`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='4'
+                checked={selectedOption === '4'}
+                type="radio"
+                id={`default-radio-4`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='5'
+                checked={selectedOption === '5'}
+                type="radio"
+                id={`default-radio-5`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='6'
+                checked={selectedOption === '6'}
+                type="radio"
+                id={`default-radio-6`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+              <Form.Check 
+                value='7'
+                checked={selectedOption === '7'}
+                type="radio"
+                id={`default-radio-7`}
+                label=""
+                name="options"
+                onChange={handleChange} 
+              />
+          </div>
+          <div className='radio-div'>
           {
             options.map(opt => (
-              <Form.Check 
-              type="radio"
-              id="default-radio"
-              label=""
-            />
+              <div className='num'>{opt}</div>
             ))
           }
+          </div>
+          <button className='back'>Back</button>
+          <button className='next'>Next</button>
         
-        </div>
       </Modal.Body>
       {/* <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
