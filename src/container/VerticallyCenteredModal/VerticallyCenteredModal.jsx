@@ -1,5 +1,5 @@
 import {Form, Button, Modal} from 'react-bootstrap';
-import "./VerticallyCenteredModal.css"
+import "./VerticallyCenteredModal.css";
 
 function VerticallyCenteredModal(props) {
   const options = [1,2,3,4,5,6,7]

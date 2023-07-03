@@ -116,10 +116,10 @@ function Header() {
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/aura-reading">Aura Reading Service</NavDropdown.Item>
-                  <NavDropdown.Divider />
+                  {/* <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">
                     Holistic Plan
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
               </NavDropdown>
               <NavLink
                 activeclassname="navbar__link active"

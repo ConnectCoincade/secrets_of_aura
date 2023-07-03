@@ -33,7 +33,7 @@ const ChakraAnalysis = () => {
                 <div className="title">
                 An introduction to the seven chakras
                 </div>
-                <Container >
+                <Container>
                     <Row>
                     <Col lg="3" md="3" className="sec5-col">
                         <div className="img-div">
