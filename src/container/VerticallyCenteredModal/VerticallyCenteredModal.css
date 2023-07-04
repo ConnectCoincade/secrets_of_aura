@@ -42,17 +42,17 @@
     background-color: #9389E3 !important;
     border-color: #9389E3 !important;
 }
-.back, .next {
+#back, #next {
     border: 2px solid #6D6FA7;
     padding: 0.5rem 3rem;
     border-radius: 15px;
     margin: 1rem;
 }
-.back {
+#back {
     color: #6D6FA7;
     background-color: #fff;
 }
-.next {
+#next {
     background: #6D6FA7;
     color: #fff;
 }

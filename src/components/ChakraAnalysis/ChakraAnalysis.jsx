@@ -5,6 +5,19 @@ import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/Ver
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);
+    const [questions, setQuestions] = React.useState([
+        {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
+        {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
+        {quest : 'How good are u at expressing yourself and your feelings?',ans : '', number : 3},
+        {quest : 'Are you very sensitive or do you get hurt very often?',ans : '', number : 4},
+        {quest : 'Do u have any stomach or health related issues? OR Do feel lack of confidence?',ans : '', number : 5},
+        {quest : 'Sexual desire?',ans : '', number : 6},
+        {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7}
+    ])
+
+    useEffect(() => {
+        console.log('questions in chakra analysis->', questions);
+    })
   return (
     <>
         <div className="chakra-analysis">
@@ -118,6 +131,7 @@ const ChakraAnalysis = () => {
         <VerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
+        questions={questions}
       />
     </>
     );
