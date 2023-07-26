@@ -103,7 +103,7 @@ function Header() {
                 to="/aura-reading"
                 onClick={() => setExpanded(false)}
               >
-                AURA READING
+                AURA TRANSFORMATION
               </NavLink>
               <NavDropdown
                 id="nav-dropdown-SOA"
