@@ -1,0 +1,366 @@
+
+
+.sec1 img, .sec3 img{
+    width: 100%;
+}
+.sec3 img {
+    max-width: 100%;
+    height: 90rem;
+}
+.sec1, .sec2, .sec3 {
+    position: relative;
+}
+.banner-content ,.sec2-content{
+    position: absolute;
+    top: 12rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.about-bg {
+    /* position: absolute; */
+}
+.chakra-analysis-sec {
+    background: transparent linear-gradient(0deg, #2E2A87 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
+    padding: 1.0rem;
+    position: inherit;
+    bottom: 100px;
+}
+.chakra-analysis-sec bold {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 55px;
+    font: normal normal medium 52px/66px Serling Galleria PERSONAL USE;
+    letter-spacing: 0px;
+    color: #9389E3;
+}
+.Testimonials {
+    background: #5E59A3 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    width: 50%;
+    margin: 5rem auto;
+    padding: 4rem;
+    color: #fff;
+    font: 1.5rem/1.4 Georgia, serif;
+}
+.sec3 .bold {
+    color: #2E2A87;
+    margin-top: -5rem;
+}
+.Testimonials div {
+    text-align: center;
+}
+.Testimonials span {
+    font-size: 40px;
+}
+.Testimonials-img {
+    position: absolute;
+    width: 90%;
+    top: 80rem;
+}
+.chakra-analysis-sec p {
+    color: #FFFFFF;
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+}
+.Testimonial-card {
+    background-color: blue;
+    color: #fff;
+}
+.chakra-analysis-sec button {
+    /* border-color: #6D6FA7 !important; */
+    border-radius: 10px;
+    padding: 10px 100px;
+    border: #9389E3 1px solid;
+    color: white;
+    font-size: 20px;
+    margin: 2rem;
+}
+.chakra-analysis-sec .btn1 {
+    background: transparent;
+}
+.chakra-analysis-sec .btn2 {
+    background: #9389E3 0% 0% no-repeat padding-box !important;
+}
+.bold {
+    font-size: 55px;
+    left: 35%;
+    line-height: initial;
+}
+.sec3 {
+    text-align: center;
+}
+.sec3 video {
+    width: 80%;
+    position: absolute;
+    top: -8rem;
+    left: 10%;
+}
+.banner-content p, .sec2-content p {
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.sec2-content p {
+    color:  #2E2A87;
+}
+.banner-content button {
+    background: #9389E3 0% 0% no-repeat padding-box !important;
+    border-color: #6D6FA7 !important;
+    border-radius: 20px;
+    padding: 20px 40px;
+    border: aliceblue;
+    color: white;
+    font-size: 25px;
+    margin: 6em 0;
+}
+.vertical {
+    border-left: 2px solid white;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 46%;
+  }
+  .sec2 {
+    text-align: center;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 5rem 0;
+  }
+  .sec2 .bold {
+    font-size: 55px;
+    left: 35%;
+    line-height: initial;
+    text-align: center;
+    font: normal normal medium 52px/60px Serling Galleria PERSONAL USE !important;
+    letter-spacing: 0px;
+    color: #2E2A87;
+    opacity: 1;
+  }
+ .img-sec{
+    width: 100%;
+    text-align: center;
+ }
+ /* .Testimonials-list-sec{
+    position: inherit;
+    bottom: 40px;
+  } */
+/*
+  .background-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* You can adjust the opacity to control image visibility 
+     If you want the image to be behind the video, make sure to set a lower z-index value for the .background-image compared to the video
+    z-index: -1; 
+  } */
+  @media (max-width: 1280px) {
+    .banner {
+        margin-top: 4em;
+    }
+    .bold {
+        font-size: 2.5rem;
+    }
+    .banner-content {
+        top: 10em;
+        text-align: center;
+    }
+    .banner-content p,.sec2 p {
+        font-size: 23px;
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .banner-content button {
+        background: #9389E3 0% 0% no-repeat padding-box !important;
+        border-color: #6D6FA7 !important;
+        border-radius: 20px;
+        padding: 10px 24px;
+        border: aliceblue;
+        color: white;
+        font-size: 12px;
+        margin: 1em 0;
+        /* width: 25%; */
+    }
+    .vertical {
+        display: none;
+    }
+    .sec2 img{
+        width: 70%;
+    }
+    /* .sec3 video {
+        width: 80%;
+        position: absolute;
+        top: -7rem;
+        left: 10%;
+    } */
+    .img-sec{
+        position: inherit;
+        bottom: 60px;
+    }
+    .Testimonials-list-sec{
+        position: inherit;
+        bottom: 50px;
+      }
+  }
+  @media (max-width: 840px) {
+    .banner {
+        margin-top: 6em;
+    }
+    .sec2 .bold, .bold{
+        font-size: 1.8rem;
+    }
+    .banner-content {
+        top: 15%;
+        text-align: center;
+    }
+    .sec2 p,.banner-content p {
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        /* margin-top: 1rem; */
+    }
+    .banner-content button {
+        background: #9389E3 0% 0% no-repeat padding-box !important;
+        border-color: #6D6FA7 !important;
+        border-radius: 10px;
+        /* padding: 10px 24px; */
+        border: aliceblue;
+        color: white;
+        font-size: 10px;
+        width: 30%;
+        margin: 0em 0;
+    }
+    .vertical {
+        display: none;
+    }
+    .sec2 img{
+        width: 40%;
+    }
+    .sec2-content{
+        top: 4.5rem;
+    }
+     .sec3 video {
+        width: 80%;
+        position: absolute;
+        top: -4rem;
+        left: 10%;
+    }
+    .chakra-analysis-sec p{
+        font-size: 15px;
+        margin: 10px 0px;
+        width: 95%;
+    }
+    .chakra-analysis-sec bold{
+        font-size: 1.8rem;
+    }
+    .chakra-analysis-sec button{
+        margin: 8px 8px;
+        font-size: 13px;
+        width: 70%;
+        text-align: center;
+        padding: 10px 40px;
+    }
+    .Testimonials{
+        width: 80%;
+        font-size: 20px;
+    }
+    .Testimonials-list-sec{
+        position: inherit;
+        bottom: 60px;
+      }
+   
+}
+@media (max-width: 470px) {
+    .banner {
+        margin-top: 6em;
+    }
+    .sec2 .bold, .bold{
+        font-size: 1.4rem;
+    }
+    .banner-content {
+        top: 15%;
+        text-align: center;
+    }
+    .sec2 p,.banner-content p {
+        font-size: 12px;
+        width: 75%;
+        margin: auto;
+        /* margin-top: 1rem; */
+    }
+    .banner-content button {
+        padding: 5px 10px;
+        background: #9389E3 0% 0% no-repeat padding-box !important;
+        border-color: #6D6FA7 !important;
+        border-radius: 10px;
+        /* padding: 10px 24px; */
+        border: aliceblue;
+        color: white;
+        font-size: 8px;
+        width: 40%;
+        /* margin: auto; */
+        /* height: 5%; */
+    }
+    .sec2-content{
+        top: 2.8rem;
+    }
+    .chakra-analysis-sec button .btn1 .btn2{
+        margin: 8px 8px;
+        font-size: 13px;
+        width: 60%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .Testimonials{
+        width: 90%;
+        font-size: 17px;
+    }
+    .img-sec{
+        position: inherit;
+        bottom: 70px;
+    }
+    .Testimonials-list-sec{
+        position: inherit;
+        bottom: 65px;
+      }
+    
+    /* .vertical {
+        display: none;
+    } */
+}
+@media (max-width: 300px){
+    .banner-content {
+        top: 5%;
+        text-align: center;
+    }
+    .sec2 p,.banner-content p {
+        font-size: 9px;
+        width: 75%;
+        margin: auto;
+        /* margin-top: 1rem; */
+    }
+    .chakra-analysis-sec p {
+        font-size: 10px;
+        margin: 0px 0px;
+        width: 95%;
+    }
+    .Testimonials{
+        width: 90%;
+        font-size: 12px;
+    }
+    .Testimonials-list-sec{
+        position: inherit;
+        bottom: 70px;
+      }
+    
+}

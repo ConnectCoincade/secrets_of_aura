@@ -1,0 +1,38 @@
+.header-text{
+    margin-top: 96px;
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: Serling Galleria PERSONAL USE, sans-serif;
+    font-size: 52px;
+    color: #2E2A87;
+}
+
+.enq-text{
+    margin-top: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-size:36px;
+    color: #2E2A87;
+}
+
+.btn-div{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.card-btn{
+    background-color: #6D6FA7;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 38px;
+    margin-right: 23px;
+    padding: 18px 46px;
+}
+
+.btn-text{
+    text-align: left;
+    font: normal normal medium 20px/16px Roboto;
+    letter-spacing: 1.78px;
+    color: #FFFFFF;
+}

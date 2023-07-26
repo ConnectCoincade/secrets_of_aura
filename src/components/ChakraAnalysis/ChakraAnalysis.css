@@ -1,0 +1,148 @@
+.chakra-analysis .sec1 {
+    margin: 5rem 0 0 -35rem;
+    height: 62rem;
+    background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat;
+}
+  .sec1 .title1, .sec1 .title2 {
+    right: 8rem;
+    position: absolute;
+    padding: 25rem 0rem;
+    color: #2E2A87;
+    font-size: 40px;
+  }
+  .title1 {
+    top: 3rem;
+  }
+  .title2 {
+    top: 6rem;
+  }
+  .sec1-btn {
+    background: #6D6FA7 0% 0% no-repeat padding-box !important;
+    border: 1pc solid #6D6FA7;
+    padding: 0 2rem;
+    right: 8rem;
+    position: absolute;
+    top: 37rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    color: #fff;    
+  }
+  .chakra-analysis .sec2 {
+    background: none;
+  }
+  .chakra-analysis .sec2 .title, .chakra-analysis .sec5 .title {
+    font-size: 50px;
+    color: #2E2A87;
+    text-align: center;
+
+  }
+  .chakra-analysis .sec5 {
+    padding: 5rem;
+    text-align: center;
+  }
+  .sec2-p, .sec5-p {
+    color: #5E59A3;
+    
+    margin: auto;
+    font-size: 20px;
+  }
+  .sec2-p {
+    width: 80%;
+  }
+  .sec5-p {
+    width: 60%;
+  }
+  
+  .chakra-consultation {
+    background: transparent linear-gradient(180deg, #C28ED9 0%, #874AA3 100%) 0% 0% no-repeat padding-box;
+    padding: 5rem;
+    width: 100%;
+    margin: 5rem 0;
+}
+.chakra-consultation .title {
+    color: #F0E7F4;
+    font-size: 50px;
+    
+}
+.chakra-consultation p {
+    color: #F0E7F4;
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+}
+.book-session1, .book-session2
+ {
+    padding: 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    background: #F0E7F4 0% 0% no-repeat padding-box;
+    margin: 2rem;
+}
+.book-session1 p,.book-session2 p {
+    color: #9389E3;
+}
+.book-session2 button, .book-session1 button {
+    /* border-color: #6D6FA7 !important; */
+    border-radius: 10px;
+    padding: 0.4rem 1.5rem;
+    border: #9389E3 1px solid;
+    background-color: #9389E3;
+    color: white;
+    font-size: 20px;
+    margin: 1rem;
+}
+.chakra-analysis .sec4 {
+  margin: 5rem 0;
+  text-align: center;
+}
+.chakra-analysis .sec4 .title {
+  color: #2E2A87;
+  font-size: 50px;
+  width: 60%;
+  margin: auto;
+}
+.img-sec {
+  text-align: center;
+}
+.img-sec img {
+  width: 90%;
+}
+.chakra-img {
+  width: 10rem;
+}
+.MTQ {
+  background: transparent linear-gradient(180deg, #C28ED9 0%, #874AA3 100%) 0% 0% no-repeat padding-box;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 20px;
+}
+.MTQ P{
+  width: 60%;
+  margin: 1rem auto;
+}
+.MTQ button {
+  color: #5E59A3;
+  background: #fff;
+  font-size: 25px;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+.chakra-analysis .sec7 {
+  text-align: center;
+  margin: 4rem;
+}
+.chakra-analysis .sec7 .ask {
+  color: #2E2A87;
+  font-size: 30px;
+}
+.chakra-analysis .sec7 button {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: #6D6FA7 1px solid;
+  color: white;
+  background: #6D6FA7;
+  font-size: 20px;
+  margin: 2rem;
+}

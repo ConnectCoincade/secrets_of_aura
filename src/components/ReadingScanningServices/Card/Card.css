@@ -1,0 +1,71 @@
+.card-services{
+    display: flex;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 11px 22px #00000029;
+    border-radius: 17px;
+    opacity: 1;
+    justify-content: center;
+    margin: 30px 7.5%;
+
+}
+
+.card-img{
+    max-height: 300px;
+    max-width: 320px;
+    margin: 33px 38px 33px 29px;
+}
+.card-textarea{
+    max-width: 998px;
+    justify-content: center;
+    margin: 33px 48px 0 0;
+}
+
+.card-header{
+    text-align: left;
+    font-size: 32px;
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    color: #2E2A87; 
+    opacity: 1;
+}
+
+.card-subheader{
+    text-align: left;
+    font: normal normal medium 24px Montserrat;
+    letter-spacing: 0px;
+    color: #9389E3;
+    opacity: 1;
+}
+
+.card-para{
+    text-align: left;
+    font: normal normal medium 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #919191;
+    opacity: 1;
+}
+
+.card-readmore{
+    text-align: left;
+    font: normal normal medium 20px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #919191;
+    opacity: 1;
+}
+
+.card-btn{
+    background-color: #6D6FA7;
+    border-radius: 8px;
+    max-height: 60px;
+    min-width: 227px;
+    text-align: center;
+    margin-top: 38px;
+    margin-right: 23px;
+}
+
+.btn-text{
+    text-align: left;
+    font: normal normal medium 20px/16px Roboto;
+    letter-spacing: 1.78px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,68 @@
+.modal-open {
+    overflow: hidden;
+}
+.SOA-modal {
+    text-align: center;
+}
+.SOA-modal .title {
+    color: #2E2A87;
+    font-size: 40px;
+}
+.SOA-modal img {
+    width: 30%;
+}
+.Q-div {
+    color: #2E2A87;
+    font-size: 25px;
+    font-weight: 500;
+}
+.question {
+    color: #5E59A3;
+    font-size: 25px;
+}
+.SOA-modal .form-check, .num {
+    display: inline-block;
+}
+.form-check-input{
+    font-size: 30px;
+    margin: 0 1.5rem;
+}
+.radio-div {
+    width: 100%;
+}
+.num {
+    padding: 0 2rem;
+    font-size: 30px;
+    color: #5E59A3;
+}
+.SOA-modal .form-check .form-check-input {
+    margin-left: 0 !important;
+}
+.SOA-modal .form-check .form-check-input:checked {
+    background-color: #9389E3 !important;
+    border-color: #9389E3 !important;
+}
+#back, #next {
+    border: 2px solid #6D6FA7;
+    padding: 0.5rem 3rem;
+    border-radius: 15px;
+    margin: 1rem;
+}
+#back {
+    color: #6D6FA7;
+    background-color: #fff;
+}
+#next {
+    background: #6D6FA7;
+    color: #fff;
+}
+@media (max-width: 576px) {
+    .form-check-input{
+        font-size: 25px;
+        margin: 0 0rem;
+    }
+    .num {
+        padding: 0 1rem;
+        font-size: 25px;
+    }
+}
