@@ -87,14 +87,6 @@ function VerticallyCenteredModal(props) {
     })
 
     console.log('answersList->', answersList);
-
-    // setQuestion({quet : props.questions[0].quest,ans : ans, number : props.questions[0].number})
-    // if(document.getElementById('next').disabled) {
-    //   debugger
-    //   document.getElementById('next').disabled = "false";
-    // }
-    
-    // console.log('question->', question);
   }
 
   function handleChange(event) {
