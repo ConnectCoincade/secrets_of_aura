@@ -3,12 +3,13 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import { useGlobalContext } from '../../context/QuestionContext';
 
 const FeedbackInputModal = (props) => {
  
   const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
   const [show, setShow] = useState(exit);
-  const handleClose = () => setShow(false);
+  const handleClose = () => setExit(false);
   const handleShow = () => setShow(true);
   
 
