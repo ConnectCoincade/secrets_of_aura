@@ -3,12 +3,12 @@ import { Form, Button, Modal } from 'react-bootstrap';
 import "./VerticallyCenteredModal.css";
 import { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context/QuestionContext';
-import FeedbackInputModal from './FeedbackInputModal';
+import FeedbackInputModal from '../FeedbackInputModal/FeedbackInputModal';
 
 function VerticallyCenteredModal2(props) {
   // const [currentQuestion, setCurrentQuestion] = useState('');
-  const [feedModal, setFeedModal] = useState(false)
-    const options = [1,2,3,4,5,6,7]
+  const [feedModal, setFeedModal] = useState(false);
+    const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
   const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
   // const [currentImage,setCurrentImage] = useState('');
@@ -44,7 +44,7 @@ function VerticallyCenteredModal2(props) {
       var radioButtons = document.getElementsByName('options');
       
       console.log(answersList[questionIndex]?.ans,answersList[answersList.length-2].ans);
-      var radioButton = document.getElementById(`default-radio-`+ answersList[1].ans);
+      var radioButton = document.getElementById(`default-radio-`+ answersList[questionIndex].ans);
       radioButton.checked = true;
     }
   };
@@ -70,16 +70,26 @@ function VerticallyCenteredModal2(props) {
     // if(answersList){
     //   console.log('answerlist is exist');
     // }
+    
     if( questionIndex+1 < questions.length){
       setAnswerList([])
     } 
+    handleData()
   }, [props,questions]);
+
+
+  const handleData = () =>{
+    if(currentQuestion){
+      console.log(currentQuestion);
+      console.log('presendt');
+    }else{
+      console.log('not present');
+    }
+  }
 
   if (!questions || questions.length === 0) {
     return null; // Handle the case when there are no questions to display
   }
-//   console.log(currentQuestion);
-
   return (
 
     (!exit) ?

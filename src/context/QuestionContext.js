@@ -17,14 +17,20 @@ const AppProvider = ({children}) =>{
         {quest : 'Sexual desire?',ans : '', number : 6,image:"https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"},
         {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7,image:"https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"}
     ];
+    const userDataObj = {
+        firstName:'',
+        lastName:'',
+        email:''
+      }
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const [questions, setQuestions] = useState(queObj);
     const [answersList, setAnswerList] = useState([]);
     const [exit, setExit] = useState(false);
+    const [userData, setUserData] = useState(userDataObj);
 
-    return <QuestionContext.Provider value={{questions,setQuestions, exit, setExit, state, dispatch,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
+    return <QuestionContext.Provider value={{questions,setQuestions, exit, setExit,userData, setUserData, state, dispatch,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
 };
 
 const useGlobalContext =()=>{

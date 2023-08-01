@@ -3,7 +3,7 @@ import "./ChakraAnalysis.css"
 import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import { useGlobalContext } from "../../context/QuestionContext";
-import FeedbackInputModal from "../../container/VerticallyCenteredModal/FeedbackInputModal";
+import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);

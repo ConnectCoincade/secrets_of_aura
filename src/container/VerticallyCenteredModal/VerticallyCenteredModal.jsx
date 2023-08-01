@@ -2,7 +2,7 @@ import {Form, Button, Modal} from 'react-bootstrap';
 import "./VerticallyCenteredModal.css";
 import React, { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context/QuestionContext';
-import FeedbackInputModal from './FeedbackInputModal';
+import FeedbackInputModal from '../FeedbackInputModal/FeedbackInputModal';
 
 function VerticallyCenteredModal(props) {
   const [feedModal, setFeedModal] = useState(false)
