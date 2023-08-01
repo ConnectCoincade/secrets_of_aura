@@ -3,16 +3,22 @@ import { Form, Button, Modal } from 'react-bootstrap';
 import "./VerticallyCenteredModal.css";
 import { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context/QuestionContext';
+import FeedbackInputModal from './FeedbackInputModal';
 
 function VerticallyCenteredModal2(props) {
   // const [currentQuestion, setCurrentQuestion] = useState('');
+  const [feedModal, setFeedModal] = useState(false)
     const options = [1,2,3,4,5,6,7]
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [number, setNumber] = useState(0);
-  const { questions, answersList, setAnswerList } = useGlobalContext();
+  const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
   // const [currentImage,setCurrentImage] = useState('');
   const currentQuestion = questions[questionIndex];
   
+  const handleSubmit = () =>{
+    props.onHide();
+    setExit(true);
+
+  }
 
   const handleNext = () => {
     if (questionIndex === questions.length - 1) {
@@ -34,7 +40,7 @@ function VerticallyCenteredModal2(props) {
     } else {
       // Move to the previous question
       setQuestionIndex(prevIndex => prevIndex - 1);
-      console.log('answersList in back->', answersList);
+      //console.log('answersList in back->', answersList);
       var radioButtons = document.getElementsByName('options');
       
       console.log(answersList[questionIndex]?.ans,answersList[answersList.length-2].ans);
@@ -75,6 +81,8 @@ function VerticallyCenteredModal2(props) {
 //   console.log(currentQuestion);
 
   return (
+
+    (!exit) ?
     <Modal
       {...props}
       size="lg"
@@ -115,10 +123,15 @@ function VerticallyCenteredModal2(props) {
         <button id='back' onClick={handleBack}>Back</button>
         { questionIndex < questions.length - 1 ? (
           <button id='next' onClick={handleNext}>Next</button>) :(
-          <Button id='next' onClick={props.onHide}>Submit</Button>)
+          <Button id='next' onClick={handleSubmit}>Submit</Button>)
           }
       </Modal.Body>
     </Modal>
+      :
+      <FeedbackInputModal
+        show={exit}
+        onHide={() => setFeedModal(false)}
+      /> 
   );
 }
 

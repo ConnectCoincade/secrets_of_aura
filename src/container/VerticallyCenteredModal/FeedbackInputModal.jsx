@@ -6,9 +6,11 @@ import Modal from 'react-bootstrap/Modal';
 
 const FeedbackInputModal = (props) => {
  
-  const [show, setShow] = useState(false);
+  const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
+  const [show, setShow] = useState(exit);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
 
   return (
     <>

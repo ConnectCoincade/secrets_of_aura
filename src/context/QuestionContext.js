@@ -22,8 +22,9 @@ const AppProvider = ({children}) =>{
 
     const [questions, setQuestions] = useState(queObj);
     const [answersList, setAnswerList] = useState([]);
+    const [exit, setExit] = useState(false);
 
-    return <QuestionContext.Provider value={{questions,setQuestions, state, dispatch,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
+    return <QuestionContext.Provider value={{questions,setQuestions, exit, setExit, state, dispatch,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
 };
 
 const useGlobalContext =()=>{
