@@ -4,9 +4,15 @@ import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/VerticallyCenteredModal/FeedbackInputModal";
+const phoneNumber = '8591965698'; // Replace with your WhatsApp phone number
+
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);
+
+    const openWhatsAppChat = () => {
+        window.open(`https://wa.me/${phoneNumber}`, '_blank');
+    };
    
  
       const queObj = [
@@ -136,7 +142,7 @@ const ChakraAnalysis = () => {
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
-                <button className="whatsapp">Get In Touch On WhatsApp</button>
+                <button className="whatsapp" onClick={openWhatsAppChat}>Get In Touch On WhatsApp</button>
             </section>
         </div>
         <VerticallyCenteredModal

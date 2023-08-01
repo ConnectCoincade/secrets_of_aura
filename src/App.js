@@ -20,8 +20,8 @@ function App() {
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/aura-reading" element={<AuraReading />}></Route>
-        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route> */}
-        <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route>
+        <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route>
+        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route> */}
 
         <Route
           path="/reading-n-scanning-service"
