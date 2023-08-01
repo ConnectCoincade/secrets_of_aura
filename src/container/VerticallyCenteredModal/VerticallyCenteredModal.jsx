@@ -1,30 +1,54 @@
 import {Form, Button, Modal} from 'react-bootstrap';
 import "./VerticallyCenteredModal.css";
 import React, { useEffect, useState } from 'react';
+import { useGlobalContext } from '../../context/QuestionContext';
+import FeedbackInputModal from './FeedbackInputModal';
 
 function VerticallyCenteredModal(props) {
+  const [feedModal, setFeedModal] = useState(false)
   const options = [1,2,3,4,5,6,7]
   const [question, setQuestion] = useState('')
   const [ans, setAns] = useState('')
   const [number, setNumber] = useState('')
   const [questions, setQuestions] = useState([])
   const [selectedOption, setSelectedOption] = useState(null);
-  const [answersList, setAnswerList] = useState([]);
+  // const [answersList, setAnswerList] = useState([]);
+  const { answersList, setAnswerList} = useGlobalContext();
   const [show, setShow] = useState(false);
   var allAnswer = []
 
+  function containsObject(obj, list) {
+    return list.some(elem => elem === obj)
+ }
   function next() {
-    debugger
     let nextButton = document.getElementById('next').textContent
     if(nextButton == 'Submit') {
+
       props.onHide();
+      setFeedModal(true);
+
     }
     
     if(number == '7') {
-      debugger
+
       document.getElementById('next').textContent = 'Submit'
+      let answerObj = {
+        quest : question,
+        ans : ans,
+        number, number
+      }
+      // const list = [...answersList, answerObj]
+      
+      // allAnswer = list;
+      // const exist = containsObject(answerObj,list);
+      // console.log(exist);
+       setAnswerList([...answersList, answerObj])
+  
+     
+      
     }
     else {
+      
       let answerObj = {
         quest : question,
         ans : ans,
@@ -33,8 +57,10 @@ function VerticallyCenteredModal(props) {
       const list = [...answersList, answerObj]
       
       allAnswer = list
+     
+
       setAnswerList([...answersList, answerObj])
-      
+    
       console.log('answersList->', answersList);
       console.log('AllAnswer->', allAnswer);
       console.log('questions here->', questions);
@@ -66,17 +92,14 @@ function VerticallyCenteredModal(props) {
       var radioButton = document.getElementById('default-radio-'+ answersList[number - 2].ans);
       radioButton.checked = true;
     }
-    debugger
+  
     if(number == '1') {
       props.onHide();
     }
-
-    
-    
   }
 
   function getAnswer(ans) {
-    debugger
+ 
     setAns(ans);
     console.log('ans->', ans);
     
@@ -87,6 +110,14 @@ function VerticallyCenteredModal(props) {
     })
 
     console.log('answersList->', answersList);
+
+    // setQuestion({quet : props.questions[0].quest,ans : ans, number : props.questions[0].number})
+    // if(document.getElementById('next').disabled) {
+    //   debugger
+    //   document.getElementById('next').disabled = "false";
+    // }
+    
+    // console.log('question->', question);
   }
 
   function handleChange(event) {
@@ -96,6 +127,7 @@ function VerticallyCenteredModal(props) {
 
   useEffect(() => {
     console.log('questions in modal->', props.questions);
+    console.log('answerlist in globally',answersList);
     // setQuestion({quet : props.questions[0].quest,ans : '', number : props.questions[0].number})
     setQuestion(props.questions[0].quest)
     setNumber(props.questions[0].number)
@@ -208,12 +240,16 @@ function VerticallyCenteredModal(props) {
           </div>
           <button id='back' onClick={back}>Back</button>
           <button id='next' onClick={next}>Next</button>
-          <Button onClick={props.onHide}>Close</Button>
+       
         
       </Modal.Body>
       {/* <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer> */}
+        {/* <FeedbackInputModal
+        show={feedModal}
+        onHide={() => setFeedModal(false)}
+      /> */}
     </Modal>
   );
 }

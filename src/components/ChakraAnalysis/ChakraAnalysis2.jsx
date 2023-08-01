@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import "./ChakraAnalysis.css"
 import {Row, Col,Container, Modal} from 'react-bootstrap';
-import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
+import VerticallyCenteredModal2 from '../../container/VerticallyCenteredModal/VerticallyCenteredModal2';
 import { useGlobalContext } from "../../context/QuestionContext";
-import FeedbackInputModal from "../../container/VerticallyCenteredModal/FeedbackInputModal";
 
-const ChakraAnalysis = () => {
+const ChakraAnalysis2 = () => {
     const [modalShow, setModalShow] = React.useState(false);
    
  
       const queObj = [
-        {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
-        {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
-        {quest : 'How good are u at expressing yourself and your feelings?',ans : '', number : 3},
-        {quest : 'Are you very sensitive or do you get hurt very often?',ans : '', number : 4},
-        {quest : 'Do u have any stomach or health related issues? OR Do feel lack of confidence?',ans : '', number : 5},
-        {quest : 'Sexual desire?',ans : '', number : 6},
-        {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7}
+        {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1,options:7},
+        {quest : 'Do you feel you are intuitive?',ans : '', number : 2,options:7},
+        {quest : 'How good are u at expressing yourself and your feelings?',ans : '', number : 3,options:7},
+        {quest : 'Are you very sensitive or do you get hurt very often?',ans : '', number : 4,options:7},
+        {quest : 'Do u have any stomach or health related issues? OR Do feel lack of confidence?',ans : '', number : 5,options:7},
+        {quest : 'Sexual desire?',ans : '', number : 6,options:7},
+        {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7,options:7}
     ]
  
 
@@ -138,19 +137,13 @@ const ChakraAnalysis = () => {
                 <button className="whatsapp">Get In Touch On WhatsApp</button>
             </section>
         </div>
-        <VerticallyCenteredModal
+        <VerticallyCenteredModal2
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
       />
-       {/* <FeedbackInputModal
-        // show={feedModal}
-        // onHide={() => setFeedModal(false)}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
     </>
     );
 };
 
-export default ChakraAnalysis;
+export default ChakraAnalysis2;

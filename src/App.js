@@ -9,6 +9,7 @@ import ReadingScanningServices from './components/ReadingScanningServices/Readin
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
+import ChakraAnalysis2 from './components/ChakraAnalysis/ChakraAnalysis2';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/aura-reading" element={<AuraReading />}></Route>
-        <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route>
+        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route> */}
+        <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route>
+
         <Route
           path="/reading-n-scanning-service"
           element={<ReadingScanningServices />}
