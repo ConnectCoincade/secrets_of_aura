@@ -15,16 +15,14 @@ const FeedbackInputModal = (props) => {
 
   return (
     <>
-      <Modal 
-    //   show={show}
-    {...props}
-     
+      <Modal
+      show={show}     
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className="SOA-modal"
-      // id="SOA-modal"
       dialogClassName="modal-90w"
+      onHide={()=>setExit(false)}
       >
         
           <Modal.Title>Help Us With Your</Modal.Title>
