@@ -79,4 +79,18 @@
     .sec1-para p {
         padding-right: 0rem;
     }
+    .FAQ{
+        text-align: center;
+        margin: 2 rem;
+        width: 85%;
+    }
+  .aboutus .sec3 .title{
+        margin: auto;
+        width: 100%;
+
+    }
+    .aboutus .sec3 p{
+        width: 100%;
+        padding-top: 20px;
+    }
 }

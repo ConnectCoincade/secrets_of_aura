@@ -103,16 +103,21 @@ function Header() {
                 to="/aura-reading"
                 onClick={() => setExpanded(false)}
               >
-                AURA READING
+                AURA TRANSFORMATION
               </NavLink>
-              <NavLink
-                activeclassname="navbar__link active"
-                className="navbar__link nav-link"
-                to="/services"
-                onClick={() => setExpanded(false)}
+              <NavDropdown
+                id="nav-dropdown-SOA"
+                title="SERVICES"
               >
-                SERVICES
-              </NavLink>
+                  <NavDropdown.Item href="/reading-n-scanning-service">Reading & Scanning Service</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/healing-n-therapy-service">
+                    Healing & Therapy Service
+                  </NavDropdown.Item>
+                  {/* <NavDropdown.Divider /> */}
+                  {/* <NavDropdown.Item href="/aura-reading">Aura Reading Service</NavDropdown.Item> */}
+                  
+              </NavDropdown>
               <NavLink
                 activeclassname="navbar__link active"
                 className="navbar__link nav-link"
@@ -123,10 +128,10 @@ function Header() {
               </NavLink>
             </Nav>
             <Nav>
-            <Button
+            {/* <Button
                 className="btn-SOA">
                 Get Started
-              </Button>
+              </Button> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
