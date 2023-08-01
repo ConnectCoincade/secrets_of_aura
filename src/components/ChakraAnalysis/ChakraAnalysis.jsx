@@ -4,17 +4,18 @@ import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/VerticallyCenteredModal/FeedbackInputModal";
-const phoneNumber = '8591965698'; // Replace with your WhatsApp phone number
+import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+const phoneNumber = process.env.PHONE_NUMBER; // Replace with your WhatsApp phone number
 
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);
+    const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
 
     const openWhatsAppChat = () => {
         window.open(`https://wa.me/${phoneNumber}`, '_blank');
     };
-   
- 
+    
       const queObj = [
         {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
         {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
@@ -69,7 +70,6 @@ const ChakraAnalysis = () => {
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
-                        <article className="col-heading">Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
@@ -138,7 +138,7 @@ const ChakraAnalysis = () => {
             <section className="sec6 MTQ">
                 <p>Explore our music library featuring specially crafted tracks by a healer, designed to connect with your chakras and aura. Enhance your inner peace and well-being with personalized music recommendations based on your chakra analysis. Take a quick 2-minute quiz to discover the perfect tracks that align with your preferences, guiding you to a playlist that brings relaxation and joy to your life.</p>
                 <p> Purchase now for only INR 99/- and embark on a transformative musical journey.</p>
-                <button>MUSIC THERAPY QUIZ</button>
+                <button onClick={() => setMusicLibraryModalShow(true)}>MUSIC THERAPY QUIZ</button>
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
@@ -149,7 +149,8 @@ const ChakraAnalysis = () => {
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
-      />
+        />
+        <MusicLibraryModal show={musicLibraryModalShow} onHide={() => setMusicLibraryModalShow(false)}/>
        {/* <FeedbackInputModal
         // show={feedModal}
         // onHide={() => setFeedModal(false)}
