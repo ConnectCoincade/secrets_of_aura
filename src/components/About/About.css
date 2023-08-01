@@ -18,6 +18,9 @@
     color: #2E2A87;
     font-size: 55px;
 }
+.sec3 .title{
+    width: 27% !important;
+}
 .aboutus .sec3 {
     padding: 5rem;
     text-align: center;
@@ -76,6 +79,9 @@
     margin: 2rem;
 }
 @media (max-width: 576px) {
+    .aboutus{
+        background-size: cover;
+    }
     .sec1-para p {
         padding-right: 0rem;
     }
@@ -87,10 +93,22 @@
   .aboutus .sec3 .title{
         margin: auto;
         width: 100%;
+        font-size : 40px;
 
     }
     .aboutus .sec3 p{
         width: 100%;
         padding-top: 20px;
+        font-size: 19px
     }
+    .aboutus .sec3{
+        padding: 1rem;
+    }
+.sec1-main{
+    display: block!important;
+}
+.sec3 .title{
+    width: 100% !important;
+}
+
 }

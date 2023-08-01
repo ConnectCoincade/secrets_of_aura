@@ -69,7 +69,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* <img className="Testimonials-img" src={img4}/> */}
 
       <section className="sec3" >
         
@@ -93,7 +92,7 @@ const Home = () => {
             harmonious energy flow. Take this transformative step towards a
             balanced and fulfilling life today.
           </p>
-          <button className="btn1">LEARN MORE</button>
+          {/* <button className="btn1">LEARN MORE</button> */}
           <button className="btn2">GET STARTED</button>
         </div>
           <div className="img-sec">
