@@ -24,6 +24,39 @@
     margin: auto;
     font-size: 22px;
 }
+.Testimonials1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Testimonials1 {
+    background: #5E59A3 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    width: 77%;
+    margin: 5rem auto;
+    padding: 2rem;
+    color: #fff;
+    font: 1.5rem/1.4 Georgia, serif;
+}
+.bold1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E2A87;
+    font-size: 2.3rem;
+}
+.Testimonials1 div {
+    text-align: center;
+}
+.Testimonials1 span {
+    font-size: 40px;
+}
+.Testimonials1-img {
+    position: absolute;
+    width: 90%;
+    top: 80rem;
+}
 .book-session1, .book-session2
  {
     padding: 1rem;
@@ -48,16 +81,21 @@
 .sec3 .title {
     color: #2E2A87;
     font-size: 52px;
-    width: 25%;
+    /* width: 25%; */
     margin: auto;
+    padding-top: 36px;
+}
+.sec3 .title {
+    width: 39% !important;
 }
 .sec3 img {
     height: 40rem;
     /* padding: 5rem 15rem; */
-    transform: scaleX(1.5);
+    transform: scale(1);
     height: auto;
     position: relative;
     z-index: -1;
+    padding: 100px;
 }
 .sec4 img {
     width: 80%;
@@ -98,12 +136,14 @@
     font-size: 25px;
 }
 .col-p {
-    color: #2E2A87;
-    font-size: 18px;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
 }
-.img-div {
+.img-div{
     padding: 2rem;
     height: 45%;
+    color: white;
 }
 .sec6 img {
     width: 100%;
@@ -115,6 +155,14 @@
 }
 .sec6 {
     margin: 5rem;
+}
+.img-1{
+    background-size: 100px norepeat;
+    width: 468%;
+    height: 250px;
+    /* padding: 90px; */
+    margin: 5px 13px 94px 333px;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 576px){

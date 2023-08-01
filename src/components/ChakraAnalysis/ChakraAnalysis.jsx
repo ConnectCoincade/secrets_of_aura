@@ -76,7 +76,7 @@ const ChakraAnalysis = () => {
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
-                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
                     </div>
                         <article className="col-heading">Solar Plexus Chakra</article>
                         <article className="col-heading">Manipura</article>
@@ -84,7 +84,8 @@ const ChakraAnalysis = () => {
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
-                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
+                        
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>
                     </div>
                         <article className="col-heading">Heart Chakra</article>
                         <article className="col-heading">Anahata</article>
@@ -92,7 +93,7 @@ const ChakraAnalysis = () => {
                     </Col>
                     </Row>
                     <Row>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"/>
                     </div>
@@ -100,7 +101,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Vishuddha</article>
                         <p className="col-p">Located in the throat region, this chakra is associated with communication, self-expression, and authenticity. It impacts our ability to express thoughts, ideas, emotions, and to communicate effectively. Its color is blue.</p>
                     </Col>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"/>
                     </div>
@@ -108,7 +109,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Ajna</article>
                         <p className="col-p">Positioned between the eyebrows on the forehead, the third eye chakra relates to intuition, insight, and inner wisdom. It’s connected to our ability to perceive beyond the physical realm and develop psychic abilities. Its color is indigo.</p>
                     </Col>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"/>
                     </div>

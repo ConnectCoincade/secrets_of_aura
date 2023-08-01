@@ -37,7 +37,6 @@ const Home = () => {
   };
   return (
     <>
-      {/* <Container> */}
       <section className="banner sec1">
         <img  src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"></img>
         <div className="banner-content">
@@ -69,7 +68,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* <img className="Testimonials-img" src={img4}/> */}
 
       <section className="sec3" >
         
@@ -93,7 +91,6 @@ const Home = () => {
             harmonious energy flow. Take this transformative step towards a
             balanced and fulfilling life today.
           </p>
-          <button className="btn1">LEARN MORE</button>
           <button className="btn2">GET STARTED</button>
         </div>
           <div className="img-sec">

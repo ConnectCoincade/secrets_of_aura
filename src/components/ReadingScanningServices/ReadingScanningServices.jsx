@@ -50,7 +50,7 @@ const ReadingScanningServices = () => {
       />
       <p className="enq-text">Would you like to enquire further?</p>
       <div className="btn-div">
-        <button className="card-btn">
+        <button className="card-btn new-btn">
           <span className="btn-text">Get In Touch On WhatsApp</span>
         </button>
       </div>
