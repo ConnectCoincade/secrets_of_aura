@@ -3,12 +3,13 @@ import "./AuraReading.css"
 import {Row, Col,Container} from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 // import Assets from '../../assets/aura-cleansing.jpg'
+import Image1 from '../../assets/meditation.png';
+import Image2 from '../../assets/hands.png';
+import Image3 from '../../assets/emotional-intelligence.png';
+import Image4 from '../../assets/XMLID_787_.png';
+import Image5 from '../../assets/11 - 20.png';
 const newImage = require('../../assets/aura-cleansing.jpg');
-const Image1 = require('../../assets/meditation.png');
-const Image2 = require('../../assets/hands.png');
-const Image3 = require('../../assets/emotional-intelligence.png');
-const Image4 = require('../../assets/XMLID_787_.png');
-const Image5 = require('../../assets/11 - 20.png');
+
 const AuraReading = () => {
 
   const responsive = {
@@ -186,7 +187,8 @@ const AuraReading = () => {
              <div className="Testimonials1">
               <Col lg="4" md="4" className="sec5-col">
                 <div className="img-div">
-                <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/XMLID_787_.png"/>
+                {/* <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/XMLID_787_.png"/> */}
+                <img src={Image4} alt="selfawareness.png"/>
 
                 </div>
                 {/* <p className="col-heading">Self Awareness</p> */}
@@ -197,7 +199,8 @@ const AuraReading = () => {
             <div className="Testimonials1">
               <Col lg="4" md="4" className="sec5-col">
               <div className="img-div">
-                <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/11%20-%2020.png"/>
+                {/* <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/11%20-%2020.png"/> */}
+                <img src={Image5} alt="hands.png"/>
               </div>
                 <p className="">Relationship Insights</p>
                 <p className="col-p1">"by reading someone’s aura, you may be able to gain insights into their personality, emotions, and energy patterns, which can help you better understand and communicate with them"</p>
@@ -206,7 +209,8 @@ const AuraReading = () => {
             <div className="Testimonials1"> 
                <Col lg="4" md="4" className="sec5-col">
               <div className="img-div">
-                <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/emotional-intelligence.png"/>
+                {/* <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/emotional-intelligence.png"/> */}
+                <img src={Image3} alt="emotionalhealing.png"/>
               </div>
                 <p className="">Emotional Healing</p>
                 <p className="col-p1">"aura reading can help identify emotional blockages or imbalances in the body’s energy field, allowing for targeted healing work to be done to release these blockages"</p>
@@ -216,7 +220,8 @@ const AuraReading = () => {
                  <Col lg="6" md="6" className="sec5-col">
                  {/* <Col lg="5" md="5" className="sec5-col"> */}
               <div className="img-div">
-                <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/hands.png"/>
+                {/* <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/hands.png"/> */}
+                <img src={Image2} alt="circle.png"/>
               </div>
                 <p className="">Energy Awareness</p>
                 <p className="col-p1">"aura reading can help you become more aware of the energy around you, allowing you to better navigate and manage the energy of the people and environments you encounter"</p>
@@ -225,7 +230,8 @@ const AuraReading = () => {
             <div className="Testimonials1">
               <Col lg="6" md="6" className="sec5-col">
               <div className="img-div">
-                <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/meditation.png"/>
+                {/* <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/meditation.png"/> */}
+                <img src={Image1} alt="spiritual.png"/>
               </div>
                 <p className="">Spiritual Growth</p>
                 <p className="col-p1">"aura reading can be a tool for spiritual development, helping you to deepen your connection to your higher self and the divine" </p>

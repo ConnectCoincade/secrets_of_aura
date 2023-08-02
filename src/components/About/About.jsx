@@ -28,7 +28,7 @@ const About = () => {
         </section>
         
       </Container>
-      <section className="sec3">
+      <section className="sect3">
           <div className="title">Secrets Of Aura</div>
           <div className="title">Vision</div>
           <p>When my spiritual guide offered me a choice between a gift to benefit myself or others, I didn’t hesitate to opt for the latter. I believe that this gift was destined for me so that I could lend a hand to as many souls as possible.</p>
