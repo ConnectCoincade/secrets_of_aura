@@ -6,32 +6,27 @@ import { useGlobalContext } from '../../context/QuestionContext';
 import FeedbackInputModal from '../FeedbackInputModal/FeedbackInputModal';
 
 function VerticallyCenteredModal2(props) {
-  // const [currentQuestion, setCurrentQuestion] = useState('');
-  const [feedModal, setFeedModal] = useState(false);
+ 
+  // const [feedModal, setFeedModal] = useState(false);
     const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
   const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
-  // const [currentImage,setCurrentImage] = useState('');
   const currentQuestion = questions[questionIndex];
   
   const handleSubmit = () =>{
     props.onHide();
     setExit(true);
-
   }
 
   const handleNext = () => {
-    if (questionIndex === questions.length - 1) {
-      // If it's the last question, change the "Next" button to "Submit"
-      //document.getElementById('next').textContent = 'Submit';
-    } else {
+   
       // Otherwise, move to the next question
       setQuestionIndex(nextIndex => nextIndex + 1);
       var radioButtons = document.getElementsByName('options');
       for (var i = 0; i < radioButtons.length; i++) {
         radioButtons[i].checked = false;
       }
-    }
+    
   };
 
   const handleBack = () => {
@@ -40,12 +35,11 @@ function VerticallyCenteredModal2(props) {
     } else {
       // Move to the previous question
       setQuestionIndex(prevIndex => prevIndex - 1);
-      //console.log('answersList in back->', answersList);
+      const selectedAnswer = answersList[questionIndex-1]?.ans || '';
       var radioButtons = document.getElementsByName('options');
-      
-      console.log(answersList[questionIndex]?.ans,answersList[answersList.length-2].ans);
-      var radioButton = document.getElementById(`default-radio-`+ answersList[questionIndex].ans);
-      radioButton.checked = true;
+      radioButtons.forEach(radioButton => {
+        radioButton.checked = radioButton.value === selectedAnswer;
+      });
     }
   };
 
@@ -59,33 +53,14 @@ function VerticallyCenteredModal2(props) {
     setAnswerList([...answersList, answerObj]);
   };
 
-  // useEffect(() => {
-  //   // Reset the "Next" button text when the component updates
-  //   //document.getElementById('next').textContent = 'Next';
-  // }, [questionIndex]);
-
   useEffect(() => {
     // Reset the question index when new questions are received via props
-    setQuestionIndex(0);
-    // if(answersList){
-    //   console.log('answerlist is exist');
-    // }
-    
+    setQuestionIndex(0);    
     if( questionIndex+1 < questions.length){
       setAnswerList([])
     } 
-    handleData()
   }, [props,questions]);
 
-
-  const handleData = () =>{
-    if(currentQuestion){
-      console.log(currentQuestion);
-      console.log('presendt');
-    }else{
-      console.log('not present');
-    }
-  }
 
   if (!questions || questions.length === 0) {
     return null; // Handle the case when there are no questions to display
@@ -140,7 +115,6 @@ function VerticallyCenteredModal2(props) {
       :
       <FeedbackInputModal
         show={exit}
-        onHide={() => setFeedModal(false)}
       /> 
   );
 }
