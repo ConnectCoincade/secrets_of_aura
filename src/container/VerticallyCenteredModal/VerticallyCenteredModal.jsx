@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context/QuestionContext';
 import FeedbackInputModal from '../FeedbackInputModal/FeedbackInputModal';
 
-function VerticallyCenteredModal2(props) {
+function VerticallyCenteredModal(props) {
  
   const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -118,4 +118,4 @@ function VerticallyCenteredModal2(props) {
   );
 }
 
-export default VerticallyCenteredModal2;
+export default VerticallyCenteredModal;
