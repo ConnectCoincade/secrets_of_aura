@@ -67,14 +67,14 @@ const ChakraAnalysis = () => {
                 <Container>
                     <Row>
                     <Col lg="3" md="3" className="sec5-col">
-                        <div className="img-div">
+                        <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
-                    </Col>
+                    </Col>  
                     <Col lg="3" md="3" className="sec5-col">
-                    <div className="img-div">
+                    <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208767.png"/>
                     </div>
                         <article className="col-heading">Sacral Chakra</article>
@@ -82,7 +82,7 @@ const ChakraAnalysis = () => {
                         <p className="col-p">Situated in the lower abdomen, below the navel, this chakra is linked to our emotions, creativity, sensuality, and sexuality. It influences our ability to embrace change, experience pleasure, and nurture relationships. It’s depicted with an orange color.</p>
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
-                    <div className="img-div">
+                    <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
                     </div>
                         <article className="col-heading">Solar Plexus Chakra</article>
@@ -90,7 +90,7 @@ const ChakraAnalysis = () => {
                         <p className="col-p">Located in the upper abdomen around the stomach area, this chakra corresponds to personal power, self-confidence, and willpower. It drives our sense of purpose, motivation, and assertiveness. Its color is yellow.</p>
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
-                    <div className="img-div">
+                    <div className="img-div-sec4">
                         
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>
                     </div>
@@ -100,24 +100,24 @@ const ChakraAnalysis = () => {
                     </Col>
                     </Row>
                     <Row>
-                    <Col lg="3" md="3" className="data">
-                    <div className="img-div">
+                    <Col lg="4" md="4">
+                    <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"/>
                     </div>
                         <article className="col-heading">Throat Chakra</article>
                         <article className="col-heading">Vishuddha</article>
                         <p className="col-p">Located in the throat region, this chakra is associated with communication, self-expression, and authenticity. It impacts our ability to express thoughts, ideas, emotions, and to communicate effectively. Its color is blue.</p>
                     </Col>
-                    <Col lg="3" md="3" className="data">
-                    <div className="img-div">
+                    <Col lg="4" md="4">
+                    <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"/>
                     </div>
                         <article className="col-heading">Third Eye Chakra</article>
                         <article className="col-heading">Ajna</article>
                         <p className="col-p">Positioned between the eyebrows on the forehead, the third eye chakra relates to intuition, insight, and inner wisdom. It’s connected to our ability to perceive beyond the physical realm and develop psychic abilities. Its color is indigo.</p>
                     </Col>
-                    <Col lg="3" md="3" className="data">
-                    <div className="img-div">
+                    <Col lg="4" md="4">
+                    <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"/>
                     </div>
                         <article className="col-heading">Crown Chakra</article>
