@@ -117,7 +117,6 @@ const AuraReading = () => {
           <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group 8718.png"/>
         </section>
         <section className="sectionc-4">
-        <Container>
         <Row>
             <Col lg="6" md="6">
               <div className="title">What is Aura Reading?</div>
@@ -126,11 +125,10 @@ const AuraReading = () => {
               <p>An aura is essentially your personal link to Earth, termed as auric energy. In an aura reading, we tap into this energy, which is in direct contact with your subconscious mind and soul. By accessing this energy, we’re able to provide you with a consultation based on insights gleaned through my visionary capabilities.</p>
               <p>Aura reading is a unique service we offer that taps into the personal energy field surrounding you, also known as your aura. This energy is intricately connected to your subconscious mind and soul, reflecting your inner state and potential. By interpreting the specific characteristics of your aura – its colors, patterns, and densities, our skilled readers gain insights into various aspects of your life. This understanding can help you unravel the complexities of your emotions, relationships, health, and spiritual growth. With these insights, you can better navigate life’s challenges and enhance your overall wellbeing.</p>
             </Col>
-            <Col lg="6" md="6" className="img-div">
+            <Col lg="6" md="6" className="img-div section-4-img">
               <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208875.png" />
             </Col>
           </Row>
-        </Container>
         </section>
         <section className="sec5">
           {/* <div className="title">Benefits of aura reading</div> */}

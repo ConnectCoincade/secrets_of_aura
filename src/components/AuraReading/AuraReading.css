@@ -24,20 +24,20 @@
     margin: auto;
     font-size: 22px;
 }
-.Testimonials1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
+
 .Testimonials1 {
     background: #5E59A3 0% 0% no-repeat padding-box;
     border-radius: 1rem;
-    width: 65%;
+    width: 80%;
     margin: 5rem auto;
     padding: 7rem;
     color: #fff;
     font: 1.5rem/1.4 Georgia, serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
 }
 .bold1{
     display: flex;
@@ -95,7 +95,10 @@
     height: auto;
     position: relative;
     z-index: -1;
-    padding: 100px;
+    padding: 8rem 20rem;
+}
+.section-4-img {
+    text-align: right;
 }
 .sectionc-4 img {
     width: 80%;
@@ -111,6 +114,9 @@
     color: #5E59A3;
     font-size: 20px;
 } 
+.sectionc-4 {
+    margin: 0 10%;
+}
 .sec5 {
     background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Rectangle%204.png") no-repeat;
     padding: 5rem;
@@ -171,8 +177,8 @@
     margin: 8px 0px 85px 167px;
     background-repeat: no-repeat;
     background-size: cover; */
-    width: 78rem;
-    height: 377;
+    width: 92rem;
+    /* height: 377; */
     margin: 5rem auto;
     background-repeat: no-repeat;
     background-size: cover;
