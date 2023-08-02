@@ -5,7 +5,7 @@ import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/Ver
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
-const phoneNumber = process.env.PHONE_NUMBER; 
+const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 
 
 const ChakraAnalysis = () => {
@@ -13,8 +13,8 @@ const ChakraAnalysis = () => {
     const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
 
     const openWhatsAppChat = () => {
-        console.log('process.env.PHONE_NUMBER->', process.env.PHONE_NUMBER);
-        window.open(`https://wa.me/8591965698`, '_blank');
+        console.log('process.env.PHONE_NUMBER->', process.env.REACT_APP_PHONE_NUMBER);
+        window.open(`https://wa.me/${process.env.REACT_APP_PHONE_NUMBER}`, '_blank');
     };
     
       const queObj = [
