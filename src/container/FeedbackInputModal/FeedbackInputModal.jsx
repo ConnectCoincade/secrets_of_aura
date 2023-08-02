@@ -1,23 +1,23 @@
-import React from "react";
-import "./FeedbackInputModal.css";
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
-import { useGlobalContext } from "../../context/QuestionContext";
+import React from 'react';
+import './FeedbackInputModal.css';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import { useGlobalContext } from '../../context/QuestionContext';
 
 const styles = {
-  modal: { padding: "5% 10%", borderRadius: "10px" },
+  modal: { padding: '5% 10%', borderRadius: '10px' },
   header: {
     paddingTop: 30,
     fontSize: 45,
   },
   button: {
-    width: "80%",
-    background: "#9389E3 0% 0% no-repeat padding-box",
-    textTransform: "uppercase",
+    width: '80%',
+    background: '#9389E3 0% 0% no-repeat padding-box',
+    textTransform: 'uppercase',
   },
-  form: { textAlign: "-webkit-center", padding: "3% 14%" },
+  form: { textAlign: '-webkit-center', padding: '3% 14%' },
 };
 
 const FeedbackInputModal = (props) => {
@@ -57,7 +57,7 @@ const FeedbackInputModal = (props) => {
           <div style={{}}>
             <Form style={styles.form}>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -67,13 +67,13 @@ const FeedbackInputModal = (props) => {
                   name="firstName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid #B00020",
-                    textTransform: "uppercase",
+                    border: '2px solid #B00020',
+                    textTransform: 'uppercase',
                   }}
                 />
               </Form.Group>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -83,13 +83,13 @@ const FeedbackInputModal = (props) => {
                   name="lastName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid #919191",
-                    textTransform: "uppercase",
+                    border: '2px solid #919191',
+                    textTransform: 'uppercase',
                   }}
                 />
               </Form.Group>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -98,7 +98,7 @@ const FeedbackInputModal = (props) => {
                   placeholder="Email ID"
                   name="email"
                   onChange={(e) => onInputChange(e)}
-                  style={{ border: "2px solid #9389E3" }}
+                  style={{ border: '2px solid #9389E3' }}
                 />
               </Form.Group>
               <Button
