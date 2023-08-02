@@ -114,7 +114,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="sec5">
+      <section className="sect5">
         <div className="ask">Can’t find the answers you are looking for?</div>
         <button className="whatsapp">Get In Touch On WhatsApp</button>
       </section>

@@ -38,16 +38,27 @@
     margin-top: 5rem;
 }
 .aboutus .sec4 .title {
+    /* text-align: center;
+    font-size: 2.5rem;
+    color: #5E59A3; */
     text-align: center;
-    font-size: 50px;
-    color: #2E2A87;
+    font-size: 2.3rem;
+    color: #5E59A3;
+    /* padding-right: 4rem; */
+
 }
 .aboutus .FAQ-heading {
+    /* text-align: center;
+    font-size: 1.9rem;
+    color: #818181; */
     text-align: center;
-    font-size: 30px;
+    font-size: 1.4rem;
     color: #818181;
-    
+    padding-top: 1rem;
+    /* padding-right: 4rem; */
 }
+   
+    
 .FAQ {
     text-align: center;
     margin: 2rem auto;
@@ -63,15 +74,15 @@
     color: #919191;
     font-size: 17px;
 }
-.sec5 {
+.sect5 {
     text-align: center;
-    margin: 4rem;
+    /* margin: 4rem; */
 }
-.sec5 .ask {
+.sect5 .ask {
     color: #2E2A87;
     font-size: 30px;
 }
-.sec5 button {
+.sect5 button {
     border-radius: 10px;
     padding: 1rem 2rem;
     border: #9389E3 1px solid;
@@ -113,4 +124,52 @@
     width: 100% !important;
 }
 
+}
+@media (max-width: 300px) {
+    .aboutus .sect3 .title {
+        margin: auto;
+        width: 100%;
+        font-size: 2.6rem;
+    }
+    .aboutus .sect3 p {
+        width: 100%;
+        padding-top: 1.6rem;
+        font-size: 1.3rem;
+    }
+    .aboutus .sec4 .title  {
+        text-align: center;
+        font-size: 2.5rem ;
+        color: #2E2A87;
+    }
+    .aboutus .FAQ-heading {
+        text-align: center;
+        font-size: 1.9rem;
+        color: #818181;
+        padding-top: 1.6rem;
+    }
+    .aboutus .sect3 {
+        padding: 0rem;
+    }
+    .sect5 button {
+        /* border-radius: 11px;
+        padding: 0rem 1rem 0rem 0rem;
+        border: #9389E3 1px solid;
+        color: white;
+        background: #9389E3;
+        font-size: 1.2rem;
+        margin: 2rem; */
+        /* box-sizing: initial; */
+        border-radius: 10px;
+        padding: 1rem 1rem;
+        border: #9389E3 1px solid;
+        color: white;
+        background: #9389E3;
+        font-size: 20px;
+        margin: 2rem;
+    }
+ 
+    .sect5{
+    padding: 1rem;
+    margin: 0;
+}
 }

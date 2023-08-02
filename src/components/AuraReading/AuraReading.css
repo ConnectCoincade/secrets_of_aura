@@ -117,12 +117,12 @@
 .sectionc-4 {
     margin: 0 10%;
 }
-.sec5 {
+sect5 {
     background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Rectangle%204.png") no-repeat;
     padding: 5rem;
     margin: 0;
 }
-.sec5 .title {
+sect5 .title {
     color: #2E2A87;
     font-size: 50px;
     margin: 3rem;
@@ -133,7 +133,7 @@
     margin: 1rem 0;
     text-align: right;
 }
-.sec5-col {
+sect5-col {
     text-align: center;
 }
 .col-heading {
