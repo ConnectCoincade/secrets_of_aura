@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { useGlobalContext } from '../../context/QuestionContext';
 
+let idOfEntry = 1;
 const styles = {
   modal: { padding: '5% 10%', borderRadius: '10px' },
   header: {
@@ -31,7 +32,36 @@ const FeedbackInputModal = (props) => {
     setExit,
   } = useGlobalContext();
   const [show, setShow] = useState(exit);
-  const handleClose = () => setExit(false);
+
+  const handleClose = async () => {
+    setExit(false);
+    try {
+      await fetch('https://sheetdb.io/api/v1/xw7i1za1rp66m', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              id: idOfEntry,
+              firstName: userData.firstName,
+              lastName: userData.lastName,
+              email: userData.email,
+            },
+          ],
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          idOfEntry++;
+          console.log(data);
+        });
+    } catch (error) {
+      console.log('Error: ', error);
+    }
+  };
   // const handleShow = () => setShow(true);
 
   const onInputChange = (e) => {
