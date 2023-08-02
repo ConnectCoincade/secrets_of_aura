@@ -3,7 +3,12 @@ import "./AuraReading.css"
 import {Row, Col,Container} from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 // import Assets from '../../assets/aura-cleansing.jpg'
-const newImage = require('../../Assets/aura-cleansing.jpg')
+const newImage = require('../../assets/aura-cleansing.jpg');
+const Image1 = require('../../assets/meditation.png');
+const Image2 = require('../../assets/hands.png');
+const Image3 = require('../../assets/emotional-intelligence.png');
+const Image4 = require('../../assets/XMLID_787_.png');
+const Image5 = require('../../assets/11 - 20.png');
 const AuraReading = () => {
 
   const responsive = {
@@ -110,7 +115,7 @@ const AuraReading = () => {
           
           <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group 8718.png"/>
         </section>
-        <section className="sec4">
+        <section className="sectionc-4">
         <Container>
         <Row>
             <Col lg="6" md="6">
@@ -182,10 +187,11 @@ const AuraReading = () => {
               <Col lg="4" md="4" className="sec5-col">
                 <div className="img-div">
                 <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/XMLID_787_.png"/>
+
                 </div>
                 {/* <p className="col-heading">Self Awareness</p> */}
                 <bold className="">Self Awareness</bold>
-                <p className="col-p">"aura reading can help you become more aware of your own energy and emotions, which can improve your ability to manage stress, make better decisions, and maintain healthy relationships"</p>
+                <p className="col-p1">"aura reading can help you become more aware of your own energy and emotions, which can improve your ability to manage stress, make better decisions, and maintain healthy relationships"</p>
               </Col>
               </div>
             <div className="Testimonials1">
@@ -194,7 +200,7 @@ const AuraReading = () => {
                 <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/11%20-%2020.png"/>
               </div>
                 <p className="">Relationship Insights</p>
-                <p className="col-p">"by reading someone’s aura, you may be able to gain insights into their personality, emotions, and energy patterns, which can help you better understand and communicate with them"</p>
+                <p className="col-p1">"by reading someone’s aura, you may be able to gain insights into their personality, emotions, and energy patterns, which can help you better understand and communicate with them"</p>
               </Col>
             </div>
             <div className="Testimonials1"> 
@@ -203,7 +209,7 @@ const AuraReading = () => {
                 <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/emotional-intelligence.png"/>
               </div>
                 <p className="">Emotional Healing</p>
-                <p className="col-p">"aura reading can help identify emotional blockages or imbalances in the body’s energy field, allowing for targeted healing work to be done to release these blockages"</p>
+                <p className="col-p1">"aura reading can help identify emotional blockages or imbalances in the body’s energy field, allowing for targeted healing work to be done to release these blockages"</p>
               </Col>
             </div>
                   <div className="Testimonials1">
@@ -213,7 +219,7 @@ const AuraReading = () => {
                 <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/hands.png"/>
               </div>
                 <p className="">Energy Awareness</p>
-                <p className="col-p">"aura reading can help you become more aware of the energy around you, allowing you to better navigate and manage the energy of the people and environments you encounter"</p>
+                <p className="col-p1">"aura reading can help you become more aware of the energy around you, allowing you to better navigate and manage the energy of the people and environments you encounter"</p>
               </Col>
             </div>
             <div className="Testimonials1">
@@ -222,7 +228,7 @@ const AuraReading = () => {
                 <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/meditation.png"/>
               </div>
                 <p className="">Spiritual Growth</p>
-                <p className="col-p">"aura reading can be a tool for spiritual development, helping you to deepen your connection to your higher self and the divine" </p>
+                <p className="col-p1">"aura reading can be a tool for spiritual development, helping you to deepen your connection to your higher self and the divine" </p>
               </Col>
               </div>
 {/*            
@@ -233,7 +239,10 @@ const AuraReading = () => {
         </div>
          {/* <section className="sec3"> */}
           <div className="img-1" style={{backgroundImage: `url('${newImage}')`}}>
-          Aura Transformation
+            <div className="data">
+         <bold className="img1-title">Aura Transformation</bold> 
+         <div className="content">Our Aura Transformation service is a comprehensive process designed to balance your energy centers, also known as chakras, and remove any impediments within your aura. These blockages can impact not only your physical and mental health, but also your professional and personal life. Through a series of specialized energy healing techniques, we work to clear these blockages, repair any damage, and fortify your aura, thereby enhancing your connection to Earth and your subconscious. Once these hindrances are removed, you’ll be better positioned to actualize your desires and aspirations without any obstructions. This transformation not only brings a harmonious balance in your life but also promotes a more fulfilling and prosperous life experience.</div>
+          </div>
           </div>
           {/* <div className="title">Aura Transformation</div>  */}
           

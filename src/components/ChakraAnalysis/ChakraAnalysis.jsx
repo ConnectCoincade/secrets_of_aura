@@ -4,11 +4,18 @@ import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
+import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+const phoneNumber = process.env.PHONE_NUMBER; 
+
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);
-   
- 
+    const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
+
+    const openWhatsAppChat = () => {
+        window.open(`https://wa.me/${phoneNumber}`, '_blank');
+    };
+    
       const queObj = [
         {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
         {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
@@ -127,18 +134,19 @@ const ChakraAnalysis = () => {
             <section className="sec6 MTQ">
                 <p>Explore our music library featuring specially crafted tracks by a healer, designed to connect with your chakras and aura. Enhance your inner peace and well-being with personalized music recommendations based on your chakra analysis. Take a quick 2-minute quiz to discover the perfect tracks that align with your preferences, guiding you to a playlist that brings relaxation and joy to your life.</p>
                 <p> Purchase now for only INR 99/- and embark on a transformative musical journey.</p>
-                <button>MUSIC THERAPY QUIZ</button>
+                <button onClick={() => setMusicLibraryModalShow(true)}>MUSIC THERAPY QUIZ</button>
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
-                <button className="whatsapp">Get In Touch On WhatsApp</button>
+                <button className="whatsapp" onClick={openWhatsAppChat}>Get In Touch On WhatsApp</button>
             </section>
         </div>
         <VerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
-      />
+        />
+        <MusicLibraryModal show={musicLibraryModalShow} onHide={() => setMusicLibraryModalShow(false)}/>
        {/* <FeedbackInputModal
         // show={feedModal}
         // onHide={() => setFeedModal(false)}
