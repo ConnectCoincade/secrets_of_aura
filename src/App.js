@@ -9,9 +9,13 @@ import ReadingScanningServices from './components/ReadingScanningServices/Readin
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
+import ReactPdfPrint from './container/FeedbackInputModal/ReactPdfPrint';
+
 
 
 function App() {
+
+  
   return (
     <>
       <Navigationbar />
@@ -21,8 +25,6 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/aura-reading" element={<AuraReading />}></Route>
         <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route>
-        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route> */}
-
         <Route
           path="/reading-n-scanning-service"
           element={<ReadingScanningServices />}
@@ -32,7 +34,8 @@ function App() {
           element={<HealingTherapyService />}
         ></Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
+      <ReactPdfPrint/>
     </>
   );
 }

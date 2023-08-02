@@ -48,6 +48,8 @@ function VerticallyCenteredModal(props) {
       quest: questions[questionIndex].quest,
       ans: selectedAnswer,
       number: questionIndex + 1,
+      image: questions[questionIndex].image,
+      chakraName:questions[questionIndex].chakraName
     };
     setAnswerList([...answersList, answerObj]);
   };

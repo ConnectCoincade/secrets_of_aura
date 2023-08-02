@@ -1,10 +1,12 @@
 import React from "react";
 import "./FeedbackInputModal.css";
-import { useState } from "react";
+import { useState,useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useGlobalContext } from "../../context/QuestionContext";
+import { useReactToPrint } from "react-to-print";
+
 
 const styles = {
   modal: { padding: "5% 10%", borderRadius: "10px" },
@@ -16,33 +18,33 @@ const styles = {
     width: "80%",
     background: "#9389E3 0% 0% no-repeat padding-box",
     textTransform: "uppercase",
+    border:'2px solid #000000'
   },
   form: { textAlign: "-webkit-center", padding: "3% 14%" },
 };
 
-const FeedbackInputModal = (props) => {
+
+const FeedbackInputModal = () => {
   const {
-    questions,
     userData,
     setUserData,
-    answersList,
-    setAnswerList,
     exit,
     setExit,
   } = useGlobalContext();
-  const [show, setShow] = useState(exit);
-  const handleClose = () => setExit(false);
-  // const handleShow = () => setShow(true);
 
+  const handleDownload = () =>{
+    setExit(false);
+  };
+ 
   const onInputChange = (e) => {
-    console.log([e.target.name], e.target.value);
     setUserData({ ...userData, [e.target.name]: e.target.value });
   };
+  
 
   return (
-    <>
+    <> 
       <Modal
-        show={show}
+        show={exit}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
@@ -67,7 +69,7 @@ const FeedbackInputModal = (props) => {
                   name="firstName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid #B00020",
+                    border: "2px solid",
                     textTransform: "uppercase",
                   }}
                 />
@@ -83,7 +85,7 @@ const FeedbackInputModal = (props) => {
                   name="lastName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid #919191",
+                    border: "2px solid ",
                     textTransform: "uppercase",
                   }}
                 />
@@ -98,22 +100,23 @@ const FeedbackInputModal = (props) => {
                   placeholder="Email ID"
                   name="email"
                   onChange={(e) => onInputChange(e)}
-                  style={{ border: "2px solid #9389E3" }}
+                  style={{ border: "2px solid " }}
                 />
               </Form.Group>
               <Button
                 variant="primary"
                 style={styles.button}
-                onClick={handleClose}
+                onClick={handleDownload}
               >
-                Send Report
+                Download Report
               </Button>
             </Form>
           </div>
         </Modal.Body>
-      </Modal>
+      </Modal>    
     </>
   );
 };
+
 
 export default FeedbackInputModal;
