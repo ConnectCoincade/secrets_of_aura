@@ -24,7 +24,7 @@
     border: 1pc solid #6D6FA7;
     padding: 0 2rem;
     right: 8rem;
-    position: absolute;
+    position: absolute; 
     top: 37rem;
     font-size: 1.5rem;
     border-radius: 15px;
@@ -67,6 +67,7 @@
     font-size: 50px;
     
 }
+/* changes */
 .chakra-consultation p {
     color: #F0E7F4;
     width: 80%;
