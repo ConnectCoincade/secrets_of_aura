@@ -5,7 +5,7 @@ import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/Ver
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
-const phoneNumber = process.env.PHONE_NUMBER; // Replace with your WhatsApp phone number
+const phoneNumber = process.env.PHONE_NUMBER; 
 
 
 const ChakraAnalysis = () => {
