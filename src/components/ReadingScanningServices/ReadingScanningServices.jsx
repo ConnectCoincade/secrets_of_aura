@@ -4,6 +4,14 @@ import Card from './Card/Card';
 
 const ReadingScanningServices = () => {
   const cardDetails = [
+
+    {
+      img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/high-angle-woman-reading-tarot.png',
+      header: 'TAROT READING',
+      subheader:
+        '15 MINS SESSION - INR 1500/- | 45 MINS SESSION - INR 4500/- | ONLINE AND IN-PERSON',
+      para: `In our tarot reading service, we delve into your past, present, and future, providing valuable insights to assist in your journey of self-discovery. Whether you are seeking clarity about relationships, career choices, personal growth, or your life's direction, our tarot reading can offer illuminating insights...`,
+    },
     {
       img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/horoscope-astrology.png',
       header: 'Kundali Reading',
@@ -17,14 +25,7 @@ const ReadingScanningServices = () => {
       subheader:
         'QUICK CONSULTATION - 1 QUESTION ONLY - INR 500/- | COMPREHENSIVE ANALYSIS - PER SESSION - INR 4500/- | ONLINE AND IN-PERSON',
       para: `It's not uncommon for different astrologers to provide varying interpretations when it comes to horoscope matching, leading to confusion. To alleviate this, we offer a combined service of aura matching along with horoscope compatibility....`,
-    },
-    {
-      img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/high-angle-woman-reading-tarot.png',
-      header: 'TAROT READING',
-      subheader:
-        '15 MINS SESSION - INR 1500/- | 45 MINS SESSION - INR 4500/- | ONLINE AND IN-PERSON',
-      para: `In our tarot reading service, we delve into your past, present, and future, providing valuable insights to assist in your journey of self-discovery. Whether you are seeking clarity about relationships, career choices, personal growth, or your life's direction, our tarot reading can offer illuminating insights...`,
-    },
+    }
   ];
 
   return (
