@@ -3,12 +3,19 @@ import "./ChakraAnalysis.css"
 import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import { useGlobalContext } from "../../context/QuestionContext";
-import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
+import FeedbackInputModal from "../../container/VerticallyCenteredModal/FeedbackInputModal";
+import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+const phoneNumber = process.env.PHONE_NUMBER; // Replace with your WhatsApp phone number
+
 
 const ChakraAnalysis = () => {
     const [modalShow, setModalShow] = React.useState(false);
-   
- 
+    const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
+
+    const openWhatsAppChat = () => {
+        window.open(`https://wa.me/${phoneNumber}`, '_blank');
+    };
+    
       const queObj = [
         {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
         {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
@@ -57,13 +64,12 @@ const ChakraAnalysis = () => {
                 An introduction to the seven chakras
                 </div>
                 <Container>
-                    <Row className="row-class">
+                    <Row>
                     <Col lg="3" md="3" className="sec5-col">
                         <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
-                        <article className="col-heading">Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
@@ -92,29 +98,26 @@ const ChakraAnalysis = () => {
                         <p className="col-p">Found in the center of the chest, the heart chakra is connected to love, compassion, and emotional well-being. It governs our ability to form healthy relationships, give and receive love, and cultivate empathy. Its color is green.</p>
                     </Col>
                     </Row>
-                    <Row className="row-class">
-                    <Col lg="4" md="4" className="sec5-col-4">
+                    <Row>
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
-                        <img className="chakra-img-col-4" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"/>
                     </div>
                         <article className="col-heading">Throat Chakra</article>
                         <article className="col-heading">Vishuddha</article>
                         <p className="col-p">Located in the throat region, this chakra is associated with communication, self-expression, and authenticity. It impacts our ability to express thoughts, ideas, emotions, and to communicate effectively. Its color is blue.</p>
                     </Col>
-                    <Col lg="4" md="4" className="sec5-col">
-                    
-
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
-                        <img className="chakra-img-col-4" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"/>
                     </div>
                         <article className="col-heading">Third Eye Chakra</article>
                         <article className="col-heading">Ajna</article>
                         <p className="col-p">Positioned between the eyebrows on the forehead, the third eye chakra relates to intuition, insight, and inner wisdom. It’s connected to our ability to perceive beyond the physical realm and develop psychic abilities. Its color is indigo.</p>
-                        
                     </Col>
-                    <Col lg="4" md="4" className="sec5-col">
+                    <Col lg="3" md="3" className="data">
                     <div className="img-div">
-                        <img className="chakra-img-col-4" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"/>
                     </div>
                         <article className="col-heading">Crown Chakra</article>
                         <article className="col-heading">Sahasrara</article>
@@ -135,18 +138,19 @@ const ChakraAnalysis = () => {
             <section className="sec6 MTQ">
                 <p>Explore our music library featuring specially crafted tracks by a healer, designed to connect with your chakras and aura. Enhance your inner peace and well-being with personalized music recommendations based on your chakra analysis. Take a quick 2-minute quiz to discover the perfect tracks that align with your preferences, guiding you to a playlist that brings relaxation and joy to your life.</p>
                 <p> Purchase now for only INR 99/- and embark on a transformative musical journey.</p>
-                <button>MUSIC THERAPY QUIZ</button>
+                <button onClick={() => setMusicLibraryModalShow(true)}>MUSIC THERAPY QUIZ</button>
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
-                <button className="whatsapp">Get In Touch On WhatsApp</button>
+                <button className="whatsapp" onClick={openWhatsAppChat}>Get In Touch On WhatsApp</button>
             </section>
         </div>
         <VerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
-      />
+        />
+        <MusicLibraryModal show={musicLibraryModalShow} onHide={() => setMusicLibraryModalShow(false)}/>
        {/* <FeedbackInputModal
         // show={feedModal}
         // onHide={() => setFeedModal(false)}
