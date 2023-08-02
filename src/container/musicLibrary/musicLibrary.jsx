@@ -35,6 +35,9 @@ const MusicLibrary = (props) => {
                         <Col>
                         Root Chakra Muladhara 
                         </Col>
+                        <Col>
+                          <button>Buy</button> 
+                        </Col>
                     </Row>
                 </Container>
             </Modal.Body>    
