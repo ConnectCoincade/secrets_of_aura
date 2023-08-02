@@ -27,7 +27,7 @@
 
 .Testimonials1 {
     background: #5E59A3 0% 0% no-repeat padding-box;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     width: 80%;
     margin: 5rem auto;
     padding: 7rem;
@@ -177,12 +177,15 @@
     margin: 8px 0px 85px 167px;
     background-repeat: no-repeat;
     background-size: cover; */
-    width: 92rem;
+    /* width: 92rem; */
     /* height: 377; */
     margin: 5rem auto;
     background-repeat: no-repeat;
     background-size: cover;
 } 
+.aura-transformation-sec {
+    margin: 0 10%;
+}
 .img1-title{
     font-size: 1.9rem;
     display: flex;
