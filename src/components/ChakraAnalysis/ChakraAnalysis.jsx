@@ -13,7 +13,8 @@ const ChakraAnalysis = () => {
     const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
 
     const openWhatsAppChat = () => {
-        window.open(`https://wa.me/${phoneNumber}`, '_blank');
+        console.log('process.env.PHONE_NUMBER->', process.env.PHONE_NUMBER);
+        window.open(`https://wa.me/8591965698`, '_blank');
     };
     
       const queObj = [
