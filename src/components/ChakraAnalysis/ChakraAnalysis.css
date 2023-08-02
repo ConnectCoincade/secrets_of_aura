@@ -10,6 +10,9 @@
     color: #2E2A87;
     font-size: 40px;
   }
+  .row-class {
+    margin: 4rem 0;
+  }
   .title1 {
     top: 3rem;
   }
@@ -109,6 +112,9 @@
 }
 .chakra-img {
   width: 10rem;
+}
+.chakra-img-col-4 {
+  width: 45% !important;
 }
 .MTQ {
   background: transparent linear-gradient(180deg, #C28ED9 0%, #874AA3 100%) 0% 0% no-repeat padding-box;
