@@ -10,6 +10,7 @@ import HealingTherapyService from './components/HealingTherapyService/HealingThe
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
 
+
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/aura-reading" element={<AuraReading />}></Route>
         <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route>
+        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route> */}
+
         <Route
           path="/reading-n-scanning-service"
           element={<ReadingScanningServices />}

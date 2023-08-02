@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../context/QuestionContext';
 import FeedbackInputModal from '../FeedbackInputModal/FeedbackInputModal';
 
-function VerticallyCenteredModal(props) {
+function VerticallyCenteredModal2(props) {
  
-  const options = [1,2,3,4,5,6,7];
+  // const [feedModal, setFeedModal] = useState(false);
+    const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
   const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
   const currentQuestion = questions[questionIndex];
@@ -19,7 +20,7 @@ function VerticallyCenteredModal(props) {
 
   const handleNext = () => {
    
-      //Move to the next question
+      // Otherwise, move to the next question
       setQuestionIndex(nextIndex => nextIndex + 1);
       var radioButtons = document.getElementsByName('options');
       for (var i = 0; i < radioButtons.length; i++) {
@@ -118,4 +119,4 @@ function VerticallyCenteredModal(props) {
   );
 }
 
-export default VerticallyCenteredModal;
+export default VerticallyCenteredModal2;

@@ -1,30 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import "./ChakraAnalysis.css"
 import {Row, Col,Container, Modal} from 'react-bootstrap';
-import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
+import VerticallyCenteredModal2 from '../../container/VerticallyCenteredModal/VerticallyCenteredModal2';
 import { useGlobalContext } from "../../context/QuestionContext";
-import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
-import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
-const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 
-
-const ChakraAnalysis = () => {
+const ChakraAnalysis2 = () => {
     const [modalShow, setModalShow] = React.useState(false);
-    const [musicLibraryModalShow, setMusicLibraryModalShow] = React.useState(false);
-
-    const openWhatsAppChat = () => {
-        console.log('process.env.PHONE_NUMBER->', process.env.REACT_APP_PHONE_NUMBER);
-        window.open(`https://wa.me/${process.env.REACT_APP_PHONE_NUMBER}`, '_blank');
-    };
-    
+   
+ 
       const queObj = [
-        {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1},
-        {quest : 'Do you feel you are intuitive?',ans : '', number : 2},
-        {quest : 'How good are u at expressing yourself and your feelings?',ans : '', number : 3},
-        {quest : 'Are you very sensitive or do you get hurt very often?',ans : '', number : 4},
-        {quest : 'Do u have any stomach or health related issues? OR Do feel lack of confidence?',ans : '', number : 5},
-        {quest : 'Sexual desire?',ans : '', number : 6},
-        {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7}
+        {quest : 'Do you feel a very strong spiritual connect?',ans : '', number : 1,options:7},
+        {quest : 'Do you feel you are intuitive?',ans : '', number : 2,options:7},
+        {quest : 'How good are u at expressing yourself and your feelings?',ans : '', number : 3,options:7},
+        {quest : 'Are you very sensitive or do you get hurt very often?',ans : '', number : 4,options:7},
+        {quest : 'Do u have any stomach or health related issues? OR Do feel lack of confidence?',ans : '', number : 5,options:7},
+        {quest : 'Sexual desire?',ans : '', number : 6,options:7},
+        {quest : 'Do u feel secure and stable/balanced in your life?',ans : '', number : 7,options:7}
     ]
  
 
@@ -71,6 +62,7 @@ const ChakraAnalysis = () => {
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
+                        <article className="col-heading">Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
@@ -83,7 +75,7 @@ const ChakraAnalysis = () => {
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
-                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>
                     </div>
                         <article className="col-heading">Solar Plexus Chakra</article>
                         <article className="col-heading">Manipura</article>
@@ -91,8 +83,7 @@ const ChakraAnalysis = () => {
                     </Col>
                     <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
-                        
-                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>
+                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
                     </div>
                         <article className="col-heading">Heart Chakra</article>
                         <article className="col-heading">Anahata</article>
@@ -100,7 +91,7 @@ const ChakraAnalysis = () => {
                     </Col>
                     </Row>
                     <Row>
-                    <Col lg="3" md="3" className="data">
+                    <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"/>
                     </div>
@@ -108,7 +99,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Vishuddha</article>
                         <p className="col-p">Located in the throat region, this chakra is associated with communication, self-expression, and authenticity. It impacts our ability to express thoughts, ideas, emotions, and to communicate effectively. Its color is blue.</p>
                     </Col>
-                    <Col lg="3" md="3" className="data">
+                    <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"/>
                     </div>
@@ -116,7 +107,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Ajna</article>
                         <p className="col-p">Positioned between the eyebrows on the forehead, the third eye chakra relates to intuition, insight, and inner wisdom. It’s connected to our ability to perceive beyond the physical realm and develop psychic abilities. Its color is indigo.</p>
                     </Col>
-                    <Col lg="3" md="3" className="data">
+                    <Col lg="3" md="3" className="sec5-col">
                     <div className="img-div">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"/>
                     </div>
@@ -139,27 +130,20 @@ const ChakraAnalysis = () => {
             <section className="sec6 MTQ">
                 <p>Explore our music library featuring specially crafted tracks by a healer, designed to connect with your chakras and aura. Enhance your inner peace and well-being with personalized music recommendations based on your chakra analysis. Take a quick 2-minute quiz to discover the perfect tracks that align with your preferences, guiding you to a playlist that brings relaxation and joy to your life.</p>
                 <p> Purchase now for only INR 99/- and embark on a transformative musical journey.</p>
-                <button onClick={() => setMusicLibraryModalShow(true)}>MUSIC THERAPY QUIZ</button>
+                <button>MUSIC THERAPY QUIZ</button>
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
-                <button className="whatsapp" onClick={openWhatsAppChat}>Get In Touch On WhatsApp</button>
+                <button className="whatsapp">Get In Touch On WhatsApp</button>
             </section>
         </div>
-        <VerticallyCenteredModal
+        <VerticallyCenteredModal2
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
-        />
-        <MusicLibraryModal show={musicLibraryModalShow} onHide={() => setMusicLibraryModalShow(false)}/>
-       {/* <FeedbackInputModal
-        // show={feedModal}
-        // onHide={() => setFeedModal(false)}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
+      />
     </>
     );
 };
 
-export default ChakraAnalysis;
+export default ChakraAnalysis2;
