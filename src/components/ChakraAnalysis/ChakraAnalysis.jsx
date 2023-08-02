@@ -125,7 +125,7 @@ const ChakraAnalysis = () => {
             <section className="sec6 MTQ">
                 <p>Explore our music library featuring specially crafted tracks by a healer, designed to connect with your chakras and aura. Enhance your inner peace and well-being with personalized music recommendations based on your chakra analysis. Take a quick 2-minute quiz to discover the perfect tracks that align with your preferences, guiding you to a playlist that brings relaxation and joy to your life.</p>
                 <p> Purchase now for only INR 99/- and embark on a transformative musical journey.</p>
-                <button>MUSIC THERAPY QUIZ</button>
+                <button>MUSIC THERAPY QUIZ</button> 
             </section>
             <section className="sec7">
                 <div className="ask">Would like to enquire further?</div>
@@ -139,6 +139,7 @@ const ChakraAnalysis = () => {
       />
     </>
     );
+    //changes
 };
 
 export default ChakraAnalysis;
