@@ -4,7 +4,9 @@ import {Row, Col,Container} from 'react-bootstrap';
 // import about_bg from "../../assets/about_bg.png"
 
 const About = () => {
-  
+  const openWhatsAppChat = () => {
+    window.open(`https://wa.me/${process.env.REACT_APP_PHONE_NUMBER}`, '_blank');
+};
   return (
     <>
      <div className="aboutus">
@@ -116,7 +118,7 @@ const About = () => {
       </section>
       <section className="sec5">
         <div className="ask">Can’t find the answers you are looking for?</div>
-        <button className="whatsapp">Get In Touch On WhatsApp</button>
+        <button className="whatsapp" onClick={openWhatsAppChat}>Get In Touch On WhatsApp</button>
       </section>
       </div>
     </>
