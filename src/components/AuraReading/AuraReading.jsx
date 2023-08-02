@@ -3,7 +3,7 @@ import "./AuraReading.css"
 import {Row, Col,Container} from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 // import Assets from '../../assets/aura-cleansing.jpg'
-const newImage = require('../../Assets/aura-cleansing.jpg')
+const newImage = require('../../assets/aura-cleansing.jpg')
 const AuraReading = () => {
 
   const responsive = {

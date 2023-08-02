@@ -21,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/aura-reading" element={<AuraReading />}></Route>
         <Route path="/chakra-analysis" element={<ChakraAnalysis />}></Route>
+        {/* <Route path="/chakra-analysis" element={<ChakraAnalysis2 />}></Route> */}
 
         <Route
           path="/reading-n-scanning-service"
