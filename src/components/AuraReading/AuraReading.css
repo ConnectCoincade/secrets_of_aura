@@ -164,12 +164,11 @@
     width: 1635px;
     height: 300px;
     /* padding: 90px; */
-    /* margin: 5px 13px 94px 333px;
-    background-repeat: no-repeat; */
+    
 
     width: 1169px;
     height: 372px;
-    /* padding: 90px; */
+    
     margin: 8px 0px 85px 167px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,7 +189,6 @@
     font-size: 16px;
     padding-top: 20px;
     color: white;
-  
 }
 .data{
     background: transparent linear-gradient(270deg, #ADA6D86E 0%, #8C88ABD1 45%, #4D479C 100%) 0% 0% no-repeat padding-box;

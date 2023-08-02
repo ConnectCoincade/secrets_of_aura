@@ -244,7 +244,7 @@ const AuraReading = () => {
          <div className="content">Our Aura Transformation service is a comprehensive process designed to balance your energy centers, also known as chakras, and remove any impediments within your aura. These blockages can impact not only your physical and mental health, but also your professional and personal life. Through a series of specialized energy healing techniques, we work to clear these blockages, repair any damage, and fortify your aura, thereby enhancing your connection to Earth and your subconscious. Once these hindrances are removed, you’ll be better positioned to actualize your desires and aspirations without any obstructions. This transformation not only brings a harmonious balance in your life but also promotes a more fulfilling and prosperous life experience.</div>
           </div>
           </div>
-          {/* <div className="title">Aura Transformation</div>  */}
+          
           
           {/* Group 8718 */}
           
