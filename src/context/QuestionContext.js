@@ -27,10 +27,11 @@ const AppProvider = ({children}) =>{
 
     const [questions, setQuestions] = useState(queObj);
     const [answersList, setAnswerList] = useState([]);
-    const [exit, setExit] = useState(false);
+    const [feedbackExit, setFeedbackExit] = useState(false);
+    const [pdfPopup, setPdfPopup] = useState(false);
     const [userData, setUserData] = useState(userDataObj);
 
-    return <QuestionContext.Provider value={{questions,setQuestions, exit, setExit,userData, setUserData, state, dispatch,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
+    return <QuestionContext.Provider value={{questions,setQuestions, feedbackExit, setFeedbackExit,userData, setUserData, state, dispatch,answersList, setAnswerList,pdfPopup, setPdfPopup}}>{children}</QuestionContext.Provider>
 };
 
 const useGlobalContext =()=>{

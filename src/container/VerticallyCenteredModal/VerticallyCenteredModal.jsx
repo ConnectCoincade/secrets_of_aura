@@ -9,12 +9,12 @@ function VerticallyCenteredModal(props) {
  
   const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
-  const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
+  const { questions, answersList, setAnswerList,feedbackExit, setFeedbackExit } = useGlobalContext();
   const currentQuestion = questions[questionIndex];
   
   const handleSubmit = () =>{
     props.onHide();
-    setExit(true);
+    setFeedbackExit(true);
   }
 
   const handleNext = () => {
@@ -68,7 +68,7 @@ function VerticallyCenteredModal(props) {
   }
   return (
 
-    (!exit) ?
+    (!feedbackExit) ?
     <Modal
       {...props}
       size="lg"
@@ -115,7 +115,7 @@ function VerticallyCenteredModal(props) {
     </Modal>
       :
       <FeedbackInputModal
-        show={exit}
+        show={feedbackExit}
       /> 
   );
 }
