@@ -172,4 +172,54 @@
     padding: 1rem;
     margin: 0;
 }
+
+}
+@media (max-width: 840px) {
+
+    .row{
+        display: block !important;
+    }
+    .sec1-para p {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-right: 0rem;
+    }
+
+    
+.aboutus .sect3 .title {
+    color: #2E2A87;
+    font-size: 3rem;
+}
+.sect3 .title {
+    width: 100% !important;
+}
+.aboutus .sect3 p {
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+}
+.aboutus .sec4 .title {
+    width: 73%;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 3rem;
+    color: #5E59A3;
+    /* padding-right: 4rem; */
+}
+.aboutus .FAQ-heading {
+    width: 73%;
+    margin: auto;
+    font-size: 2rem;
+    color: #818181;
+    padding-top: 1rem;
+    /* padding-right: 4rem; */
+}
+.FAQ {
+    text-align: center;
+    margin: 2rem auto;
+    width: 73%;
+}
+
 }

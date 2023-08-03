@@ -145,4 +145,19 @@ a {
       text-align: center;
     }
   }
+   /*@media (max-width: 840px) { 
+    .col-md-2 {
+      /* flex: 0 0 auto; */
+      /* width: 98% !important; */
+  /* } */
+  /* .footer-col{
+  font-size: 45px;
+  } */
+
+  /* .col-md-4 {
+     
+      width: 100% !important;
+ 
+  }  */
+  
   
