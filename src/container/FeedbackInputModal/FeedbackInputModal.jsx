@@ -8,17 +8,17 @@ import { useGlobalContext } from "../../context/QuestionContext";
 import { Document, Page, Text, Image, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 
 
-
+let idOfEntry = 1;
 const styles = {
-  modal: { padding: "5% 10%", borderRadius: "10px" },
+  modal: { padding: '5% 10%', borderRadius: '10px' },
   header: {
     paddingTop: 30,
     fontSize: 45,
   },
   button: {
-    width: "80%",
-    background: "#9389E3 0% 0% no-repeat padding-box",
-    textTransform: "uppercase",
+    width: '80%',
+    background: '#9389E3 0% 0% no-repeat padding-box',
+    textTransform: 'uppercase',
   },
   form: { textAlign: "-webkit-center", padding: "3% 14%" },
 
@@ -56,6 +56,7 @@ const styles = {
   tableImgHeading: { alignItems: "center" , width: 50, fontSize: 16},
   tableChakraHeading: { alignItems: "center" , width: 300, fontSize: 16},
   tableBoolHeading: {display:'flex',flexGrow: 1, alignItems: "right" , width: 40, fontSize: 16},
+  form: { textAlign: '-webkit-center', padding: '3% 14%' },
 };
 
 const FeedbackInputModal = () => {
@@ -66,6 +67,8 @@ const FeedbackInputModal = () => {
     answersList,
     setAnswerList
   } = useGlobalContext();
+  const [show, setShow] = useState(feedbackExit);
+
 
   const handleDownload = () =>{
     setTimeout(() => {
@@ -151,7 +154,7 @@ const FeedbackInputModal = () => {
           <div style={{}}>
             <Form style={styles.form}>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -162,11 +165,13 @@ const FeedbackInputModal = () => {
                   onChange={(e) => onInputChange(e)}
                   style={{
                     textTransform: "uppercase",
+                    border: '2px solid #B00020',
+                    textTransform: 'uppercase',
                   }}
                 />
               </Form.Group>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -177,11 +182,13 @@ const FeedbackInputModal = () => {
                   onChange={(e) => onInputChange(e)}
                   style={{
                     textTransform: "uppercase",
+                    border: '2px solid #919191',
+                    textTransform: 'uppercase',
                   }}
                 />
               </Form.Group>
               <Form.Group
-                style={{ width: "80%" }}
+                style={{ width: '80%' }}
                 className="mb-4"
                 controlId="exampleForm.ControlInput1"
               >
@@ -190,6 +197,7 @@ const FeedbackInputModal = () => {
                   placeholder="Email ID"
                   name="email"
                   onChange={(e) => onInputChange(e)}
+                  style={{ border: '2px solid #9389E3' }}
                 />
               </Form.Group>
               <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf" onClick={handleDownload}>
