@@ -147,6 +147,7 @@ const ChakraAnalysis = () => {
             </section>
         </div>
         <VerticallyCenteredModal
+        className="popup1"
         show={modalShow}
         onHide={() => setModalShow(false)}
         questions={questions}
