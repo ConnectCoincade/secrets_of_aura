@@ -9,22 +9,31 @@ function VerticallyCenteredModal(props) {
  
   const options = [1,2,3,4,5,6,7];
   const [questionIndex, setQuestionIndex] = useState(0);
-  const { questions, answersList, setAnswerList,exit, setExit } = useGlobalContext();
+  const { questions, answersList, setAnswerList,feedbackExit, setFeedbackExit } = useGlobalContext();
   const currentQuestion = questions[questionIndex];
   
   const handleSubmit = () =>{
     props.onHide();
-    setExit(true);
+    setFeedbackExit(true);
   }
 
   const handleNext = () => {
    
       //Move to the next question
-      setQuestionIndex(nextIndex => nextIndex + 1);
+      const selectedAnswer = answersList[questionIndex]?.ans || ''
+
+      if(!selectedAnswer){
+        alert('Please select the Option')
+      }else{
+        setQuestionIndex(nextIndex => nextIndex + 1);
       var radioButtons = document.getElementsByName('options');
-      for (var i = 0; i < radioButtons.length; i++) {
+      for (let i = 0; i < radioButtons.length; i++) {
         radioButtons[i].checked = false;
       }
+
+      }
+
+      
     
   };
 
@@ -43,15 +52,16 @@ function VerticallyCenteredModal(props) {
   };
 
   const handleOptionChange = (event) => {
-    const selectedAnswer = event.target.value;
-    const answerObj = {
-      quest: questions[questionIndex].quest,
-      ans: selectedAnswer,
-      number: questionIndex + 1,
-      image: questions[questionIndex].image,
-      chakraName:questions[questionIndex].chakraName
-    };
-    setAnswerList([...answersList, answerObj]);
+
+      const selectedAnswer = event.target.value;
+      const answerObj = {
+        quest: questions[questionIndex].quest,
+        ans: selectedAnswer,
+        number: questionIndex + 1,
+        image: questions[questionIndex].image,
+        chakraName:questions[questionIndex].chakraName
+      };
+      setAnswerList([...answersList, answerObj]);   
   };
 
   useEffect(() => {
@@ -68,7 +78,7 @@ function VerticallyCenteredModal(props) {
   }
   return (
 
-    (!exit) ?
+    (!feedbackExit) ?
     <Modal
       {...props}
       size="lg"
@@ -115,7 +125,7 @@ function VerticallyCenteredModal(props) {
     </Modal>
       :
       <FeedbackInputModal
-        show={exit}
+        show={feedbackExit}
       /> 
   );
 }
