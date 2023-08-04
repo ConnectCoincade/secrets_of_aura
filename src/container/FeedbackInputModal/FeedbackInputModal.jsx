@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { useGlobalContext } from '../../context/QuestionContext';
 
-let idOfEntry = 1;
 const styles = {
   modal: { padding: '5% 10%', borderRadius: '10px' },
   header: {
@@ -45,7 +44,6 @@ const FeedbackInputModal = (props) => {
         body: JSON.stringify({
           data: [
             {
-              id: idOfEntry,
               firstName: userData.firstName,
               lastName: userData.lastName,
               email: userData.email,
@@ -54,10 +52,7 @@ const FeedbackInputModal = (props) => {
         }),
       })
         .then((response) => response.json())
-        .then((data) => {
-          idOfEntry++;
-          console.log(data);
-        });
+        .then((data) => console.log(data));
     } catch (error) {
       console.log('Error: ', error);
     }
