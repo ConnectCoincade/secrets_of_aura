@@ -70,11 +70,34 @@ const FeedbackInputModal = () => {
   const [show, setShow] = useState(feedbackExit);
 
 
-  const handleDownload = () =>{
+  const handleDownload = async () =>{
     setTimeout(() => {
       setFeedbackExit(false);
       setAnswerList([])
     }, 500);
+
+    try {
+      await fetch('https://sheetdb.io/api/v1/xw7i1za1rp66m', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              firstName: userData.firstName,
+              lastName: userData.lastName,
+              email: userData.email,
+            },
+          ],
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    } catch (error) {
+      console.log('Error: ', error);
+    }
   };
  
   const onInputChange = (e) => {
