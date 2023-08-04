@@ -28,13 +28,8 @@ const ChakraAnalysis = () => {
  
 
     const [questions, setQuestions] = React.useState(queObj);
-    // const { answersList } = useGlobalContext()
+    
 
-    useEffect(() => {
-        //  console.log('questions in chakra analysis->', questions);
-        // console.log(answersList);
-      
-    })
   return (
     <>
         <div className="chakra-analysis">
@@ -69,7 +64,8 @@ const ChakraAnalysis = () => {
                         <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
-                        <article className="col-heading">Root Chakra Muladhara</article>
+                        <article className="col-heading">Root Chakra</article>
+                        <article className="col-heading">Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
                     </Col>  
                     <Col lg="3" md="3" className="sec5-col">
