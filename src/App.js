@@ -9,8 +9,6 @@ import ReadingScanningServices from './components/ReadingScanningServices/Readin
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
-import ReactPdfPrint from './container/FeedbackInputModal/ReactPdfPrint';
-
 
 
 function App() {
@@ -34,8 +32,7 @@ function App() {
           element={<HealingTherapyService />}
         ></Route>
       </Routes>
-      {/* <Footer /> */}
-      <ReactPdfPrint/>
+      <Footer />
     </>
   );
 }

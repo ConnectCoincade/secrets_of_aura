@@ -20,11 +20,20 @@ function VerticallyCenteredModal(props) {
   const handleNext = () => {
    
       //Move to the next question
-      setQuestionIndex(nextIndex => nextIndex + 1);
+      const selectedAnswer = answersList[questionIndex]?.ans || ''
+
+      if(!selectedAnswer){
+        alert('Please select the Option')
+      }else{
+        setQuestionIndex(nextIndex => nextIndex + 1);
       var radioButtons = document.getElementsByName('options');
-      for (var i = 0; i < radioButtons.length; i++) {
+      for (let i = 0; i < radioButtons.length; i++) {
         radioButtons[i].checked = false;
       }
+
+      }
+
+      
     
   };
 
@@ -43,15 +52,16 @@ function VerticallyCenteredModal(props) {
   };
 
   const handleOptionChange = (event) => {
-    const selectedAnswer = event.target.value;
-    const answerObj = {
-      quest: questions[questionIndex].quest,
-      ans: selectedAnswer,
-      number: questionIndex + 1,
-      image: questions[questionIndex].image,
-      chakraName:questions[questionIndex].chakraName
-    };
-    setAnswerList([...answersList, answerObj]);
+
+      const selectedAnswer = event.target.value;
+      const answerObj = {
+        quest: questions[questionIndex].quest,
+        ans: selectedAnswer,
+        number: questionIndex + 1,
+        image: questions[questionIndex].image,
+        chakraName:questions[questionIndex].chakraName
+      };
+      setAnswerList([...answersList, answerObj]);   
   };
 
   useEffect(() => {

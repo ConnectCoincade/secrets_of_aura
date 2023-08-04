@@ -147,12 +147,6 @@ const ChakraAnalysis = () => {
         questions={questions}
         />
         <MusicLibraryModal show={musicLibraryModalShow} onHide={() => setMusicLibraryModalShow(false)}/>
-       {/* <FeedbackInputModal
-        // show={feedModal}
-        // onHide={() => setFeedModal(false)}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
     </>
     );
 };

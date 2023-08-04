@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useContext, useReducer, createContext } from 'react';
-import { initialState, reducer } from "./useReducer";
+
 
 
 const QuestionContext = React.createContext(null);
@@ -22,16 +22,12 @@ const AppProvider = ({children}) =>{
         lastName:'',
         email:''
       }
-
-    const [state, dispatch] = useReducer(reducer, initialState)
-
     const [questions, setQuestions] = useState(queObj);
     const [answersList, setAnswerList] = useState([]);
     const [feedbackExit, setFeedbackExit] = useState(false);
-    const [pdfPopup, setPdfPopup] = useState(false);
     const [userData, setUserData] = useState(userDataObj);
 
-    return <QuestionContext.Provider value={{questions,setQuestions, feedbackExit, setFeedbackExit,userData, setUserData, state, dispatch,answersList, setAnswerList,pdfPopup, setPdfPopup}}>{children}</QuestionContext.Provider>
+    return <QuestionContext.Provider value={{questions,setQuestions, feedbackExit, setFeedbackExit,userData, setUserData,answersList, setAnswerList}}>{children}</QuestionContext.Provider>
 };
 
 const useGlobalContext =()=>{

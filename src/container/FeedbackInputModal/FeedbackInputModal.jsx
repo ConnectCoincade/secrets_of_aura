@@ -5,9 +5,6 @@ import {Button, Table } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useGlobalContext } from "../../context/QuestionContext";
-import { useReactToPrint } from "react-to-print";
-import ReactPdfPrint from "./ReactPdfPrint";
-import html2pdf from "html2pdf.js";
 import { Document, Page, Text, Image, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 
 
@@ -22,7 +19,6 @@ const styles = {
     width: "80%",
     background: "#9389E3 0% 0% no-repeat padding-box",
     textTransform: "uppercase",
-    border:'2px solid #000000'
   },
   form: { textAlign: "-webkit-center", padding: "3% 14%" },
 
@@ -46,10 +42,10 @@ const styles = {
   page: { padding: 60 },
   logo: { width: "12%", marginBottom: 10 },
   title: { fontWeight: "bold", fontSize: 18, textAlign: "left" },
-  name: { fontSize: 14, marginBottom: 5 },
+  name: { fontSize: 14, marginBottom: 5,textTransform: "uppercase" },
   email: { fontSize: 14, marginBottom: 20 },
   table: { width: "100%" },
-  tableRow: { display: 'flex', flexDirection: "row", borderBottomWidth: 1, borderColor: "#000", alignItems: "center", height: 40 },
+  tableRow: { display: 'flex', flexDirection: "row", borderBottomWidth: 1, borderColor: "whitesmoke", alignItems: "center", height: 40 },
   tableIndex: { borderColor: "#000", alignItems: "left" , width: 50, fontSize: 14},
   tableImg: {  borderColor: "#000", alignItems: "center" , width: 50, padding: 5},
   tableChakra: {borderColor: "#000", alignItems: "center" , width: 300, fontSize: 14},
@@ -60,8 +56,6 @@ const styles = {
   tableImgHeading: { alignItems: "center" , width: 50, fontSize: 16},
   tableChakraHeading: { alignItems: "center" , width: 300, fontSize: 16},
   tableBoolHeading: {display:'flex',flexGrow: 1, alignItems: "right" , width: 40, fontSize: 16},
-
-  // headingIndex : 
 };
 
 const FeedbackInputModal = () => {
@@ -69,47 +63,15 @@ const FeedbackInputModal = () => {
     userData,
     setUserData,
     feedbackExit, setFeedbackExit,
-    setPdfPopup,
-    pdfPopup,
-    answersList
+    answersList,
+    setAnswerList
   } = useGlobalContext();
-  const [showPDF, setShowPDF] = useState(false);
-
-  const pdfRef = useRef();
-  const handlePrint = useReactToPrint({
-    content:()=>pdfRef.current,
-    documentTitle:'report',
-    onbeforeprint: (a)=>{
-      console.log('here before->', a);
-    },
-    onafterprint: (a)=>{
-      console.log('here a->', a);
-    }
-});
-
-// const handlePrint =()=>{
-//   const content = pdfRef.current;
-//   if (content) {
-//     const options = {
-//       margin: 1,
-//       filename: "report.pdf",
-//       image: { type: "jpeg", quality: 0.98 },
-//       html2canvas: { scale: 1 },
-//       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-//     };
-
-//     // Convert the content to PDF using html2pdf
-//     html2pdf().set(options).from(content).save();
-//   }
-// }
 
   const handleDownload = () =>{
     setTimeout(() => {
       setFeedbackExit(false);
+      setAnswerList([])
     }, 500);
-    
-   // handlePrint();
-
   };
  
   const onInputChange = (e) => {
@@ -134,16 +96,16 @@ const FeedbackInputModal = () => {
       <View style={styles.table}>
         <View style={[styles.tableRow, styles.tableHeader]}>
         <View style={styles.tableIndexHeading}>
-            <Text style={styles.cell}>Sr.No</Text>
+            <Text >Sr.No</Text>
         </View>
         <View style={styles.tableImgHeading}>
-            <Text style={styles.cell}>Chakra</Text>
+            <Text >Chakra</Text>
         </View>
         <View style={styles.tableChakraHeading}>
-            <Text style={styles.cell}>Chakra Name</Text>
+            <Text >Chakra Name</Text>
         </View>
         <View style={styles.tableBoolHeading}>
-            <Text style={styles.cell}>Status</Text>
+            <Text >Status</Text>
         </View>          
           {/* <Text style={styles.tableImgHeading}>Chakra</Text>
           <Text style={styles.tableChakraHeading}>Chakra Name</Text>
@@ -152,16 +114,16 @@ const FeedbackInputModal = () => {
         {answersList.map((data, index) => (
           <View key={index} style={styles.tableRow}>
             <View style={styles.tableIndex}>
-              <Text style={styles.cell}>{data.number}</Text>
+              <Text >{data.number}</Text>
             </View>
             <View style={styles.tableImg}>
               <Image style={{ width: "100%", textAlign:"left"}} src={data?.image} />
             </View>
             <View style={styles.tableChakra}>
-              <Text style={styles.cell}>{data.chakraName}</Text>
+              <Text >{data.chakraName}</Text>
             </View>
             <View style={styles.tableBool}>
-              <Text style={styles.cell}>{data.ans > 5 ? "Opened" : "Closed"}</Text>
+              <Text >{data.ans > 5 ? "Opened" : "Closed"}</Text>
             </View>
             
           </View>
@@ -199,7 +161,6 @@ const FeedbackInputModal = () => {
                   name="firstName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid",
                     textTransform: "uppercase",
                   }}
                 />
@@ -215,7 +176,6 @@ const FeedbackInputModal = () => {
                   name="lastName"
                   onChange={(e) => onInputChange(e)}
                   style={{
-                    border: "2px solid ",
                     textTransform: "uppercase",
                   }}
                 />
@@ -230,7 +190,6 @@ const FeedbackInputModal = () => {
                   placeholder="Email ID"
                   name="email"
                   onChange={(e) => onInputChange(e)}
-                  style={{ border: "2px solid " }}
                 />
               </Form.Group>
               <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf" onClick={handleDownload}>
@@ -242,28 +201,10 @@ const FeedbackInputModal = () => {
               
               >Download Report</Button>
               }
-              {/* <Button
-                variant="primary"
-                style={styles.button}
-                onClick={handleDownload}
-              >
-                Download Report
-              </Button> */}
               </PDFDownloadLink>
             </Form>
           </div>
         </Modal.Body>
-
-       <div style={{ display: "none" }}>
-          <PDFViewer width="1000" height="600">
-            <MyDocument />
-          </PDFViewer>
-          <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf">
-            {({ blob, url, loading, error }) =>
-              loading ? "Loading document..." : "Download PDF"
-            }
-          </PDFDownloadLink>
-        </div> 
       </Modal>  
       </>
       
