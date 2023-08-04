@@ -113,9 +113,9 @@ function VerticallyCenteredModal(props) {
           ))}
         </div>
 
-        <button id='back' onClick={handleBack}>Back</button>
+        <Button  id='back' onClick={handleBack}>{" < "}Back</Button>
         { questionIndex < questions.length - 1 ? (
-          <button id='next' onClick={handleNext} disabled={answersList[questionIndex]?.ans ? false: true}>Next</button>) :(
+          <Button id='next' onClick={handleNext} disabled={answersList[questionIndex]?.ans ? false: true}>Next{" > "}</Button>) :(
           <Button id='next' onClick={handleSubmit} disabled={answersList[questionIndex]?.ans ? false: true} >Submit</Button>)
           }
       </Modal.Body>
