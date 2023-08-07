@@ -5,6 +5,8 @@ import Form from 'react-bootstrap/Form';
 // import Modal from 'react-bootstrap/Modal';
 import { useGlobalContext } from '../../context/QuestionContext';
 import {Row, Col,Container, Modal} from 'react-bootstrap';
+import Payment from '../Payment/Payment';
+
 
 const MusicLibrary = (props) => {
  
@@ -36,7 +38,8 @@ const MusicLibrary = (props) => {
                         Root Chakra Muladhara 
                         </Col>
                         <Col>
-                          <button>Buy</button> 
+                          {/* <button>Buy</button>  */}
+                          <Payment/>
                         </Col>
                     </Row>
                 </Container>

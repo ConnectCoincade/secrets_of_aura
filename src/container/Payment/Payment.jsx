@@ -51,9 +51,10 @@ const Payment = () => {
     }
 
   return (
-    <div>payment
-        <button onClick={()=>displayRazorPay(100)}>buyNow</button>
-    </div>
+    <>
+        <button onClick={()=>displayRazorPay(100)}>Buy</button>
+
+    </>
     
   )
 }
