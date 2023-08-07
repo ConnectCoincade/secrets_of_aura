@@ -7,7 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import { useGlobalContext } from "../../context/QuestionContext";
 import { Document, Page, Text, Image, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 import * as yup from 'yup'
-import { useFormik } from "formik";
+
 
 
 
@@ -94,6 +94,7 @@ const FeedbackInputModal = () => {
       if(disable===false){
         setTimeout(()=>{
           setFeedbackExit(false);
+          setAnswerList([]);
         },500);
        }
     } catch (error) {

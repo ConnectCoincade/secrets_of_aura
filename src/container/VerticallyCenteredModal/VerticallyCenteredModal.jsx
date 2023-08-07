@@ -50,7 +50,9 @@ function VerticallyCenteredModal(props) {
 
   const handleOptionChange = (event) => {
 
-      const selectedAnswer = event.target.value;
+    // answersList.filter((data)=>console.log(data.quest === data.quest))
+    
+    const selectedAnswer = event.target.value;
         const answerObj = {
           quest: questions[questionIndex].quest,
           ans: selectedAnswer,
@@ -58,7 +60,16 @@ function VerticallyCenteredModal(props) {
           image: questions[questionIndex].image,
           chakraName:questions[questionIndex].chakraName
         };
-        setAnswerList([...answersList, answerObj]);       
+
+        const existingIndex = answersList.findIndex((data) => data.number === answerObj.number);
+        if(existingIndex !== -1){
+          const updatedArray = [...answersList];
+          updatedArray[existingIndex] = answerObj;
+          setAnswerList(updatedArray);
+        }else{
+          setAnswerList([...answersList, answerObj]);
+        }
+           
   };
 
   useEffect(() => {
