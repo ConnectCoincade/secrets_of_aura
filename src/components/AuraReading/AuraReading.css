@@ -91,7 +91,7 @@
 .sec3 img {
     height: 40rem;
     /* padding: 5rem 15rem; */
-    transform: scale(1);
+    transform: scale(1.5);
     height: auto;
     position: relative;
     z-index: -1;

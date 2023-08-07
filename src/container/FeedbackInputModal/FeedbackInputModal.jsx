@@ -86,27 +86,37 @@ const FeedbackInputModal = () => {
     email: yup.string().trim().matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, 'Invalid E-mail format').email('Invalid E-mail format').required('Email is required'),
   });
 
-  const  handleDownload = async() =>{
-    try {
-      await userSchema.validate(userData, { abortEarly: false });
-      setValidationErrors({});
-      setDisable(false); // Enable the download button
+  const handleChange = async() =>{
+
+    const timerOut = setTimeout(async()=>{
+      try {
+        await userSchema.validate(userData, { abortEarly: false });
+        setValidationErrors({});
+        setDisable(false)
+       
+      } catch (error) {
+        if (error instanceof yup.ValidationError) {
+          const errors = {};
+          error.inner.forEach((err) => {
+            errors[err.path] = err.message;
+          });
+          setValidationErrors(errors);
+          setDisable(true);
+        }
+      }
+    },2000);
+
+    return () => clearTimeout(timerOut); 
+  }
+
+  const  handleDownload = () =>{
+    
       if(disable===false){
         setTimeout(()=>{
           setFeedbackExit(false);
           setAnswerList([]);
         },500);
        }
-    } catch (error) {
-      if (error instanceof yup.ValidationError) {
-        const errors = {};
-        error.inner.forEach((err) => {
-          errors[err.path] = err.message;
-        });
-        setValidationErrors(errors);
-        setDisable(true); // Disable the download button
-      }
-    }
    };
   const onInputChange = (e) => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
@@ -191,6 +201,8 @@ const FeedbackInputModal = () => {
                   placeholder="First Name"
                   name="firstName"
                   onChange={(e) => onInputChange(e)}
+                  onKeyUp={handleChange}
+                  on
                   style={{
                     textTransform: "uppercase",
                   }}
@@ -208,6 +220,7 @@ const FeedbackInputModal = () => {
                   placeholder="Last Name"
                   name="lastName"
                   onChange={(e) => onInputChange(e)}
+                  onKeyUp={handleChange}
                   style={{
                     textTransform: "uppercase",
                   }}
@@ -225,17 +238,21 @@ const FeedbackInputModal = () => {
                   placeholder="Email ID"
                   name="email"
                   onChange={(e) => onInputChange(e)}
+                  onKeyUp={handleChange}
                 />
                {validationErrors.email && <div className="validation-error" style={{color:'red',fontSize:12,textAlign:'left'}}>{validationErrors.email}</div> || <div style={{height:18}}></div> }
               </Form.Group>
 
               <div onClick={handleDownload}>
-              <Button  variant="primary" style={styles.button} disabled={disable}> 
-              <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf"  >
+              <Button  variant="primary" style={styles.button} > 
+              {disable ?  <div style={{color:'white'}}>
+              Download Report
+              </div> : <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf"  >
               <div style={{color:'white'}}>
               Download Report
               </div>
-              </PDFDownloadLink>
+              </PDFDownloadLink> }
+               
               </Button>
               </div>
 
