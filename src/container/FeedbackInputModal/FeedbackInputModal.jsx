@@ -83,7 +83,7 @@ const FeedbackInputModal = () => {
   const userSchema = yup.object().shape({
     firstName: yup.string().trim().matches(/^[a-zA-Z]*$/, 'First name must only contain letters').min(2, 'First Name must be at least 2 characters').max(25).required('First Name is required'),
     lastName: yup.string().trim().matches(/^[a-zA-Z]*$/, 'Last name must only contain letters').min(2, 'Last Name must be at least 2 characters').max(25).required('Last Name is required'),
-    email: yup.string().trim().email('Invalid E-mail format').required('Email is required'),
+    email: yup.string().trim().matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, 'Invalid E-mail format').email('Invalid E-mail format').required('Email is required'),
   });
 
   const  handleDownload = async() =>{
