@@ -1,6 +1,6 @@
 .chakra-analysis .sec1 {
     margin: 5rem 0 0 -35rem;
-    height: 62rem;
+    height: 52rem !important;
     /* background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat; */
     /* background: url("../../assets/Group\ 8898.png"); */
   
@@ -211,7 +211,7 @@
     font-size: 1rem;
   }
   .chakra-analysis .sec1 {
-    height: 22rem;
+    height: 22rem !important;
   }
   .chakra-analysis .sec5 {
     padding: 1rem;
@@ -226,6 +226,50 @@ text-align: center;
 }
 .chakra-consultation{
   padding: 0rem;
+  margin: 0rem;
+}
+.chakra-analysis .sec4 .title{
+  font-size: 28px;
+    width: 100%;
+    margin: auto;
+}
+.chakra-analysis .sec5 .title {
+  font-size: 25px;
+    color: #2E2A87;
+    text-align: center;
+}
+.sec5-p{
+  width: 100%;
+  margin: 1rem 1rem 0rem 0rem;
+  font-size: 16px;
+}
+.sec6 p {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+
+.MTQ {
+  padding: 1rem;
+}
+.sec6 {
+  margin: 2rem;
+}
+.MTQ P {
+  width: 100%;
+  margin: 1rem auto;
+}
+.MTQ button{
+  font-size: 18px;
+  padding: 1rem 1rem;
+}
+.chakra-analysis .sec7 button{
+  font-size: 12px;
+    margin: 1rem;
+
+}
+.chakra-consultation p{
+  font-size: 17px;
 }
 /* .chakra-consultation p {
     color: #F0E7F4;
@@ -245,7 +289,44 @@ text-align: center;
   } */
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .sec1-content {
+    position: absolute;
+    top: 19rem;
+  }
+}
+.chakra-analysis .sec1 {
+  margin: 5rem 0 0 -35rem;
+  height: 37rem;
+}
+.chakra-analysis .sec5 .title{
+  margin-bottom: 1rem;
+}
+.chakra-analysis .sec5 {
+  padding: 3rem;
+}
+.sec5-p {
+  width: 100%;
+}
+.MTQ P {
+  width: 80%;
+}
+.sec6{
+  margin: 0%;
+}
+.sec6 p {
+  text-align: right;
+  color: white;
+}
+.MTQ button{
+  padding: 1rem 1rem;
+}
+.chakra-consultation{
+  padding: 0%;
+}
+/* .sec2 p, .banner-content p {
+  font-size: 21px;
+} */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
 /* Extra large devices (large laptops and desktops, 1200px and up) */

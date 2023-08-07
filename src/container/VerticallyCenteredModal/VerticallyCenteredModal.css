@@ -97,3 +97,16 @@
         font-size: 28px;
     }
 }
+@media only screen and (min-width: 768px){
+    .num {
+        padding: 0px 1.27rem;
+        font-size: 25px;
+    }
+    .radio-div {
+        width: 100%;
+    }
+    .form-check {
+        padding-left: 0.1rem !important;
+    }
+    
+}
