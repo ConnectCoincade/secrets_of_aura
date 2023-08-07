@@ -9,6 +9,7 @@ import ReadingScanningServices from './components/ReadingScanningServices/Readin
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
+import Payment from './container/Payment/Payment';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           element={<HealingTherapyService />}
         ></Route>
       </Routes>
+      <Payment/>
       <Footer />
     </>
   );
