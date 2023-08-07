@@ -5,6 +5,7 @@ import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/Ver
 import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+import chakraimg from '../../assets/Group 8898.png'; 
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 
 
@@ -39,14 +40,17 @@ const ChakraAnalysis = () => {
   return (
     <>
         <div className="chakra-analysis">
-            <section className="sec1">
-                <p className="title1">Unlock the potential for balance,</p>
-                <p className="title2"> healing, and personal growth!</p>
-                <button className="sec1-btn" onClick={() => setModalShow(true)}>TAKE QUIZ</button>
+            <section className="sec1 sec1-div">
+                <img className="sec1-img" src={chakraimg} />
+                <div className="sec1-content">
+                    <article className="title1">Unlock the potential for balance,</article>
+                    <p className="title2"> healing, and personal growth!</p>
+                    <button className="sec1-btn" onClick={() => setModalShow(true)}>TAKE QUIZ</button>
+                </div>
             </section>
             <section className="sec2">
                 <div className="title">What is Chakra Analysis?</div>
-                <p className="sec2-p">The chakras, vital energy centers of the body, play a pivotal role in maintaining our overall well-being. Derived from the Sanskrit term for ‘wheels,’ chakras represent the rotating energy hubs that infuse our body with life-force, sculpting our aura. This aura acts as a protective energy shield, much akin to our body’s immune system. Any imbalance in these powerhouses of energy (the chakras) can have profound effects, not only on our physical health but also on our mental and spiritual states. This delicate harmony of energies within us is critical in maintaining a state of holistic health and vitality. These energy centers each play a crucial role in balancing our physical, emotional, and spiritual health. When they are all working in harmony, we are more capable of achieving personal growth and well-being. Various practices such as meditation, yoga, energy healing, and mindful awareness can be used to activate, cleanse, and balance the chakras.</p>
+                <p className="sec2-p2">The chakras, vital energy centers of the body, play a pivotal role in maintaining our overall well-being. Derived from the Sanskrit term for ‘wheels,’ chakras represent the rotating energy hubs that infuse our body with life-force, sculpting our aura. This aura acts as a protective energy shield, much akin to our body’s immune system. Any imbalance in these powerhouses of energy (the chakras) can have profound effects, not only on our physical health but also on our mental and spiritual states. This delicate harmony of energies within us is critical in maintaining a state of holistic health and vitality. These energy centers each play a crucial role in balancing our physical, emotional, and spiritual health. When they are all working in harmony, we are more capable of achieving personal growth and well-being. Various practices such as meditation, yoga, energy healing, and mindful awareness can be used to activate, cleanse, and balance the chakras.</p>
             </section>
             <section className="sec3 chakra-consultation">
                 <div className="title">Chakra Consultation</div>
@@ -66,14 +70,14 @@ const ChakraAnalysis = () => {
                 </div>
                 <Container>
                     <Row>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" className="sec5-col">
                         <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
                         <p className="col-p">Positioned at the base of the spine, this chakra is tied to our basic survival instincts, stability, and grounding. It governs our sense of security, physical health, and connection to the Earth. Its color is red.</p>
                     </Col>  
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" className="sec5-col">
                     <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208767.png"/>
                     </div>
@@ -81,7 +85,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Savdhisthana</article>
                         <p className="col-p">Situated in the lower abdomen, below the navel, this chakra is linked to our emotions, creativity, sensuality, and sexuality. It influences our ability to embrace change, experience pleasure, and nurture relationships. It’s depicted with an orange color.</p>
                     </Col>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" className="sec5-col">
                     <div className="img-div-sec4">
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"/>
                     </div>
@@ -89,7 +93,7 @@ const ChakraAnalysis = () => {
                         <article className="col-heading">Manipura</article>
                         <p className="col-p">Located in the upper abdomen around the stomach area, this chakra corresponds to personal power, self-confidence, and willpower. It drives our sense of purpose, motivation, and assertiveness. Its color is yellow.</p>
                     </Col>
-                    <Col lg="3" md="3" className="sec5-col">
+                    <Col lg="3" className="sec5-col">
                     <div className="img-div-sec4">
                         
                         <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"/>

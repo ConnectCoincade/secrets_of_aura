@@ -69,7 +69,7 @@
     letter-spacing: 1.78px;
     color: #FFFFFF;
 }
-@media (max-width: 375px){
+@media (max-width: 470px){
     /* .header-text{
         font-size: 35px;
     }
@@ -114,4 +114,15 @@
         margin-left: 0rem;
         padding: 11px 37px;
     }*/
+    .card-btn-main{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .card-services{
+        /* width: 100% !important; */
+    }
+    .card-para {
+        font-size: 19px;
+    }
 }

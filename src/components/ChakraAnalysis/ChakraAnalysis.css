@@ -1,12 +1,25 @@
 .chakra-analysis .sec1 {
     margin: 5rem 0 0 -35rem;
     height: 62rem;
-    background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat;
+    /* background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat; */
+    /* background: url("../../assets/Group\ 8898.png"); */
+  
+}
+.sec1-img {
+  width: 100%;
+}
+.sec1-div {
+  position: relative;
+}
+.sec1-content {
+  position: absolute;
+  top: 23rem;
+  right: 2rem;
 }
   .sec1 .title1, .sec1 .title2 {
     right: 8rem;
-    position: absolute;
-    padding: 25rem 0rem;
+    /* position: absolute; */
+    /* padding: 25rem 0rem; */
     color: #2E2A87;
     font-size: 40px;
   }
@@ -14,18 +27,16 @@
     margin: 4rem 0;
   }
   .title1 {
-    top: 3rem;
+    /* top: 3rem; */
   }
   .title2 {
-    top: 6rem;
+    /* top: 6rem; */
   }
   .sec1-btn {
     background: #6D6FA7 0% 0% no-repeat padding-box !important;
-    border: 1pc solid #6D6FA7;
-    padding: 0 2rem;
-    right: 8rem;
-    position: absolute; 
-    top: 37rem;
+    border: 1px solid #6D6FA7;
+  
+    padding: 0.5rem 2rem;
     font-size: 1.5rem;
     border-radius: 15px;
     color: #fff;    
@@ -43,13 +54,13 @@
     padding: 5rem;
     text-align: center;
   }
-  .sec2-p, .sec5-p {
+  .sec2-p2, .sec5-p {
     color: #5E59A3;
     
     margin: auto;
     font-size: 20px;
   }
-  .sec2-p {
+  .sec2-p2 {
     width: 80%;
   }
   .sec5-p {
@@ -156,3 +167,86 @@
   font-size: 20px;
   margin: 2rem;
 }
+@media (max-width: 470px) {
+  /* .sec2 p, .banner-content p {
+    font-size: 15px !important;
+    width: 85% !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .chakra-analysis .sec2 .title {
+    font-size: 28px !important;
+    color: #2E2A87;
+    text-align: center;
+    padding-bottom: 1rem;
+} */
+.chakra-analysis .sec2 .title{
+  font-size: 28px !important;
+  color: #2E2A87;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.chakra-analysis .sec2 .sec2-p2{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-right: 0rem;
+    font-size: 14px;
+    color: #2E2A87;
+    width: 80%;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sec1-content {
+    top: 9rem;
+    right: 1rem;
+  }
+  .title1, .title2 {
+    font-size: 1.2rem !important;
+  }
+  .sec1-btn {
+    font-size: 1rem;
+  }
+  .chakra-analysis .sec1 {
+    height: 22rem;
+  }
+  .chakra-analysis .sec5 {
+    padding: 1rem;
+text-align: center;
+}
+.sec3 .title {
+    color: #2E2A87;
+    font-size: 52px;
+    margin: auto;
+    padding-top: 38px;
+    width: 92% !important;
+}
+.chakra-consultation{
+  padding: 0rem;
+}
+/* .chakra-consultation p {
+    color: #F0E7F4;
+    width: 89%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 1rem;
+} */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .sec1-content {
+    top: 8rem;
+  }
+  .title1, .title2 {
+    font-size: 5rem;
+  } */
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

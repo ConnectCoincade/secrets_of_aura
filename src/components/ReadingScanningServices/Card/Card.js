@@ -14,10 +14,12 @@ const Card = (props) => {
         <p className="card-para">{props.para}</p>
         {/* <p className="card-readmore">Read More</p> */}
       </div>
-      <a href="https://calendly.com/yash-h10/test-meet" target="blank">
+      <a  href="https://calendly.com/yash-h10/test-meet" target="blank">
+        <div className='card-btn-main'>
         <button className="card-btn">
           <span className="btn-text">BOOK SESSION</span>
         </button>
+        </div>
       </a>
     </div>
   );

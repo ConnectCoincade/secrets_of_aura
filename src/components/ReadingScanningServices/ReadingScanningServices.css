@@ -58,9 +58,9 @@
     .card-btn{
         margin-bottom: 30px;
     }
-    .card-para{
+    /* .card-para{
         font-size: 25px;
-    }
+    } */
     .card-subheader{
         font-size: 20px;
     }
@@ -98,6 +98,27 @@
     font-size: 52px;
     color: #2E2A87;
 }
+    }
+
+    @media (max-width: 470px){
+        .card-img {
+            width: 31%;
+            display: flex;
+            justify-content: center;
+            /* padding: 0px; */
+            padding-left: 30px !important;
+            margin: 0px !important;
+        }
+        .card-services{
+            padding: 0px !important;
+            }
+            .card-textarea {
+                max-width: 998px;
+                justify-content: center;
+                padding: 10px 25px;
+                margin: 0% !important;
+            }
+
     }
 
    

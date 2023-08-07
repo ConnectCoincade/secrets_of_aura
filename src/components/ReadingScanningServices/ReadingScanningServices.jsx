@@ -4,7 +4,6 @@ import Card from './Card/Card';
 import Scanimage1 from '../../assets/high-angle-woman-reading-tarot.png';
 import Scanimage2 from '../../assets/horoscope-astrology.png';
 import Scanimage3 from '../../assets/numerology-collage-concept.png';
-
 const ReadingScanningServices = () => {
   const cardDetails = [
 

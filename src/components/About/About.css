@@ -125,30 +125,34 @@
 }
 
 }
-@media (max-width: 300px) {
+@media (max-width: 470px) {
     .aboutus .sect3 .title {
         margin: auto;
         width: 100%;
-        font-size: 2.6rem;
+        font-size: 2rem !important;
+        padding-bottom: 0rem !important;
     }
     .aboutus .sect3 p {
         width: 100%;
         padding-top: 1.6rem;
-        font-size: 1.3rem;
+        font-size: 1rem !important;
+     
     }
     .aboutus .sec4 .title  {
         text-align: center;
-        font-size: 2.5rem ;
+        /* font-size: 2.5rem ; */
+        font-size: 1.8rem !important;
         color: #2E2A87;
+        width: 100% !important;
     }
     .aboutus .FAQ-heading {
         text-align: center;
-        font-size: 1.9rem;
+        font-size: 1.5rem !important;
         color: #818181;
-        padding-top: 1.6rem;
+        padding-top: 1rem;
     }
     .aboutus .sect3 {
-        padding: 0rem;
+        padding: 0rem !important;
     }
     .sect5 button {
         /* border-radius: 11px;
@@ -186,17 +190,23 @@
         padding-right: 0rem;
     }
 
+    .aboutus .sect3{
+        padding: 2rem;
+    }
+
     
 .aboutus .sect3 .title {
     color: #2E2A87;
     font-size: 3rem;
+    padding-bottom: 1rem;
 }
 .sect3 .title {
     width: 100% !important;
 }
 .aboutus .sect3 p {
     color: #fff;
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     margin: auto;
     font-size: 22px;
 }
