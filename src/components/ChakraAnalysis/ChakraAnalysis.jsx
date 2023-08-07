@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './ChakraAnalysis.css';
 import { Row, Col, Container, Modal } from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
-import { useGlobalContext } from "../../context/QuestionContext";
-import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 

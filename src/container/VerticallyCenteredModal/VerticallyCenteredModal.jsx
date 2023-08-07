@@ -20,22 +20,19 @@ function VerticallyCenteredModal(props) {
   const handleNext = () => {
    
       //Move to the next question
-      const selectedAnswer = answersList[questionIndex]?.ans || ''
-
-      if(!selectedAnswer){
-        alert('Please select the Option')
-      }else{
-        setQuestionIndex(nextIndex => nextIndex + 1);
+       setQuestionIndex(nextIndex => nextIndex + 1);
+     const selectedAnswer = answersList[questionIndex+1]?.ans || '';
       var radioButtons = document.getElementsByName('options');
-      for (let i = 0; i < radioButtons.length; i++) {
-        radioButtons[i].checked = false;
-      }
-
-      }
-
+      // for (let i = 0; i < radioButtons.length; i++) {
+      //   radioButtons[i].checked = false;
+      // }  
+      radioButtons.forEach(radioButton => {
+        radioButton.checked = radioButton.value === selectedAnswer;
+      });
+       
+   }
       
-    
-  };
+  
 
   const handleBack = () => {
     if (questionIndex === 0) {
@@ -53,15 +50,26 @@ function VerticallyCenteredModal(props) {
 
   const handleOptionChange = (event) => {
 
-      const selectedAnswer = event.target.value;
-      const answerObj = {
-        quest: questions[questionIndex].quest,
-        ans: selectedAnswer,
-        number: questionIndex + 1,
-        image: questions[questionIndex].image,
-        chakraName:questions[questionIndex].chakraName
-      };
-      setAnswerList([...answersList, answerObj]);   
+    // answersList.filter((data)=>console.log(data.quest === data.quest))
+    
+    const selectedAnswer = event.target.value;
+        const answerObj = {
+          quest: questions[questionIndex].quest,
+          ans: selectedAnswer,
+          number: questionIndex + 1,
+          image: questions[questionIndex].image,
+          chakraName:questions[questionIndex].chakraName
+        };
+
+        const existingIndex = answersList.findIndex((data) => data.number === answerObj.number);
+        if(existingIndex !== -1){
+          const updatedArray = [...answersList];
+          updatedArray[existingIndex] = answerObj;
+          setAnswerList(updatedArray);
+        }else{
+          setAnswerList([...answersList, answerObj]);
+        }
+           
   };
 
   useEffect(() => {
@@ -116,10 +124,10 @@ function VerticallyCenteredModal(props) {
           ))}
         </div>
 
-        <button id='back' onClick={handleBack}>Back</button>
+        <Button  id='back' onClick={handleBack}>Back</Button>
         { questionIndex < questions.length - 1 ? (
-          <button id='next' onClick={handleNext}>Next</button>) :(
-          <Button id='next' onClick={handleSubmit}>Submit</Button>)
+          <Button id='next' onClick={handleNext} disabled={answersList[questionIndex]?.ans ? false: true}>Next</Button>) :(
+          <Button id='next' onClick={handleSubmit} disabled={answersList[questionIndex]?.ans ? false: true} >Submit</Button>)
           }
       </Modal.Body>
     </Modal>

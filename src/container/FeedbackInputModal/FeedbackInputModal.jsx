@@ -6,6 +6,8 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useGlobalContext } from "../../context/QuestionContext";
 import { Document, Page, Text, Image, View, StyleSheet, PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
+import * as yup from 'yup'
+
 
 
 let idOfEntry = 1;
@@ -67,50 +69,67 @@ const FeedbackInputModal = () => {
     answersList,
     setAnswerList
   } = useGlobalContext();
-  const [show, setShow] = useState(feedbackExit);
+  const [disable, setDisable] = useState(true);
+  const [validationErrors, setValidationErrors] = useState({});
 
-
-  const handleDownload = async () =>{
-    setTimeout(() => {
-      setFeedbackExit(false);
-      setAnswerList([])
-    }, 500);
-
-    try {
-      await fetch('https://sheetdb.io/api/v1/xw7i1za1rp66m', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          data: [
-            {
-              firstName: userData.firstName,
-              lastName: userData.lastName,
-              email: userData.email,
-            },
-          ],
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => console.log(data));
-    } catch (error) {
-      console.log('Error: ', error);
+  function validateEmail(inputText) {
+    var mailFormat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (inputText.match(mailFormat)) {
+      return true;
+    } else {
+      return false;
     }
-  };
- 
+  }
+
+  const userSchema = yup.object().shape({
+    firstName: yup.string().trim().matches(/^[a-zA-Z]*$/, 'First name must only contain letters').min(2, 'First Name must be at least 2 characters').max(25).required('First Name is required'),
+    lastName: yup.string().trim().matches(/^[a-zA-Z]*$/, 'Last name must only contain letters').min(2, 'Last Name must be at least 2 characters').max(25).required('Last Name is required'),
+    email: yup.string().trim().matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, 'Invalid E-mail format').email('Invalid E-mail format').required('Email is required'),
+  });
+
+  const handleChange = async() =>{
+
+    const timerOut = setTimeout(async()=>{
+      try {
+        await userSchema.validate(userData, { abortEarly: false });
+        setValidationErrors({});
+        setDisable(false)
+       
+      } catch (error) {
+        if (error instanceof yup.ValidationError) {
+          const errors = {};
+          error.inner.forEach((err) => {
+            errors[err.path] = err.message;
+          });
+          setValidationErrors(errors);
+          setDisable(true);
+        }
+      }
+    },2000);
+
+    return () => clearTimeout(timerOut); 
+  }
+
+  const  handleDownload = () =>{
+    
+      if(disable===false){
+        setTimeout(()=>{
+          setFeedbackExit(false);
+          setAnswerList([]);
+        },500);
+       }
+   };
   const onInputChange = (e) => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   };
-  
+ 
   const MyDocument = () => (
     <Document>
         <Page style={styles.page}>
       <View>
         <Image style={styles.logo} src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo.png" />
         <Text style={styles.title}>Secret Of Aura</Text>
-        <Text style={styles.address} >  603, 6TH FLR, LAXMI PLAZA, LAXMI IND ESTATE,{''}</Text>
+        <Text style={styles.address} >603, 6TH FLR, LAXMI PLAZA, LAXMI IND ESTATE,{''}</Text>
         <Text style={styles.address}>NEW LINK ROAD, ANDHERI WEST, MUMBAI CITY, MH, 400053, INDIA</Text>
         <Text style={styles.address}>Contact No - 8591965698</Text>
         <Text style={styles.adminEmail}>connect@secretsodaura.com</Text>
@@ -133,9 +152,6 @@ const FeedbackInputModal = () => {
         <View style={styles.tableBoolHeading}>
             <Text >Status</Text>
         </View>          
-          {/* <Text style={styles.tableImgHeading}>Chakra</Text>
-          <Text style={styles.tableChakraHeading}>Chakra Name</Text>
-          <Text style={styles.tableBoolHeading}>Status</Text> */}
         </View>
         {answersList.map((data, index) => (
           <View key={index} style={styles.tableRow}>
@@ -186,12 +202,16 @@ const FeedbackInputModal = () => {
                   placeholder="First Name"
                   name="firstName"
                   onChange={(e) => onInputChange(e)}
+                  onKeyUp={handleChange}
+                  on
                   style={{
                     textTransform: "uppercase",
-                    border: '2px solid #B00020',
+                    border: '2px solid #9389E3',
                     textTransform: 'uppercase',
                   }}
                 />
+                
+               {validationErrors.firstName && <div className="validation-error" style={{color:'red',fontSize:12,textAlign:'left'}}>{validationErrors.firstName}</div> || <div style={{height:18}}></div>} 
               </Form.Group>
               <Form.Group
                 style={{ width: '80%' }}
@@ -203,12 +223,15 @@ const FeedbackInputModal = () => {
                   placeholder="Last Name"
                   name="lastName"
                   onChange={(e) => onInputChange(e)}
+                  onKeyUp={handleChange}
                   style={{
                     textTransform: "uppercase",
-                    border: '2px solid #919191',
+                    border: '2px solid #9389E3',
                     textTransform: 'uppercase',
                   }}
                 />
+                
+               {validationErrors.lastName && <div className="validation-error" style={{color:'red',fontSize:12,textAlign:'left'}}>{validationErrors.lastName}</div> || <div style={{height:18}}></div> }
               </Form.Group>
               <Form.Group
                 style={{ width: '80%' }}
@@ -221,25 +244,29 @@ const FeedbackInputModal = () => {
                   name="email"
                   onChange={(e) => onInputChange(e)}
                   style={{ border: '2px solid #9389E3' }}
+                  onKeyUp={handleChange}
                 />
+               {validationErrors.email && <div className="validation-error" style={{color:'red',fontSize:12,textAlign:'left'}}>{validationErrors.email}</div> || <div style={{height:18}}></div> }
               </Form.Group>
-              <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf" onClick={handleDownload}>
-              {({ blob, url, loading, error }) =>
-              // loading ? 
-              // <Button>Loading Document...</Button> : 
-              <Button variant="primary"
-              style={styles.button}
-              
-              >Download Report</Button>
-              }
-              </PDFDownloadLink>
+
+              <div onClick={handleDownload}>
+              <Button  variant="primary" style={styles.button}> 
+              {disable ?  <div style={{color:'white'}}>
+              Download Report
+              </div> : <PDFDownloadLink document={<MyDocument />} fileName="Report.pdf"  >
+              <div style={{color:'white'}}>
+              Download Report
+              </div>
+              </PDFDownloadLink> }
+               
+              </Button>
+              </div>
+
             </Form>
           </div>
         </Modal.Body>
       </Modal>  
-      </>
-      
-    
+      </>   
   );
 };
 
