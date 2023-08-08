@@ -69,6 +69,12 @@
     letter-spacing: 1.78px;
     color: #FFFFFF;
 }
+.btn-text1{
+    text-align: left;
+    font: normal normal medium 20px/16px Roboto;
+    letter-spacing: 1.78px;
+    padding: 1rem;
+}
 @media (max-width: 470px){
     /* .header-text{
         font-size: 35px;
@@ -125,4 +131,23 @@
     .card-para {
         font-size: 19px;
     }
+    /* .card-btn{
+    border-radius: 10px;
+    padding: 1.2rem 1.2rem;
+    border: #9389E3 1px solid;
+    background-color: #9389E3;
+    color: white;
+    font-size: 20px;
+    margin: 2rem;
+
+    } */
+.card-btn{
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    border: #9389E3 1px solid;
+    background-color: #9389E3;
+    color: white;
+    font-size: 19px;
+    margin: 2rem;
+}
 }

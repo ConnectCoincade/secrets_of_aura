@@ -1,6 +1,6 @@
 .chakra-analysis .sec1 {
     margin: 5rem 0 0 -35rem;
-    height: 52rem !important;
+    /* height: 52rem; */
     /* background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat; */
     /* background: url("../../assets/Group\ 8898.png"); */
   
@@ -13,7 +13,7 @@
 }
 .sec1-content {
   position: absolute;
-  top: 23rem;
+  top: 24rem;
   right: 2rem;
 }
   .sec1 .title1, .sec1 .title2 {
@@ -200,8 +200,9 @@
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
   .sec1-content {
-    top: 9rem;
+    top: 10rem;
     right: 1rem;
   }
   .title1, .title2 {
@@ -211,7 +212,7 @@
     font-size: 1rem;
   }
   .chakra-analysis .sec1 {
-    height: 22rem !important;
+    height: 22rem;
   }
   .chakra-analysis .sec5 {
     padding: 1rem;
@@ -280,25 +281,31 @@ text-align: center;
 } */
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media (min-width: 601px) and (min-width: 767px)  {
   /* .sec1-content {
     top: 8rem;
   }
   .title1, .title2 {
     font-size: 5rem;
   } */
+  .chakra-analysis .sec1 {
+    /* height: 35rem; */
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .sec1-content {
     position: absolute;
-    top: 19rem;
+    top: 15rem;
   }
 }
-.chakra-analysis .sec1 {
-  margin: 5rem 0 0 -35rem;
+/* .chakra-analysis .sec1 {
+  margin: 5rem 0 0 -79rem;
   height: 37rem;
-}
+} */
+/* .sec1 .sec1-div{
+  height: 35rem !important;
+} */
 .chakra-analysis .sec5 .title{
   margin-bottom: 1rem;
 }
@@ -328,6 +335,8 @@ text-align: center;
   font-size: 21px;
 } */
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}

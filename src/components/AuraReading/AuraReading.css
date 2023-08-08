@@ -222,11 +222,12 @@ sec5-col {
     .aura-consultation p {
         color: #F0E7F4;
         /* width: 80%; */
-        width: 100% !important;
+        width: 90% !important;
         margin: auto;
         /* font-size: 18px; */
         /* font-size: 2rem; */
-        font-size: 1.2rem !important;
+        /* font-size: 1.2rem !important; */
+        font-size: 1rem !important;
         padding-top: 1.5rem !important;
     }
     .aura-consultation .title {
@@ -265,6 +266,9 @@ sec5-col {
     .sec3 img{
         transform: scale(1);
         padding: 3rem 2rem !important;
+    }
+    .sec1 video {
+        width: 89%;
     }
 
     .Testimonials1 {

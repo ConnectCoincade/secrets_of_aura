@@ -1,6 +1,10 @@
 .aboutus {
     background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/about_bg.png") no-repeat;
     margin-top: 10rem;
+   
+}
+.sec1, .sec2 {
+    margin: auto 2rem;
 }
 .sec1-para {
     color: #5E59A3;
@@ -51,17 +55,19 @@
     /* text-align: center;
     font-size: 1.9rem;
     color: #818181; */
-    text-align: center;
+    text-align: left;
     font-size: 1.4rem;
     color: #818181;
     padding-top: 1rem;
+    margin: 0 auto;
     /* padding-right: 4rem; */
+    width: 34%;
 }
    
     
 .FAQ {
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     width: 34%;
 }
 .FAQ .question {
@@ -91,7 +97,7 @@
     font-size: 20px;
     margin: 2rem;
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .aboutus{
         background-size: cover;
     }
@@ -101,7 +107,6 @@
     .FAQ{
         text-align: center;
         margin: 2 rem;
-        width: 85%;
     }
   .aboutus .sect3 .title{
         margin: auto;
@@ -114,9 +119,7 @@
         padding-top: 20px;
         font-size: 19px
     }
-    .aboutus .sect3{
-        padding: 1rem;
-    }
+    
 .sec1-main{
     display: block!important;
 }
@@ -124,8 +127,17 @@
     width: 100% !important;
 }
 
-}
+} */
 @media (max-width: 470px) {
+    .sec1 {
+        margin: auto 1rem;
+    }
+    .sec1-para p {
+        padding-right: 0;
+    }
+    .aboutus {
+        margin-top: 6rem;
+    }
     .aboutus .sect3 .title {
         margin: auto;
         width: 100%;
@@ -134,7 +146,8 @@
     }
     .aboutus .sect3 p {
         width: 100%;
-        padding-top: 1.6rem;
+        /* padding-top: 1.6rem; */
+        padding-top: 1rem;
         font-size: 1rem !important;
      
     }
@@ -149,10 +162,12 @@
         text-align: center;
         font-size: 1.5rem !important;
         color: #818181;
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
+        padding:1rem 0.5rem;
+        width: 100% !important;
     }
     .aboutus .sect3 {
-        padding: 0rem !important;
+        padding: 1rem !important;
     }
     .sect5 button {
         /* border-radius: 11px;
@@ -168,7 +183,7 @@
         border: #9389E3 1px solid;
         color: white;
         background: #9389E3;
-        font-size: 20px;
+        font-size: 18px;
         margin: 2rem;
     }
  
@@ -176,10 +191,20 @@
     padding: 1rem;
     margin: 0;
 }
+.FAQ{
+    width: fit-content;
+    margin: 1rem;
+}
 
 }
-@media (max-width: 840px) {
+@media (min-width: 471px) and (max-width: 840px) {
+    .aboutus {
+        margin-top: 8rem;
 
+    }
+    .sec1 {
+        margin: auto 2rem;
+    }
     .row{
         display: block !important;
     }
@@ -211,16 +236,16 @@
     font-size: 22px;
 }
 .aboutus .sec4 .title {
-    width: 73%;
-    margin: auto;
+    width: auto;
+    margin: auto 2rem;
     /* text-align: center; */
     font-size: 3rem;
     color: #5E59A3;
     /* padding-right: 4rem; */
 }
 .aboutus .FAQ-heading {
-    width: 73%;
-    margin: auto;
+    width: auto;
+    margin: auto 2rem;
     font-size: 2rem;
     color: #818181;
     padding-top: 1rem;
@@ -228,8 +253,8 @@
 }
 .FAQ {
     text-align: center;
-    margin: 2rem auto;
-    width: 73%;
+    margin: 2rem;
+    width: auto;
 }
 
 }
