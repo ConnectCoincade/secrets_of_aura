@@ -23,31 +23,32 @@ const Footer = () => {
                 <NavLink to="/about">About Us</NavLink>
               </p>
               <p>
+                <NavLink to="/aura-reading">Aura Reading</NavLink>
+              </p>
+              <p>
+                <NavLink to="/chakra-analysis">Chakra Analysis</NavLink>
+              </p>
+              {/* <p>
                 <NavLink to="/services">Services</NavLink>
+              </p> */}
+              
+              
+            </Col>
+            <Col xs={12} md={2} className="footer-col footer-links">
+              
+              <p>
+              <NavLink to="/support">Support</NavLink>
               </p>
               <p>
                 <a href="#/" target="_blank" rel="noreferrer">
                   Privacy Policy
                 </a>
               </p>
-              {/* <p>
-                <a
-                  href="https://3tdao.com/3TRetail.pdf"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Investor Deck
+              <p>
+                <a href="#/" target="_blank" rel="noreferrer">
+                  Cancellation Policy
                 </a>
-              </p> */}
-            </Col>
-            <Col xs={12} md={2} className="footer-col footer-links">
-              <p>
-                <NavLink to="/aura-reading">Aura Reading</NavLink>
               </p>
-              <p>
-                <NavLink to="/chakra-analysis">Chakra Analysis</NavLink>
-              </p>
-            
               <p>
                 <a href="/#" target="_blank" rel="noreferrer noopener">
                   Terms and Conditions

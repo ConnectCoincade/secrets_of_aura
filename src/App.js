@@ -7,6 +7,7 @@ import AuraReading from './components/AuraReading/AuraReading';
 import ChakraAnalysis from './components/ChakraAnalysis/ChakraAnalysis';
 import ReadingScanningServices from './components/ReadingScanningServices/ReadingScanningServices';
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
+import Support from './components/Support/Support';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
 
@@ -31,6 +32,7 @@ function App() {
           path="/healing-n-therapy-service"
           element={<HealingTherapyService />}
         ></Route>
+        <Route path='/support' element={<Support/>}></Route>
       </Routes>
       <Footer />
     </>
