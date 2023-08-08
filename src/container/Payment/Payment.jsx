@@ -43,7 +43,7 @@ const Payment = () => {
             address:"Razorpay Corporate office"
           },
           theme:{
-            color:'#3399cc'
+            color:'#5599cc'
           }
         };
         var pay = new window.Razorpay(options);
@@ -52,7 +52,7 @@ const Payment = () => {
 
   return (
     <div>payment
-        <button onClick={()=>displayRazorPay(100)}>buyNow</button>
+        <button onClick={()=>displayRazorPay(200)}>buyNow</button>
     </div>
     
   )
