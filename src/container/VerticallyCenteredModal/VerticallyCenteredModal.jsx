@@ -23,9 +23,6 @@ function VerticallyCenteredModal(props) {
        setQuestionIndex(nextIndex => nextIndex + 1);
      const selectedAnswer = answersList[questionIndex+1]?.ans || '';
       var radioButtons = document.getElementsByName('options');
-      // for (let i = 0; i < radioButtons.length; i++) {
-      //   radioButtons[i].checked = false;
-      // }  
       radioButtons.forEach(radioButton => {
         radioButton.checked = radioButton.value === selectedAnswer;
       });
@@ -49,9 +46,7 @@ function VerticallyCenteredModal(props) {
   };
 
   const handleOptionChange = (event) => {
-
-    // answersList.filter((data)=>console.log(data.quest === data.quest))
-    
+   
     const selectedAnswer = event.target.value;
         const answerObj = {
           quest: questions[questionIndex].quest,

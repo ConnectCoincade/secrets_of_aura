@@ -1,6 +1,15 @@
 import React from 'react'
+import { saveAs } from 'file-saver';
+import { Button } from 'react-bootstrap';
+import RootChakraMurladhara  from '../../song/RootChakraMurladhara.mp3'
+import SacralChakraSavdhisthana from '../../song/SacralChakraSavdhisthana.mp3'
+import SolarPlexusChakraManipura from '../../song/SolarPlexusChakraManipura.mp3';
+import HeartChakraAnahata from '../../song/HeartChakraAnahata.mp3';
+import ThroatChakraVishuddha from '../../song/ThroatChakraVishuddha.mp3';
+import ThirdEyeChakraAjna from '../../song/ThirdEyeChakraAjna.mp3'
+import CrownChakraSahasrara from '../../song/CrownChakraSahasrara.mp3'
 
-const Payment = () => {
+const Payment = (props) => {
 
     // const loadScript =  (src) =>{
     //       return new Promise((resolve)=>{
@@ -16,14 +25,21 @@ const Payment = () => {
     //         document.body.appendChild(script);
     //       })
     // }
-    const displayRazorPay = async(price)=>{
+    const displayRazorPay = async(price,chakraSongName)=>{
 
-        // const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
-    
-        // if(!res){
-        //     alert('you are offline failed to load sdk')
-        //     return;
-        // }
+      const musicName = chakraSongName.replaceAll(' ','')
+      const songs = {
+        RootChakraMurladhara,
+        SacralChakraSavdhisthana,
+        SolarPlexusChakraManipura,
+        HeartChakraAnahata,
+        ThroatChakraVishuddha,
+        ThirdEyeChakraAjna,
+        CrownChakraSahasrara,
+      };
+  
+      const songUrl = songs[musicName];
+
         var options = {
           key:"rzp_test_Fj7bmVOyv14Z4S",
           key_secret:"",
@@ -32,18 +48,24 @@ const Payment = () => {
           name:"Test_Project",
           description:"for testing purpose",
           handler: function(response){
-            alert(response.razorpay_payment_id);
+            if(!response){
+              alert('payment not successfull')
+            }else{
+              saveAs(songUrl, `${chakraSongName}.mp3`);
+             // alert(response.razorpay_payment_id);             
+            }
+            
           },
-          prefill:{
-            name:"mady",
-            email:"mady@gmai.com",
-            contact:"8828768148",
-          },
+          // prefill:{
+          //   name:"mady",
+          //   email:"mady@gmai.com",
+          //   contact:"8828768148",
+          // },
           notes:{
             address:"Razorpay Corporate office"
           },
           theme:{
-            color:'#3399cc'
+            color:'#20b2aa'
           }
         };
         var pay = new window.Razorpay(options);
@@ -52,8 +74,7 @@ const Payment = () => {
 
   return (
     <>
-        <button onClick={()=>displayRazorPay(100)}>Buy</button>
-
+        <Button style={{background:'#6D6FA7',width:'50%'}} onClick={()=>displayRazorPay(99,props.chakra)} >Buy</Button>
     </>
     
   )
