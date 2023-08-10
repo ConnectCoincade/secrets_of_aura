@@ -95,7 +95,8 @@
     height: auto;
     position: relative;
     z-index: -1;
-    padding: 8rem 20rem;
+    padding: 5rem 2rem;
+    width: 65%;
 }
 .section-4-img {
     text-align: right;

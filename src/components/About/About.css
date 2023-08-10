@@ -3,9 +3,21 @@
     margin-top: 10rem;
    
 }
+.naqqya-col {
+    position: relative;
+}
+.naqqya {
+    position: absolute;
+    width: 30% !important;
+    z-index: 1000;
+    left: 1rem;
+    top: 30rem;
+}
 .about-naqqya-img {
-    height: 100%;
+    width: 70% !important;
     border: 1rem solid black;
+
+    
 }
 .sec1, .sec2 {
     margin: auto 2rem;
@@ -18,7 +30,7 @@
      font-family: 'Montserrat', sans-serif !important;
 }
 .sec2 video {
-    width: 100%;
+    width: 80%;
 }
 .aboutus .sec2 {
     background: none;

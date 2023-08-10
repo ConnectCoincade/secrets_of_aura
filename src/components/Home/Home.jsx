@@ -49,7 +49,7 @@ const Home = () => {
           </p>
           <div className="vertical"></div>
           <a href="https://calendly.com/yash-h10/test-meet" target="blank">
-            <button>SCHEDULE YOUR SESSION</button>
+            <button disabled>SCHEDULE YOUR SESSION</button>
           </a>
         </div>
       </section>
@@ -105,44 +105,20 @@ const Home = () => {
             autoPlay={false}
           >
             <p className="Testimonials">
-              <span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
+              <span>&ldquo;</span>Astonishing aura reading and tarot session with Secrets of Aura Team. Spot-on insights left me empowered and enlightened. Highly recommend!
               <span className="upside-down">&rdquo;</span>
             </p>
             <div className="Testimonials">
-              <q>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </q>
+            <span>&ldquo;</span>
+              Life-changing experience at Secrets of Aura. Accurate aura and tarot readings provided clarity and renewed confidence. A must-try!
+              <span className="upside-down">&rdquo;</span>
             </div>
             <div className="Testimonials">
-              <q>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </q>
+            <span>&ldquo;</span>
+              Incredible! Profound aura and tarot insights felt like a personalized guide. Left with positivity and direction.
+              <span className="upside-down">&rdquo;</span>
             </div>
-            <div className="Testimonials">
-              <q>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </q>
-            </div>
+            
           </Carousel>
         </div>
       </section>

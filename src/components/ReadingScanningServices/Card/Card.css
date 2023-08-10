@@ -61,7 +61,12 @@
     text-align: center;
     margin-top: 38px;
     margin-right: 23px;
+
+    
 }
+/* .card-btn:disabled{
+    background: none;
+} */
 
 .btn-text{
     text-align: left;
