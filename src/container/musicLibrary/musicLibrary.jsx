@@ -53,10 +53,9 @@ const MusicLibrary = (props) => {
                     </Col>  
                     <Col>
                       <Payment chakra={quest.chakraName} />
-                    </Col>
-                    
-                </Row>
-                </Container>
+                    </Col>  
+                    </Row>
+                    </Container>
                   ))}
                     
             </Modal.Body>    
