@@ -3,6 +3,7 @@ import './ChakraAnalysis.css';
 import { Row, Col, Container, Modal } from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+import chakraimg from '../../assets/Group 8898.png'; 
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 
 

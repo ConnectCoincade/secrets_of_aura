@@ -1,6 +1,10 @@
 .aboutus {
     background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmNnTaKcDiDjcrihRcqcGwcw4ujHik768YAajLha1ceUAt/about_bg.png") no-repeat;
     margin-top: 10rem;
+   
+}
+.sec1, .sec2 {
+    margin: auto 2rem;
 }
 .sec1-para {
     color: #5E59A3;
@@ -38,19 +42,32 @@
     margin-top: 5rem;
 }
 .aboutus .sec4 .title {
+    /* text-align: center;
+    font-size: 2.5rem;
+    color: #5E59A3; */
     text-align: center;
-    font-size: 50px;
-    color: #2E2A87;
+    font-size: 2.3rem;
+    color: #5E59A3;
+    /* padding-right: 4rem; */
+
 }
 .aboutus .FAQ-heading {
-    text-align: center;
-    font-size: 30px;
+    /* text-align: center;
+    font-size: 1.9rem;
+    color: #818181; */
+    text-align: left;
+    font-size: 1.4rem;
     color: #818181;
-    
+    padding-top: 1rem;
+    margin: 0 auto;
+    /* padding-right: 4rem; */
+    width: 34%;
 }
+   
+    
 .FAQ {
     text-align: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     width: 34%;
 }
 .FAQ .question {
@@ -63,15 +80,15 @@
     color: #919191;
     font-size: 17px;
 }
-.sec5 {
+.sect5 {
     text-align: center;
-    margin: 4rem;
+    /* margin: 4rem; */
 }
-.sec5 .ask {
+.sect5 .ask {
     color: #2E2A87;
     font-size: 30px;
 }
-.sec5 button {
+.sect5 button {
     border-radius: 10px;
     padding: 1rem 2rem;
     border: #9389E3 1px solid;
@@ -80,7 +97,7 @@
     font-size: 20px;
     margin: 2rem;
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .aboutus{
         background-size: cover;
     }
@@ -90,7 +107,6 @@
     .FAQ{
         text-align: center;
         margin: 2 rem;
-        width: 85%;
     }
   .aboutus .sect3 .title{
         margin: auto;
@@ -103,14 +119,142 @@
         padding-top: 20px;
         font-size: 19px
     }
-    .aboutus .sect3{
-        padding: 1rem;
-    }
+    
 .sec1-main{
     display: block!important;
 }
 .sect3 .title{
     width: 100% !important;
+}
+
+} */
+@media (max-width: 470px) {
+    .sec1 {
+        margin: auto 1rem;
+    }
+    .sec1-para p {
+        padding-right: 0;
+    }
+    .aboutus {
+        margin-top: 6rem;
+    }
+    .aboutus .sect3 .title {
+        margin: auto;
+        width: 100%;
+        font-size: 2rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .aboutus .sect3 p {
+        width: 100%;
+        /* padding-top: 1.6rem; */
+        padding-top: 1rem;
+        font-size: 1rem !important;
+     
+    }
+    .aboutus .sec4 .title  {
+        text-align: center;
+        /* font-size: 2.5rem ; */
+        font-size: 1.8rem !important;
+        color: #2E2A87;
+        width: 100% !important;
+    }
+    .aboutus .FAQ-heading {
+        text-align: center;
+        font-size: 1.5rem !important;
+        color: #818181;
+        /* padding-top: 1rem; */
+        padding:1rem 0.5rem;
+        width: 100% !important;
+    }
+    .aboutus .sect3 {
+        padding: 1rem !important;
+    }
+    .sect5 button {
+        /* border-radius: 11px;
+        padding: 0rem 1rem 0rem 0rem;
+        border: #9389E3 1px solid;
+        color: white;
+        background: #9389E3;
+        font-size: 1.2rem;
+        margin: 2rem; */
+        /* box-sizing: initial; */
+        border-radius: 10px;
+        padding: 1rem 1rem;
+        border: #9389E3 1px solid;
+        color: white;
+        background: #9389E3;
+        font-size: 18px;
+        margin: 2rem;
+    }
+ 
+    .sect5{
+    padding: 1rem;
+    margin: 0;
+}
+.FAQ{
+    width: fit-content;
+    margin: 1rem;
+}
+
+}
+@media (min-width: 471px) and (max-width: 840px) {
+    .aboutus {
+        margin-top: 8rem;
+
+    }
+    .sec1 {
+        margin: auto 2rem;
+    }
+    .row{
+        display: block !important;
+    }
+    .sec1-para p {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-right: 0rem;
+    }
+
+    .aboutus .sect3{
+        padding: 2rem;
+    }
+
+    
+.aboutus .sect3 .title {
+    color: #2E2A87;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.sect3 .title {
+    width: 100% !important;
+}
+.aboutus .sect3 p {
+    color: #fff;
+    /* width: 80%; */
+    width: 100%;
+    margin: auto;
+    font-size: 22px;
+}
+.aboutus .sec4 .title {
+    width: auto;
+    margin: auto 2rem;
+    /* text-align: center; */
+    font-size: 3rem;
+    color: #5E59A3;
+    /* padding-right: 4rem; */
+}
+.aboutus .FAQ-heading {
+    width: auto;
+    margin: auto 2rem;
+    font-size: 2rem;
+    color: #818181;
+    padding-top: 1rem;
+    /* padding-right: 4rem; */
+}
+.FAQ {
+    text-align: center;
+    margin: 2rem;
+    width: auto;
 }
 
 }

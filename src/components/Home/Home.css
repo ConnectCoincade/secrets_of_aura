@@ -31,6 +31,7 @@
     white-space: nowrap;
     font-size: 55px;
     font: normal normal medium 52px/66px Serling Galleria PERSONAL USE;
+    /* font: 'Montserrat', sans-serif; */
     letter-spacing: 0px;
     color: #9389E3;
 }
@@ -42,6 +43,8 @@
     padding: 4rem;
     color: #fff;
     font: 1.5rem/1.4 Georgia, serif;
+    /* font: 'Montserrat', sans-serif; */
+    /* font: Arial, Regular; */
 }
 .sec3 .bold {
     color: #2E2A87;
@@ -221,7 +224,8 @@
         text-align: center;
     }
     .sec2 p,.banner-content p {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 21px;
         width: 80%;
         margin: auto;
         /* margin-top: 1rem; */
@@ -233,7 +237,8 @@
         /* padding: 10px 24px; */
         border: aliceblue;
         color: white;
-        font-size: 10px;
+        /* font-size: 10px; */
+        font-size: 16px;
         width: 35%;
         margin: 4em 0;
     }
