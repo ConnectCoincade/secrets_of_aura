@@ -167,6 +167,12 @@
   font-size: 20px;
   margin: 2rem;
 }
+.info{
+  display: flow-root !important;
+    float: right;
+    padding: 0rem 0.5rem !important;
+    margin: 0rem !important;
+}
 @media (max-width: 470px) {
   /* .sec2 p, .banner-content p {
     font-size: 15px !important;
@@ -197,6 +203,7 @@
     color: #2E2A87;
     width: 80%;
   }
+
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

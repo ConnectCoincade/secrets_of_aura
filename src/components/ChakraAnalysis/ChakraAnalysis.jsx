@@ -6,6 +6,7 @@ import { useGlobalContext } from "../../context/QuestionContext";
 import FeedbackInputModal from "../../container/FeedbackInputModal/FeedbackInputModal";
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
 import chakraimg from '../../assets/Group 8898.png'; 
+import Information from './Information';
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
 
 
@@ -56,8 +57,10 @@ const ChakraAnalysis = () => {
                 <div className="title">Chakra Consultation</div>
                 <p>During a chakra analysis, we evaluate the energy processes within the human body, processes that are mirrored in one’s heart rate. This examination allows us to compile an integral index, which, in terms of physical substance, aligns closely with the concept of an aura. This procedure is conducted using specialized equipment and must be carried out in person. However, we also offer an online chakra analysis.</p>
                 <div className="book-session1">
+                <Information/>
                 <p>Online Chakra Consultation INR 2000/-</p>
                 <button>BOOK SESSION</button>
+              
                 </div>
                 <div className="book-session2">
                 <p>In-person Chakra Consultation INR 2500/-</p>
@@ -136,6 +139,7 @@ const ChakraAnalysis = () => {
             </section>
             
             <section className="sec5">
+            
                 <div className="title">Music Therapy Consultation</div>
                 <p className="sec5-p">Music therapy is a powerful form of treatment that utilizes the therapeutic benefits of music to improve an individual’s physical, emotional and cognitive wellbeing. We have developed our Music Therapy tracks as a tool for opening chakras and healing the aura. In addition to chakra opening, music therapy can also help to heal the aura. We use vibrational frequencies produced by instruments like Tibetan singing bowls, tuning forks, gongs, and bells, among others, in our sound healing practice to cleanse and balance the aura, promoting overall physical and mental health.</p>
             </section>

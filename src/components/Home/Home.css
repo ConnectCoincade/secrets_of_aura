@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 .sec1 img, .sec3 img{
     width: 100%;
@@ -6,9 +6,11 @@
 .sec3 img {
     max-width: 100%;
     height: 90rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec1, .sec2, .sec3 {
     position: relative;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .banner-content ,.sec2-content{
     position: absolute;
@@ -16,6 +18,7 @@
     width: 100%;
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .about-bg {
     /* position: absolute; */
@@ -31,7 +34,7 @@
     white-space: nowrap;
     font-size: 55px;
     font: normal normal medium 52px/66px Serling Galleria PERSONAL USE;
-    /* font: 'Montserrat', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif !important; */
     letter-spacing: 0px;
     color: #9389E3;
 }
@@ -45,10 +48,12 @@
     font: 1.5rem/1.4 Georgia, serif;
     /* font: 'Montserrat', sans-serif; */
     /* font: Arial, Regular; */
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec3 .bold {
     color: #2E2A87;
     margin-top: -5rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .Testimonials div {
     text-align: center;
@@ -105,6 +110,7 @@
     width: 50%;
     margin: auto;
     margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec2-content p {
     color:  #2E2A87;
@@ -118,13 +124,16 @@
     color: white;
     font-size: 25px;
     margin: 6em 0;
+    
 }
 .vertical {
     border-left: 2px solid white;
     height: 110px;
     position: absolute;
-    left: 50%;
-    top: 46%;
+    /* left: 50%;
+    top: 46%; */
+    left: 48%;
+    top: 51%;
   }
   .sec2 {
     text-align: center;

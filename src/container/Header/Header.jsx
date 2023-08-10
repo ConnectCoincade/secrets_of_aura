@@ -83,7 +83,7 @@ function Header() {
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(expanded ? false : "expanded")}
-            aria-controls="navbarScroll"
+            aria-controls=" responsive-navbar-nav navbarScroll"
             data-bs-toggle="collapse"
             data-bs-target="#navbarScroll"
           />

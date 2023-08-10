@@ -1,30 +1,27 @@
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-function TriggerRendererProp() {
+function TriggerExample() {
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      To avail this service, we require a full-length photograph of yours. Upon receipt of the image, a comprehensive report will be compiled manually and delivered to you within a span of 24 hours. Directly have a word with us on WhatsApp.
+    </Tooltip>
+  );
+
   return (
     <OverlayTrigger
       placement="bottom"
-      overlay={<Tooltip id="button-tooltip-2">Check out this avatar</Tooltip>}
+      delay={{ show: 250, hide: 400 }}
+      overlay={renderTooltip}
     >
-      {({ ref, ...triggerHandler }) => (
-        <Button
-          variant="light"
-          {...triggerHandler}
-          className="d-inline-flex align-items-center"
-        >
-          <Image
-            ref={ref}
-            roundedCircle
-            src="holder.js/20x20?text=J&bg=28a745&fg=FFF"
-          />
-          <span className="ms-1">Hover to see</span>
-        </Button>
-      )}
+      
+      <Button className='info' variant="flat">ⓘ</Button>
+      
+     
+    
     </OverlayTrigger>
   );
 }
 
-export default TriggerRendererProp;
+export default TriggerExample;
