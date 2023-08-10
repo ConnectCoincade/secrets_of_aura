@@ -37,7 +37,7 @@ const AuraReading = () => {
     <>
      <div className="aura-reading">
         <section className="sec1">
-        <video src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Comp 4.mp4" autoplay="true" controls/>
+        <video src="https://ipfs.filebase.io/ipfs/QmerM5CSd3MaUuVTB5cgejpXt9kAHHuXtorv9aW37GVtog" autoplay="true" controls/>
         </section>
         <section className="sec2 aura-consultation">
             <div className="title">Aura Consultation</div>

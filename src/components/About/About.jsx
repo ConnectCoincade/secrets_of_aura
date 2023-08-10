@@ -27,7 +27,7 @@ const About = () => {
         </Row>
         </section>
         <section className="sec2">
-          <video src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Comp%202.mp4" autoplay="true" controls/>
+          <video src="https://ipfs.filebase.io/ipfs/QmWKqagKgd7c4V2yneMvL3rMrRnPeQ6pesp3H43SB9CXYD" autoplay="true" controls/>
         </section>
         
       {/* </Container> */}

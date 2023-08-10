@@ -73,7 +73,7 @@ const Home = () => {
       <section className="sec3" >
         
         <video
-          src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/video1.mp4"
+          src="https://ipfs.filebase.io/ipfs/QmdpXotSps9n25KseMS31KugqLfrz1pAkHZDHF5uBAaGoa"
           autoplay="false"
           controls
         />
