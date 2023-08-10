@@ -8,6 +8,8 @@ import Image2 from '../../assets/hands.png';
 import Image3 from '../../assets/emotional-intelligence.png';
 import Image4 from '../../assets/XMLID_787_.png';
 import Image5 from '../../assets/11 - 20.png';
+import Image6 from '../../assets/Group 8718.png';
+import Image7 from '../../assets/Group 8875.png';
 const newImage = require('../../assets/aura-cleansing.jpg');
 
 const AuraReading = () => {
@@ -114,7 +116,7 @@ const AuraReading = () => {
           <div className="title">The process of Aura Reading</div>
           {/* Group 8718 */}
           
-          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group 8718.png"/>
+          <img src={Image6}/>
         </section>
         <section className="sectionc-4">
         <Row>
@@ -126,7 +128,7 @@ const AuraReading = () => {
               <p>Aura reading is a unique service we offer that taps into the personal energy field surrounding you, also known as your aura. This energy is intricately connected to your subconscious mind and soul, reflecting your inner state and potential. By interpreting the specific characteristics of your aura – its colors, patterns, and densities, our skilled readers gain insights into various aspects of your life. This understanding can help you unravel the complexities of your emotions, relationships, health, and spiritual growth. With these insights, you can better navigate life’s challenges and enhance your overall wellbeing.</p>
             </Col>
             <Col lg="6" md="6" className="img-div section-4-img">
-              <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208875.png" />
+              <img src={Image7} />
             </Col>
           </Row>
         </section>
