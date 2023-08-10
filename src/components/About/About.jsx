@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./About.css"
 import {Row, Col,Container} from 'react-bootstrap';
 // import about_bg from "../../assets/about_bg.png"
+import aboutImg from '../../assets/Group 8620.png';
 
 const About = () => {
   
@@ -19,7 +20,7 @@ const About = () => {
             <p> Now, I feel grateful for the opportunity to continue facilitating positive change in people’s lives. My goal remains steadfast: to support others in finding their joy and wisdom, fostering their courage, and reinforcing their convictions. My hope is to contribute to their happiness, as we journey together on this path of personal growth.</p>
           </Col>
           <Col sm={12} md={6}>
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"/>
+            <img className="about-naqqya-img" src={aboutImg}/>
           </Col>
         </Row>
         </section>

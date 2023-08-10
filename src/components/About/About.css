@@ -3,6 +3,10 @@
     margin-top: 10rem;
    
 }
+.about-naqqya-img {
+    height: 100%;
+    border: 1rem solid black;
+}
 .sec1, .sec2 {
     margin: auto 2rem;
 }

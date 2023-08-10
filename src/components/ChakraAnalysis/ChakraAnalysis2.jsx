@@ -3,6 +3,16 @@ import "./ChakraAnalysis.css"
 import {Row, Col,Container, Modal} from 'react-bootstrap';
 import VerticallyCenteredModal2 from '../../container/VerticallyCenteredModal/VerticallyCenteredModal2';
 import { useGlobalContext } from "../../context/QuestionContext";
+import ChakraImg from '../../assets/Group 8751.png';
+import ChakraImg2 from '../../assets/Group 8767.png';
+import ChakraImg3 from '../../assets/Group 8809.png';
+import ChakraImg4 from '../../assets/Group 8809.png';
+import ChakraImg5 from '../../assets/Group 8805.png';
+import ChakraImg6 from '../../assets/Group 8861.png';
+import ChakraImg7 from '../../assets/Group 8862.png';
+import ChakraImg8 from '../../assets/Group 8862.png';
+
+
 
 const ChakraAnalysis2 = () => {
     const [modalShow, setModalShow] = React.useState(false);
@@ -59,7 +69,7 @@ const ChakraAnalysis2 = () => {
                     <Row>
                     <Col lg="3" md="3" className="sec5-col">
                         <div className="img-div">
-                        <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/>
+                        {/* <img className="chakra-img" src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"/> */}
                         </div>
                         <article className="col-heading">Root Chakra Muladhara</article>
                         <article className="col-heading">Muladhara</article>
