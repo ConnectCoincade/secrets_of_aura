@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-// import home1 from "../../assets/home1.png";
-// import img2 from "../../assets/sec2.png";
+import home1 from "../../assets/Group 8695.png";
+import img2 from "../../assets/lOGO_bLACK.png";
 // import img3 from "../../assets/Group 8669.png";
 // import img4 from "../../assets/Group 7.png"
 // import video1 from "../../assets/video1.mp4"
@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <section className="banner sec1">
-        <img  src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"></img>
+        <img  src={home1}></img>
         <div className="banner-content">
           <div className="bold">Discover Your Aura</div>
           <div className="bold">With Us!</div>
@@ -47,14 +47,15 @@ const Home = () => {
             for your energy field and unlock a deeper connection to yourself,
             others, and the universe. Join us on this transformative journey.
           </p>
-          <div className="vertical"></div>
+          
+          {/* <div className="vertical"></div> */}
           <a href="https://calendly.com/yash-h10/test-meet" target="blank">
             <button disabled>SCHEDULE YOUR SESSION</button>
           </a>
         </div>
       </section>
       <section className="sec2">
-        <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/sec2.png"></img>
+        <img src={img2}></img>
         <div className="sec2-content">
           <div className="bold">What Is</div>
           <div className="bold">Secrets Of Aura?</div>
@@ -76,9 +77,9 @@ const Home = () => {
           autoplay="false"
           controls
         />
-          <div className="background-img">
+          {/* <div className="background-img">
           <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208669.png" />
-          </div>
+          </div> */}
         
         <div className="chakra-analysis-sec">
            <bold >Chakra Analysis</bold> 
