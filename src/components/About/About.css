@@ -3,6 +3,22 @@
     margin-top: 10rem;
    
 }
+.naqqya-col {
+    position: relative;
+}
+.naqqya {
+    position: absolute;
+    width: 30% !important;
+    z-index: 1000;
+    left: 1rem;
+    top: 30rem;
+}
+.about-naqqya-img {
+    width: 70% !important;
+    border: 1rem solid black;
+
+    
+}
 .sec1, .sec2 {
     margin: auto 2rem;
 }
@@ -11,9 +27,10 @@
 }
 .sec1-para p {
     padding-right: 6rem;
+     font-family: 'Montserrat', sans-serif !important;
 }
 .sec2 video {
-    width: 100%;
+    width: 80%;
 }
 .aboutus .sec2 {
     background: none;
@@ -23,7 +40,7 @@
     font-size: 55px;
 }
 .sect3 .title{
-    width: 42% !important;
+    /* width: 42% !important; */
     padding-top: 9px;
     margin: auto;
 }
@@ -31,6 +48,7 @@
     padding: 5rem;
     text-align: center;
     background: transparent linear-gradient(180deg, #928DCE 0%, #2F2C55 100%) 0% 0% no-repeat padding-box;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .aboutus .sect3 p {
     color: #fff;
@@ -40,6 +58,7 @@
 }
 .aboutus .sec4 {
     margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .aboutus .sec4 .title {
     /* text-align: center;
@@ -82,7 +101,8 @@
 }
 .sect5 {
     text-align: center;
-    /* margin: 4rem; */
+    margin: 4rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sect5 .ask {
     color: #2E2A87;
@@ -195,6 +215,9 @@
     width: fit-content;
     margin: 1rem;
 }
+.sec2{
+    margin: auto 1rem;
+}
 
 }
 @media (min-width: 471px) and (max-width: 840px) {
@@ -256,5 +279,40 @@
     margin: 2rem;
     width: auto;
 }
+
+}
+@media (min-width: 912px) and (max-width: 1024px){
+    .row{
+        display: grid !important;
+    }
+    .col-md-6 {
+        width: 100% !important;
+        margin: auto;
+    }
+    .sec1-para p {
+        padding-right: 0px;
+    }
+    .aboutus .sect3{
+        padding: 2rem;
+    }
+    .aboutus .sect3 p{
+        width: 96%;
+        font-size: 21px;
+    }
+        .FAQ {
+            text-align: center;
+            margin: 1rem auto;
+             width: 100%; 
+            padding: 20px;
+    }
+    .aboutus .FAQ-heading {
+        text-align: center;
+        font-size: 1.4rem;
+        color: #818181;
+        padding-top: 1rem;
+         margin: 0;
+         padding-right: 0rem;
+        width: 100%;
+    }
 
 }
