@@ -72,7 +72,7 @@ const ChakraAnalysis = () => {
                 </div>
                 <div className="book-session2">
                 <p>In-person Chakra Consultation INR 2500/-</p>
-                <button>BOOK SESSION</button>
+                <button disabled>BOOK SESSION</button>
                 </div>
             </section>
             <section className="sec4">

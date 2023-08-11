@@ -57,6 +57,11 @@
     margin-top: -5rem;
     font-family: 'Montserrat', sans-serif !important;
 }
+.boldhome{
+    font-size: 3.3rem;
+    color: #2E2A87;
+    
+}
 .Testimonials div {
     text-align: center;
 }
@@ -237,6 +242,7 @@
     .banner-content {
         top: 15%;
         text-align: center;
+        margin-top: -23rem;
     }
     .sec2 p,.banner-content p {
         /* font-size: 18px; */
@@ -253,9 +259,12 @@
         border: aliceblue;
         color: white;
         /* font-size: 10px; */
-        font-size: 16px;
-        width: 35%;
+        font-size: 10px;
+        /* font-size: 15px; */
+        /* width: 35%; */
+        width: 50%;
         margin: 4em 0;
+        padding: 8px 10px;
     }
     .vertical {
         display: none;
@@ -265,12 +274,16 @@
     }
     .sec2-content{
         top: 4.5rem;
+        margin-top: -21rem;
+    }
+    .sec2{
+        padding: 6rem 0;
     }
      .sec3 video {
         width: 80%;
-        position: absolute;
+        /* position: absolute;
         top: -2rem;
-        left: 10%;
+        left: 10%; */
     }
     .chakra-analysis-sec p{
         font-size: 15px;
@@ -305,14 +318,16 @@
 }
 @media (max-width: 470px) {
     .banner {
-        margin-top: 5em !important;
+        margin-top: 5.3em !important;
     }
     .sec2 .bold, .bold{
         font-size: 1.4rem;
+    
     }
     .banner-content {
         top: 6%;
         text-align: center;
+        margin-top: -13rem;
     }
     .sec2 p,.banner-content p {
         font-size: 14px;
@@ -320,15 +335,25 @@
         margin: auto;
         /* margin-top: 1rem; */
     }
+    .sec2{
+        padding: 3rem 0;
+    }
+    .boldhome{
+        margin-top: 31rem;
+        /* width: 20px; */
+        font-size: 1.5rem;
+    }
     .banner-content button {
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
+        padding: 12px 10px;
         background: #9389E3 0% 0% no-repeat padding-box !important;
         border-color: #6D6FA7 !important;
         border-radius: 10px;
         /* padding: 10px 24px; */
         border: aliceblue;
         color: white;
-        font-size: 10px;
+        /* font-size: 10px; */
+        font-size: 8px;
         width: 40%;
         margin: 1em 0;
         /* margin: auto; */
@@ -336,6 +361,7 @@
     }
     .sec2-content{
         top: 2.8rem;
+        margin-top: -39rem;
     }
     .chakra-analysis-sec button{
         font-size: 13px;
@@ -354,6 +380,9 @@
         text-align: center;
         white-space: nowrap;
     }
+    .chakra-analysis-sec{
+        margin-top: 5rem;
+    }
     .Testimonials{
         width: 90%;
         font-size: 17px;
@@ -366,6 +395,10 @@
         position: inherit;
         bottom: 65px;
       }
+      .sec3 {
+        text-align: center;
+        margin-top: -2rem;
+    }
     
     /* .vertical {
         display: none;

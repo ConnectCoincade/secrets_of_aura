@@ -171,6 +171,9 @@
         font-size: 1rem !important;
      
     }
+    .naqqya{
+        top: 13rem;
+    }
     .aboutus .sec4 .title  {
         text-align: center;
         /* font-size: 2.5rem ; */
@@ -204,7 +207,8 @@
         color: white;
         background: #9389E3;
         font-size: 18px;
-        margin: 2rem;
+        /* margin: 2rem; */
+        margin: 1rem;
     }
  
     .sect5{

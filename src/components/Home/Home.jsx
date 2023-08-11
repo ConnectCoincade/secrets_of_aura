@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import home1 from "../../assets/Group 8695.png";
 import img2 from "../../assets/lOGO_bLACK.png";
+import img3 from '../../assets/Group 7.png'
 // import img3 from "../../assets/Group 8669.png";
 // import img4 from "../../assets/Group 7.png"
 // import video1 from "../../assets/video1.mp4"
 import "./Home.css";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import ChakraAnalysis2 from "../ChakraAnalysis/ChakraAnalysis2";
 
 const Home = () => {
   // const Testimonials = [
@@ -57,7 +60,7 @@ const Home = () => {
       <section className="sec2">
         <img src={img2}></img>
         <div className="sec2-content">
-          <div className="bold">What Is</div>
+          <div className="boldhome">What Is</div>
           <div className="bold">Secrets Of Aura?</div>
           <p>
             At Secrets of Aura, our objective is to simplify astrology, making
@@ -92,10 +95,22 @@ const Home = () => {
             harmonious energy flow. Take this transformative step towards a
             balanced and fulfilling life today.
           </p>
+          {/* <span><a href="ChakraAnalysis2.jsx">Go to Other Page</a></span> */}
+      
+          <Link to="/chakra-analysis">
           <button className="btn2">GET STARTED</button>
+          </Link>
+     
+        {/* <Router>
+      <div>
+        <Switch>
+          <Route path="/" exact component={ChakraAnalysis2} />
+        </Switch>
+      </div>
+    </Router> */}
         </div>
           <div className="img-sec">
-          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%207.png" />
+          <img src={img3} />
           </div>
         <div className="Testimonials-list-sec">
           <bold className="bold">Testimonials</bold>
