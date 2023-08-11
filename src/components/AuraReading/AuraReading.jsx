@@ -44,7 +44,7 @@ const AuraReading = () => {
             <p>Unlock the hidden colors of your aura and gain profound insights about your energy field. Schedule an aura reading session today and discover a deeper understanding of yourself and your spiritual well-being.</p>
             <div className="book-session1">
               <p>Aura Consultation 60 MINS SESSION INR 3000/-</p>
-              <button disabled>BOOK SESSION</button>
+              <button className="disabled" disabled>BOOK SESSION</button>
             </div>
             <div className="book-session2">
               <p>Aura Consultation + Chakra Analysis INR 4500/-</p>

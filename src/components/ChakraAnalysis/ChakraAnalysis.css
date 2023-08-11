@@ -106,12 +106,16 @@
     font-size: 20px;
     margin: 1rem;
 }
+.disabled{
+  cursor: not-allowed;
+}
 .img-div-sec4 {
   margin: 2rem;
 }
 .chakra-analysis .sec4 {
   margin: 5rem 0;
   text-align: center;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .chakra-analysis .sec4 .title {
   color: #2E2A87;
@@ -149,10 +153,12 @@
   padding: 1rem 2rem;
   border-radius: 15px;
   border: 1px solid #fff;
+  cursor: not-allowed;
 }
 .chakra-analysis .sec7 {
   text-align: center;
   margin: 4rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .chakra-analysis .sec7 .ask {
   color: #2E2A87;
@@ -224,6 +230,7 @@
   .chakra-analysis .sec5 {
     padding: 1rem;
 text-align: center;
+font-family: 'Montserrat', sans-serif !important;
 }
 .sec3 .title {
     color: #2E2A87;
@@ -262,6 +269,7 @@ text-align: center;
 }
 .sec6 {
   margin: 2rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .MTQ P {
   width: 100%;

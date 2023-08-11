@@ -53,7 +53,7 @@ const Home = () => {
           
           {/* <div className="vertical"></div> */}
           <a href="https://calendly.com/yash-h10/test-meet" target="blank">
-            <button disabled>SCHEDULE YOUR SESSION</button>
+            <button disabled className="not-allowed">SCHEDULE YOUR SESSION</button>
           </a>
         </div>
       </section>

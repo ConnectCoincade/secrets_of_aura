@@ -15,8 +15,9 @@ function TriggerExample() {
       delay={{ show: 250, hide: 400 }}
       overlay={renderTooltip}
     >
-      
+   
       <Button className='info' variant="flat">ⓘ</Button>
+
       
      
     
