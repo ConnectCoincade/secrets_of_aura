@@ -153,7 +153,7 @@ const FeedbackInputModal = () => {
           setDisable(true);
         }
       }
-    }, 2000);
+    }, 500);
 
     return () => clearTimeout(timerOut);
   };
