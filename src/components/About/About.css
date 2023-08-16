@@ -210,11 +210,16 @@
         /* margin: 2rem; */
         margin: 1rem;
     }
+    .sect5 .ask {
+        color: #2E2A87;
+        font-size: 18px;
+    }
  
     .sect5{
     padding: 1rem;
     margin: 0;
 }
+
 .FAQ{
     width: fit-content;
     margin: 1rem;

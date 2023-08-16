@@ -133,9 +133,18 @@
     }
     .card-services{
         /* width: 100% !important; */
+        margin-top: 32px !important;
     }
     .card-para {
-        font-size: 19px;
+        /* font-size: 19px; */
+        font-size: 14px;
+    }
+    .card-header{
+        font-size: 22px;
+    }
+    .card-subheader{
+        text-align: center;
+        font-size: 16px;
     }
     /* .card-btn{
     border-radius: 10px;
@@ -155,5 +164,6 @@
     color: white;
     font-size: 19px;
     margin: 2rem;
+    min-width: 205px !important;
 }
 }

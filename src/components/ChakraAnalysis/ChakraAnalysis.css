@@ -145,6 +145,7 @@
 .MTQ P{
   width: 60%;
   margin: 1rem auto;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .MTQ button {
   color: #5E59A3;
@@ -262,10 +263,12 @@ font-family: 'Montserrat', sans-serif !important;
   text-align: center;
   color: white;
   font-size: 19px;
+
 }
 
 .MTQ {
   padding: 1rem;
+  margin: 0% !important;
 }
 .sec6 {
   margin: 2rem;

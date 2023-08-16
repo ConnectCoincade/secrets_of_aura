@@ -61,6 +61,7 @@ a {
     margin-top: 0%;
     padding: 4px;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif !important;
   }
   
   .pt-col {
@@ -93,7 +94,8 @@ a {
     margin: 0;
     margin-top: 0%;
     padding: 4px;
-    margin: 0 10rem;
+    /* margin: 0 10rem; */
+    margin: 0px 7rem;
   }
   .copyright {
     text-align: left;
@@ -137,6 +139,28 @@ a {
       float: none;
       font-size: 12px !important;
     }
+    .footer-col p {
+      text-align: center;
+      width: 100%;
+
+    }
+    .address {
+      text-align: center !important;
+      padding-right: 0% !important;
+      font-size: 12px !important;
+      padding-left: 0% !important;
+      letter-spacing: 1.4px;
+  }
+  .col-md-2 {
+    width: 100% !important;
+  }
+  .col-md-4{
+    width: 100% !important;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+  }
     
   }
   @media (max-width: 1065px) {

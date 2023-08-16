@@ -9,6 +9,7 @@ import ReadingScanningServices from './components/ReadingScanningServices/Readin
 import HealingTherapyService from './components/HealingTherapyService/HealingTherapyService';
 import Navigationbar from './container/Header/Header';
 import Footer from './container/Footer/Footer';
+import ChakraAnalysis2 from './components/ChakraAnalysis/ChakraAnalysis2';
 
 
 function App() {

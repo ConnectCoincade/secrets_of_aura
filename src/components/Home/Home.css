@@ -194,6 +194,7 @@
     .banner-content {
         top: 10em;
         text-align: center;
+        /* margin-top: -41rem !important; */
     }
     .banner-content p,.sec2 p {
         font-size: 23px;
@@ -233,12 +234,20 @@
         bottom: 50px;
       }
   }
+  @media only screen and (max-width: 912px) {
+   .banner-content{
+    margin-top: -27rem;
+   }
+  }
+
   @media (max-width: 840px) {
     .banner {
         margin-top: 6em;
     }
     .sec2 .bold, .bold{
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
+        font-size: 2rem;
+        margin: 0rem 0rem 1rem 0rem;
     }
     .banner-content {
         top: 15%;
@@ -260,12 +269,13 @@
         border: aliceblue;
         color: white;
         /* font-size: 10px; */
-        font-size: 10px;
+        font-size: 13px;
         /* font-size: 15px; */
         /* width: 35%; */
-        width: 50%;
+        /* width: 50%; */
+        width: 32%;
         margin: 4em 0;
-        padding: 8px 10px;
+        padding: 10px 10px;
     }
     .vertical {
         display: none;
@@ -317,12 +327,36 @@
       }
    
 }
+@media (max-width: 540px){
+    .banner-content {
+        top: 15%;
+        text-align: center;
+        margin-top: -17rem;
+    }
+    .banner-content p {
+        /* font-size: 18px; */
+        font-size: 13px;
+    }
+    .banner-content button{
+        width: 44%;
+    margin: 3em 0;
+    padding: 6px 5px;
+    }
+    .sec2-content {
+        top: 4.5rem;
+        margin-top: -16rem;
+    }
+    .boldhome {
+        font-size: 2.3rem;
+    }
+}
 @media (max-width: 470px) {
     .banner {
         margin-top: 5.3em !important;
     }
     .sec2 .bold, .bold{
         font-size: 1.4rem;
+        margin: 2%;
     
     }
     .banner-content {
@@ -331,7 +365,7 @@
         margin-top: -13rem;
     }
     .sec2 p,.banner-content p {
-        font-size: 14px;
+        font-size: 13px;
         width: 100%;
         margin: auto;
         /* margin-top: 1rem; */
@@ -400,6 +434,11 @@
       .sec3 {
         text-align: center;
         margin-top: -2rem;
+    }
+    .chakra-analysis-sec p {
+        font-size: 15px;
+        margin: 10px 10px;
+        width: 94%;
     }
     
     /* .vertical {

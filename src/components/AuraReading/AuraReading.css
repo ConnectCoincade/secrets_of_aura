@@ -132,7 +132,7 @@ sec5 {
     padding: 5rem;
     margin: 0;
 }
-sec5 .title {
+.sec5 .title {
     color: #2E2A87;
     font-size: 50px;
     margin: 3rem;
@@ -322,11 +322,13 @@ sec5 .title {
      .xyz{
         font-weight: 400;
         font-size: 2rem !important;
-        display: flex;
+        display: flex ;
         justify-content: center;
         color: #2E2A87; 
          padding-bottom: 2rem !important; 
          padding-top: 1rem !important;
+         padding-bottom: 0px;
+         padding: 0px 20px;
      }
     
     .content {
@@ -349,7 +351,9 @@ sec5 .title {
         height: auto;
         position: relative;
         z-index: -1;
-        padding: 6rem 6rem;
+        /* padding: 6rem 6rem; */
+        padding: 4rem 0rem;
+
     }
     .sec3 .title {
         color: #2E2A87;
@@ -415,5 +419,13 @@ sec5 .title {
       
     }
 
+}
+@media (max-width: 912px) {
+    .sec3 .title {
+        width: 84% !important;
+        font-size: 44px;
+        padding-top: 36px;
+    }
+  
 }
 

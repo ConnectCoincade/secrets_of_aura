@@ -9,8 +9,10 @@ import img3 from '../../assets/Group 7.png'
 import "./Home.css";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
-import ChakraAnalysis2 from "../ChakraAnalysis/ChakraAnalysis2";
+import { BrowserRouter as Router, Routes, Route, Switch, Link} from "react-router-dom";
+// import ChakraAnalysis2 from "../ChakraAnalysis/ChakraAnalysis2";
+import ChakraAnalysis from "../ChakraAnalysis/ChakraAnalysis";
+
 
 const Home = () => {
   // const Testimonials = [
@@ -53,7 +55,7 @@ const Home = () => {
           
           {/* <div className="vertical"></div> */}
           <a href="https://calendly.com/yash-h10/test-meet" target="blank">
-            <button disabled className="not-allowed">SCHEDULE YOUR SESSION</button>
+            <button disabled >SCHEDULE YOUR SESSION</button>
           </a>
         </div>
       </section>
@@ -100,6 +102,9 @@ const Home = () => {
           <Link to="/chakra-analysis">
           <button className="btn2">GET STARTED</button>
           </Link>
+        
+         
+         
      
         {/* <Router>
       <div>

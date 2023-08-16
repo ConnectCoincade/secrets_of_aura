@@ -67,7 +67,7 @@ const ChakraAnalysis = () => {
                 <div className="book-session1">
                 <Information/>
                 <p>Online Chakra Consultation INR 2000/-</p>
-                <button disabled>BOOK SESSION</button>
+                <button disabled className="disabled">BOOK SESSION</button>
               
                 </div>
                 <div className="book-session2">
