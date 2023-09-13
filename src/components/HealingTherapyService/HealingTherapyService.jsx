@@ -1,25 +1,28 @@
 import React from 'react';
 import './HealingTherapyService.css';
 import Card from '../ReadingScanningServices/Card/Card';
+import Scanimage4 from '../../assets/magic-composition-with-pink-candle-crystals-pagan-bag-flowers.png';
+import Scanimage5 from '../../assets/beautiful-amethyst-crystals-round-rose-quartz-stone-with-dry-lavender-bouquet-magic-amulets.png';
+import Scanimage6 from '../../assets/WhatsApp Image 2023-06-07 at 1.08.16 PM.png';
 
 const HealingTherapyService = () => {
   const cardDetails = [
     {
-      img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/magic-composition-with-pink-candle-crystals-pagan-bag-flowers.png',
+      img: Scanimage4 ,
       header: 'WAND HEALING',
       subheader:
         '1 SESSION - INR 3000/- | 5 SESSIONS - INR 12,000/- | 10 SESSIONS - INR 20,000/- | IN-PERSON ONLY',
       para: 'Our Wand Healing service commences by identifying your energy blockages with the aid of a pendulum. Once detected, we use different crystal wands to target and remove these obstructions, align your chakras, and balance your auric energies...',
     },
     {
-      img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/beautiful-amethyst-crystals-round-rose-quartz-stone-with-dry-lavender-bouquet-magic-amulets.png',
+      img: Scanimage5,
       header: 'CRYSTAL THERAPY',
       subheader:
         'THIS THERAPY IS COUPLED WITH CONSULTATIONS ONLY. YOU CANNOT BUY THIS SERVICE SEPARATELY | ONLINE AND IN-PERSON',
       para: `Crystals, being reservoirs of Earth's energy, are known for their healing properties. We harness this energy to address various issues related to your career, relationships, finances, personal life, and health through tailored remedies.`,
     },
     {
-      img: 'https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/WhatsApp%20Image%202023-06-07%20at%201.08.16%20PM.png',
+      img: Scanimage6,
       header: 'AIRENERGY THERAPY',
       subheader:
         '30 MINS SESSION - INR 800/- | 45 MINS SESSION - INR 1000/- | IN-PERSON ONLY',

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 .sec1 img, .sec3 img{
     width: 100%;
@@ -6,16 +6,20 @@
 .sec3 img {
     max-width: 100%;
     height: 90rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec1, .sec2, .sec3 {
-    position: relative;
+    /* position: relative; */
+    font-family: 'Montserrat', sans-serif !important;
 }
-.banner-content ,.sec2-content{
-    position: absolute;
-    top: 12rem;
+.banner-content {
+    /* position: absolute; */
+    /* top: 12rem; */
+    margin-top: -45rem;
     width: 100%;
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .about-bg {
     /* position: absolute; */
@@ -23,14 +27,16 @@
 .chakra-analysis-sec {
     background: transparent linear-gradient(0deg, #2E2A87 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
     padding: 1.0rem;
-    position: inherit;
-    bottom: 100px;
+    margin-top: 10rem;
+    /* position: inherit; */
+    /* bottom: 100px; */
 }
 .chakra-analysis-sec bold {
     width: 100%;
     white-space: nowrap;
     font-size: 55px;
     font: normal normal medium 52px/66px Serling Galleria PERSONAL USE;
+    /* font-family: 'Montserrat', sans-serif !important; */
     letter-spacing: 0px;
     color: #9389E3;
 }
@@ -42,10 +48,19 @@
     padding: 4rem;
     color: #fff;
     font: 1.5rem/1.4 Georgia, serif;
+    /* font: 'Montserrat', sans-serif; */
+    /* font: Arial, Regular; */
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec3 .bold {
     color: #2E2A87;
     margin-top: -5rem;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.boldhome{
+    font-size: 3.3rem;
+    color: #2E2A87;
+    
 }
 .Testimonials div {
     text-align: center;
@@ -54,9 +69,9 @@
     font-size: 40px;
 }
 .Testimonials-img {
-    position: absolute;
+    /* position: absolute; */
     width: 90%;
-    top: 80rem;
+    /* top: 80rem; */
 }
 .chakra-analysis-sec p {
     color: #FFFFFF;
@@ -90,18 +105,23 @@
 }
 .sec3 {
     text-align: center;
+    margin-top: -5rem;
 }
 .sec3 video {
     width: 80%;
-    position: absolute;
-    top: -8rem;
-    left: 10%;
+    /* position: absolute; */
+    /* top: -8rem; */
+    /* left: 10%; */
+}
+.sec2-content {
+    margin-top: -40rem;
 }
 .banner-content p, .sec2-content p {
     font-size: 25px;
     width: 50%;
     margin: auto;
     margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .sec2-content p {
     color:  #2E2A87;
@@ -115,23 +135,27 @@
     color: white;
     font-size: 25px;
     margin: 6em 0;
+    cursor: not-allowed;
+    
 }
 .vertical {
     border-left: 2px solid white;
     height: 110px;
     position: absolute;
-    left: 50%;
-    top: 46%;
+    /* left: 50%;
+    top: 46%; */
+    left: 48%;
+    top: 51%;
   }
   .sec2 {
     text-align: center;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #5E59A3 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding: 5rem 0;
+    padding: 15rem 0;
   }
   .sec2 .bold {
     font-size: 55px;
-    left: 35%;
+    /* left: 35%; */
     line-height: initial;
     text-align: center;
     font: normal normal medium 52px/60px Serling Galleria PERSONAL USE !important;
@@ -170,6 +194,7 @@
     .banner-content {
         top: 10em;
         text-align: center;
+        /* margin-top: -41rem !important; */
     }
     .banner-content p,.sec2 p {
         font-size: 23px;
@@ -209,19 +234,29 @@
         bottom: 50px;
       }
   }
+  @media only screen and (max-width: 912px) {
+   .banner-content{
+    margin-top: -27rem;
+   }
+  }
+
   @media (max-width: 840px) {
     .banner {
         margin-top: 6em;
     }
     .sec2 .bold, .bold{
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
+        font-size: 2rem;
+        margin: 0rem 0rem 1rem 0rem;
     }
     .banner-content {
         top: 15%;
         text-align: center;
+        margin-top: -23rem;
     }
     .sec2 p,.banner-content p {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 21px;
         width: 80%;
         margin: auto;
         /* margin-top: 1rem; */
@@ -233,9 +268,14 @@
         /* padding: 10px 24px; */
         border: aliceblue;
         color: white;
-        font-size: 10px;
-        width: 35%;
+        /* font-size: 10px; */
+        font-size: 13px;
+        /* font-size: 15px; */
+        /* width: 35%; */
+        /* width: 50%; */
+        width: 32%;
         margin: 4em 0;
+        padding: 10px 10px;
     }
     .vertical {
         display: none;
@@ -245,12 +285,16 @@
     }
     .sec2-content{
         top: 4.5rem;
+        margin-top: -21rem;
+    }
+    .sec2{
+        padding: 6rem 0;
     }
      .sec3 video {
         width: 80%;
-        position: absolute;
+        /* position: absolute;
         top: -2rem;
-        left: 10%;
+        left: 10%; */
     }
     .chakra-analysis-sec p{
         font-size: 15px;
@@ -283,32 +327,69 @@
       }
    
 }
+@media (max-width: 540px){
+    .banner-content {
+        top: 15%;
+        text-align: center;
+        margin-top: -17rem;
+    }
+    .banner-content p {
+        /* font-size: 18px; */
+        font-size: 13px;
+    }
+    .banner-content button{
+        width: 44%;
+    margin: 3em 0;
+    padding: 6px 5px;
+    }
+    .sec2-content {
+        top: 4.5rem;
+        margin-top: -16rem;
+    }
+    .boldhome {
+        font-size: 2.3rem;
+    }
+}
 @media (max-width: 470px) {
     .banner {
-        margin-top: 5em !important;
+        margin-top: 5.3em !important;
     }
     .sec2 .bold, .bold{
         font-size: 1.4rem;
+        margin: 2%;
+    
     }
     .banner-content {
         top: 6%;
         text-align: center;
+        margin-top: -13rem;
     }
     .sec2 p,.banner-content p {
-        font-size: 14px;
+        font-size: 13px;
         width: 100%;
         margin: auto;
         /* margin-top: 1rem; */
     }
+    .sec2{
+        padding: 3rem 0;
+    }
+    .boldhome{
+        margin-top: 31rem;
+        /* width: 20px; */
+        font-size: 1.5rem;
+    }
+    /* .not-allowed {cursor: not-allowed;} */
     .banner-content button {
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
+        padding: 12px 10px;
         background: #9389E3 0% 0% no-repeat padding-box !important;
         border-color: #6D6FA7 !important;
         border-radius: 10px;
         /* padding: 10px 24px; */
         border: aliceblue;
         color: white;
-        font-size: 10px;
+        /* font-size: 10px; */
+        font-size: 8px;
         width: 40%;
         margin: 1em 0;
         /* margin: auto; */
@@ -316,6 +397,7 @@
     }
     .sec2-content{
         top: 2.8rem;
+        margin-top: -39rem;
     }
     .chakra-analysis-sec button{
         font-size: 13px;
@@ -334,6 +416,9 @@
         text-align: center;
         white-space: nowrap;
     }
+    .chakra-analysis-sec{
+        margin-top: 5rem;
+    }
     .Testimonials{
         width: 90%;
         font-size: 17px;
@@ -346,6 +431,15 @@
         position: inherit;
         bottom: 65px;
       }
+      .sec3 {
+        text-align: center;
+        margin-top: -2rem;
+    }
+    .chakra-analysis-sec p {
+        font-size: 15px;
+        margin: 10px 10px;
+        width: 94%;
+    }
     
     /* .vertical {
         display: none;

@@ -22,12 +22,19 @@
 }
 
 .card-btn{
-    background-color: #6D6FA7;
+    /* background-color: #6D6FA7;
     border-radius: 8px;
     text-align: center;
     margin-top: 38px;
     margin-right: 23px;
-    padding: 18px 46px;
+    padding: 18px 46px; */
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    border: #9389E3 1px solid;
+    background-color: #9389E3;
+    color: white;
+    font-size: 19px;
+    margin: 2rem;
 }
 
 .btn-text{

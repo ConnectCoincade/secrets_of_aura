@@ -3,9 +3,17 @@ import './ChakraAnalysis.css';
 import { Row, Col, Container, Modal } from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
+
+import ChakraImg from '../../assets/Group8751.png';
+import ChakraImg2 from '../../assets/Group8767.png';
+import ChakraImg3 from '../../assets/Group8809.png';
+import ChakraImg4 from '../../assets/Group8805.png';
+import ChakraImg5 from '../../assets/Group8861.png';
+import ChakraImg6 from '../../assets/Group8862.png';
+import ChakraImg7 from '../../assets/Group8863.png';
+import ChakraImg8 from '../../assets/Group7.png';
+import chakraimg from '../../assets/Group8898.png';
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER; 
-
-
 const ChakraAnalysis = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [musicLibraryModalShow, setMusicLibraryModalShow] =
@@ -33,6 +41,7 @@ const ChakraAnalysis = () => {
     <>
       <div className="chakra-analysis">
         <section className="sec1">
+        <img className="sec1-img" src={chakraimg} />
           <p className="title1">Unlock the potential for balance,</p>
           <p className="title2"> healing, and personal growth!</p>
           <button className="sec1-btn" onClick={() => setModalShow(true)}>
@@ -87,7 +96,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208751.png"
+                    src={ChakraImg}
                   />
                 </div>
                 <article className="col-heading">Root Chakra Muladhara</article>
@@ -102,7 +111,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208767.png"
+                    src={ChakraImg2}
                   />
                 </div>
                 <article className="col-heading">Sacral Chakra</article>
@@ -119,7 +128,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208809.png"
+                    src={ChakraImg3}
                   />
                 </div>
                 <article className="col-heading">Solar Plexus Chakra</article>
@@ -135,7 +144,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208805.png"
+                    src={ChakraImg4}
                   />
                 </div>
                 <article className="col-heading">Heart Chakra</article>
@@ -153,7 +162,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208861.png"
+                    src={ChakraImg5}
                   />
                 </div>
                 <article className="col-heading">Throat Chakra</article>
@@ -165,13 +174,10 @@ const ChakraAnalysis = () => {
                   communicate effectively. Its color is blue.
                 </p>
               </Col>
-              <Col lg="3" md="3" className="data">
-                <div className="img-div">
-                  <img
-                    className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208862.png"
-                  />
-                </div>
+              <Col lg="4" md="4">
+                    <div className="img-div-sec4">
+                        <img className="chakra-img" src={ChakraImg6}/>
+                    </div>
                 <article className="col-heading">Third Eye Chakra</article>
                 <article className="col-heading">Ajna</article>
                 <p className="col-p">
@@ -185,8 +191,7 @@ const ChakraAnalysis = () => {
                 <div className="img-div">
                   <img
                     className="chakra-img"
-                    src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208863.png"
-                  />
+                    src={ChakraImg7} />
                 </div>
                 <article className="col-heading">Crown Chakra</article>
                 <article className="col-heading">Sahasrara</article>
@@ -202,7 +207,7 @@ const ChakraAnalysis = () => {
           </Container>
         </section>
         <section className="img-sec">
-          <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%207.png" />
+          <img src={ChakraImg8} />
         </section>
 
         <section className="sec5">

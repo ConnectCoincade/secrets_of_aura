@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Navbar, Nav, Container, Button, NavDropdown} from "react-bootstrap";
 import { NavLink, useLocation } from "react-router-dom";
+import logo2 from '../../assets/Group10.png';
 // import logo from "../../assets/logo.png";
 import "./Header.css";
 function Header() {
@@ -79,7 +80,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand href="/">
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo.png" alt="Secret of aura Logo" className="logo " />
+            <img src={logo2} alt="Secret of aura Logo" className="logo " />
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(expanded ? false : "expanded")}

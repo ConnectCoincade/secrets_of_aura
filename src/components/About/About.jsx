@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./About.css"
 import {Row, Col,Container} from 'react-bootstrap';
-// import about_bg from "../../assets/about_bg.png"
+// import about_bg from "../../assets/about_bg.png";
+import aboutImg from '../../assets/Nakia_02.png';
+import naqqya from '../../assets/Group 8697.svg'
 
 const About = () => {
   const openWhatsAppChat = () => {
@@ -20,13 +22,14 @@ const About = () => {
             <p>Despite the confusion, life continued, and I pursued my ambitions, enjoying a fair degree of success. Yet beneath these achievements, I felt an undercurrent of unfulfillment, a sense of something amiss. Acknowledging this feeling led me to pay closer attention to my inherent ability, exploring its potential to aid those around me. The true worth of this endeavor became evident when I began positively impacting many lives. This affirmed my role as a mind and aura reader.</p>
             <p> Now, I feel grateful for the opportunity to continue facilitating positive change in people’s lives. My goal remains steadfast: to support others in finding their joy and wisdom, fostering their courage, and reinforcing their convictions. My hope is to contribute to their happiness, as we journey together on this path of personal growth.</p>
           </Col>
-          <Col>
-            <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/home1.png"/>
+          <Col sm={12} md={6} className="naqqya-col">
+            <img className="naqqya" src={naqqya}/>
+            <img className="about-naqqya-img" src={aboutImg}/>
           </Col>
         </Row>
         </section>
         <section className="sec2">
-          <video src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Comp%202.mp4" autoplay="true" controls/>
+          <video src="https://ipfs.filebase.io/ipfs/QmWKqagKgd7c4V2yneMvL3rMrRnPeQ6pesp3H43SB9CXYD" autoplay="true" controls/>
         </section>
         
       </Container>

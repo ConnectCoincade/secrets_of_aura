@@ -29,6 +29,7 @@
     margin-right: 23px;
     padding: 18px 46px;
     margin-bottom: 0px;
+    cursor: not-allowed;
 }
 
 .btn-text{
@@ -58,9 +59,9 @@
     .card-btn{
         margin-bottom: 30px;
     }
-    .card-para{
+    /* .card-para{
         font-size: 25px;
-    }
+    } */
     .card-subheader{
         font-size: 20px;
     }
@@ -75,8 +76,9 @@
         opacity: 1;
         justify-content: center;
         margin: auto !important;
+        margin-top: 15px !important;
         width: 93% !important;
-        padding: 0px 30px 0px 16px!important;
+        padding: 0rem 3rem 0rem 3rem!important;
     }
     .card-btn{
         background-color: #6D6FA7;
@@ -90,10 +92,89 @@
     .card-btn{
         margin-bottom: 30px;
     }
-    @media (max-width: 375px){
-        .header-text{
-            font-size: 35px;
+    .header-text{
+        margin-top: 100px;
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: Serling Galleria PERSONAL USE, sans-serif;
+    font-size: 52px;
+    color: #2E2A87;
+}
+    }
+
+    @media (max-width: 470px){
+        .card-img {
+            width: 31%;
+            display: flex;
+            justify-content: center;
+            /* padding: 0px; */
+            /* padding-left: 30px !important; */
+            padding-left: 0px !important;
+            margin: auto !important;
         }
+        .card-services{
+            padding: 0px !important;
+            }
+            .card-textarea {
+                max-width: 998px;
+                justify-content: center;
+                padding: 10px 25px;
+                margin: 0% !important;
+            }
+            .card-para{
+                padding: auto !important;
+            }
+            .card-subheader{
+                text-align: center;
+            }
+
+    }
+    @media (max-width: 912px){
+        .card-para {
+            text-align: center;
+            font: normal normal medium 24px/29px Montserrat;
+            letter-spacing: 0px;
+            padding: 0px 15px;
+            color: #919191;
+            opacity: 1;
+        }
+        .card-services {
+            display: grid !important;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 11px 22px #00000029;
+            border-radius: 17px;
+            opacity: 1;
+            justify-content: center;
+            margin: 30px 7.5%;
+            font-family: 'Montserrat', sans-serif !important;
+            padding: 30px;
+        }
+
+        
+        .card-img {
+            display: flex;
+            justify-content: center;
+            margin: auto !important;
+        
+    }
+    .card-header{
+        text-align: center !important;
+    }
+    .card-subheader{
+        text-align: center;
+    }
+    .card-textarea{
+        margin: 0% !important;
+    }
+    .card-para{
+        text-align: center !important;
+    }
+    .card-btn-main{
+    display: flex;
+    justify-content: center;
+    }
     }
     
-}
+
+   
+

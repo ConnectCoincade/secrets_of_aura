@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Footer.css";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
+import logo1 from '../../assets/Group10.png'
 // import logo from "../../assets/logo-soa.png";
 const Footer = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const Footer = () => {
         <Nav>
           <Row className="Row">
             <Col xs={12} md={4} className="footer-col" onClick={gotoHome}>
-              <img src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo.png" alt="logo" className="footer-logo" />
+              <img src={logo1} alt="logo" className="footer-logo" />
             </Col>
             <Col xs={12} md={2} className="footer-col footer-links">
               <p>

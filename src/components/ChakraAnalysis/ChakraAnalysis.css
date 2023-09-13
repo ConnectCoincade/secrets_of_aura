@@ -1,12 +1,25 @@
 .chakra-analysis .sec1 {
     margin: 5rem 0 0 -35rem;
-    height: 62rem;
-    background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat;
+    /* height: 52rem; */
+    /* background: url("https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/Group%208898.png") no-repeat; */
+    /* background: url("../../assets/Group\ 8898.png"); */
+  
+}
+.sec1-img {
+  width: 100%;
+}
+.sec1-div {
+  position: relative;
+}
+.sec1-content {
+  position: absolute;
+  top: 24rem;
+  right: 2rem;
 }
   .sec1 .title1, .sec1 .title2 {
     right: 8rem;
-    position: absolute;
-    padding: 25rem 0rem;
+    /* position: absolute; */
+    /* padding: 25rem 0rem; */
     color: #2E2A87;
     font-size: 40px;
   }
@@ -14,18 +27,16 @@
     margin: 4rem 0;
   }
   .title1 {
-    top: 3rem;
+    /* top: 3rem; */
   }
   .title2 {
-    top: 6rem;
+    /* top: 6rem; */
   }
   .sec1-btn {
     background: #6D6FA7 0% 0% no-repeat padding-box !important;
-    border: 1pc solid #6D6FA7;
-    padding: 0 2rem;
-    right: 8rem;
-    position: absolute; 
-    top: 37rem;
+    border: 1px solid #6D6FA7;
+  
+    padding: 0.5rem 2rem;
     font-size: 1.5rem;
     border-radius: 15px;
     color: #fff;    
@@ -43,13 +54,13 @@
     padding: 5rem;
     text-align: center;
   }
-  .sec2-p, .sec5-p {
+  .sec2-p2, .sec5-p {
     color: #5E59A3;
     
     margin: auto;
     font-size: 20px;
   }
-  .sec2-p {
+  .sec2-p2 {
     width: 80%;
   }
   .sec5-p {
@@ -95,12 +106,16 @@
     font-size: 20px;
     margin: 1rem;
 }
+.disabled{
+  cursor: not-allowed;
+}
 .img-div-sec4 {
   margin: 2rem;
 }
 .chakra-analysis .sec4 {
   margin: 5rem 0;
   text-align: center;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .chakra-analysis .sec4 .title {
   color: #2E2A87;
@@ -130,6 +145,7 @@
 .MTQ P{
   width: 60%;
   margin: 1rem auto;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .MTQ button {
   color: #5E59A3;
@@ -138,10 +154,12 @@
   padding: 1rem 2rem;
   border-radius: 15px;
   border: 1px solid #fff;
+  cursor: not-allowed;
 }
 .chakra-analysis .sec7 {
   text-align: center;
   margin: 4rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .chakra-analysis .sec7 .ask {
   color: #2E2A87;
@@ -156,3 +174,187 @@
   font-size: 20px;
   margin: 2rem;
 }
+.info{
+  display: flow-root !important;
+    float: right;
+    padding: 0rem 0.5rem !important;
+    margin: 0rem !important;
+}
+@media (max-width: 470px) {
+  /* .sec2 p, .banner-content p {
+    font-size: 15px !important;
+    width: 85% !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .chakra-analysis .sec2 .title {
+    font-size: 28px !important;
+    color: #2E2A87;
+    text-align: center;
+    padding-bottom: 1rem;
+} */
+.chakra-analysis .sec2 .title{
+  font-size: 28px !important;
+  color: #2E2A87;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.chakra-analysis .sec2 .sec2-p2{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-right: 0rem;
+    font-size: 14px;
+    color: #2E2A87;
+    width: 80%;
+  }
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .sec1-content {
+    top: 10rem;
+    right: 1rem;
+  }
+  .title1, .title2 {
+    font-size: 1.2rem !important;
+  }
+  .sec1-btn {
+    font-size: 1rem;
+  }
+  .chakra-analysis .sec1 {
+    height: 22rem;
+  }
+  .chakra-analysis .sec5 {
+    padding: 1rem;
+text-align: center;
+font-family: 'Montserrat', sans-serif !important;
+}
+.sec3 .title {
+    color: #2E2A87;
+    font-size: 52px;
+    margin: auto;
+    padding-top: 38px;
+    width: 92% !important;
+}
+.chakra-consultation{
+  padding: 0rem;
+  margin: 0rem;
+}
+.chakra-analysis .sec4 .title{
+  font-size: 28px;
+    width: 100%;
+    margin: auto;
+}
+.chakra-analysis .sec5 .title {
+  font-size: 25px;
+    color: #2E2A87;
+    text-align: center;
+}
+.sec5-p{
+  width: 100%;
+  margin: 1rem 1rem 0rem 0rem;
+  font-size: 16px;
+}
+.sec6 p {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+
+}
+
+.MTQ {
+  padding: 1rem;
+  margin: 0% !important;
+}
+.sec6 {
+  margin: 2rem;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.MTQ P {
+  width: 100%;
+  margin: 1rem auto;
+}
+.MTQ button{
+  font-size: 18px;
+  padding: 1rem 1rem;
+}
+.chakra-analysis .sec7 button{
+  font-size: 12px;
+    margin: 1rem;
+
+}
+.chakra-consultation p{
+  font-size: 17px;
+}
+/* .chakra-consultation p {
+    color: #F0E7F4;
+    width: 89%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 1rem;
+} */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 601px) and (min-width: 767px)  {
+  /* .sec1-content {
+    top: 8rem;
+  }
+  .title1, .title2 {
+    font-size: 5rem;
+  } */
+  .chakra-analysis .sec1 {
+    /* height: 35rem; */
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sec1-content {
+    position: absolute;
+    top: 15rem;
+  }
+}
+/* .chakra-analysis .sec1 {
+  margin: 5rem 0 0 -79rem;
+  height: 37rem;
+} */
+/* .sec1 .sec1-div{
+  height: 35rem !important;
+} */
+.chakra-analysis .sec5 .title{
+  margin-bottom: 1rem;
+}
+.chakra-analysis .sec5 {
+  padding: 3rem;
+}
+.sec5-p {
+  width: 100%;
+}
+.MTQ P {
+  width: 80%;
+}
+.sec6{
+  margin: 0%;
+}
+.sec6 p {
+  text-align: right;
+  color: white;
+}
+.MTQ button{
+  padding: 1rem 1rem;
+}
+.chakra-consultation{
+  padding: 0%;
+}
+/* .sec2 p, .banner-content p {
+  font-size: 21px;
+} */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
