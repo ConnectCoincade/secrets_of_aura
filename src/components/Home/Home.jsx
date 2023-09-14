@@ -4,10 +4,11 @@ import { Container } from "react-bootstrap";
 // import img2 from "../../assets/sec2.png";
 // import img3 from "../../assets/Group 8669.png";
 // import img4 from "../../assets/Group 7.png"
-// import video1 from "../../assets/video1.mp4"
+// import video1 from "../../assets/video1.mp4";
+import {NavLink} from "react-router-dom";
 import home1 from '../../assets/Group8695.png';
 import img2 from '../../assets/lOGO_bLACK.png';
-import img3 from '../../assets/Group7.png'
+import img3 from '../../assets/Group7.png';
 import "./Home.css";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
@@ -94,7 +95,8 @@ const Home = () => {
             harmonious energy flow. Take this transformative step towards a
             balanced and fulfilling life today.
           </p>
-          <button className="btn2">GET STARTED</button>
+          
+          <NavLink to="/chakra-analysis"><button className="btn2">GET STARTED</button></NavLink>
         </div>
           <div className="img-sec">
           <img src={img3} />

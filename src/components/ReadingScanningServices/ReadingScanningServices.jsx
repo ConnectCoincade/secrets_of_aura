@@ -30,10 +30,12 @@ const ReadingScanningServices = () => {
       para: `It's not uncommon for different astrologers to provide varying interpretations when it comes to horoscope matching, leading to confusion. To alleviate this, we offer a combined service of aura matching along with horoscope compatibility....`,
     }
   ];
-
+  const openWhatsAppChat = () => {
+    window.open(`https://wa.me/${process.env.REACT_APP_PHONE_NUMBER}`, '_blank');
+};
   return (
     <>
-      <p className="header-text">Reading/Scanning Services</p>
+      <p className="header-text">Reading & Scanning Services</p>
       <Card
         img={cardDetails[0].img}
         header={cardDetails[0].header}
@@ -54,9 +56,9 @@ const ReadingScanningServices = () => {
       />
       <p className="enq-text">Would you like to enquire further?</p>
       <div className="btn-div">
-        <button className="card-btn new-btn">
-          <span className="btn-text">Get In Touch On WhatsApp</span>
-        </button>
+      <button className="whatsapp" onClick={openWhatsAppChat}>
+            Get In Touch On WhatsApp
+          </button>
       </div>
     </>
   );

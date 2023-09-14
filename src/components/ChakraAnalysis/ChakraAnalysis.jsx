@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './ChakraAnalysis.css';
-import { Row, Col, Container, Modal } from 'react-bootstrap';
+import { Row, Col, Container, Modal, Button } from 'react-bootstrap';
 import VerticallyCenteredModal from '../../container/VerticallyCenteredModal/VerticallyCenteredModal';
 import MusicLibraryModal from "../../container/musicLibrary/musicLibrary";
-
+import Information from './Information'
 import ChakraImg from '../../assets/Group8751.png';
 import ChakraImg2 from '../../assets/Group8767.png';
 import ChakraImg3 from '../../assets/Group8809.png';
@@ -40,17 +40,17 @@ const ChakraAnalysis = () => {
   return (
     <>
       <div className="chakra-analysis">
-        <section className="sec1">
-        <img className="sec1-img" src={chakraimg} />
-          <p className="title1">Unlock the potential for balance,</p>
-          <p className="title2"> healing, and personal growth!</p>
-          <button className="sec1-btn" onClick={() => setModalShow(true)}>
-            TAKE QUIZ
-          </button>
-        </section>
+      <section className="sec1 sec1-div">
+                <img className="sec1-img" src={chakraimg} />
+                <div className="sec1-content">
+                    <article className="title1">Unlock the potential for balance,</article>
+                    <p className="title2"> healing, and personal growth!</p>
+                    <button className="sec1-btn" onClick={() => setModalShow(true)}>TAKE QUIZ</button>
+                </div>
+            </section>
         <section className="sec2">
           <div className="title">What is Chakra Analysis?</div>
-          <p className="sec2-p">
+          <p className="sec2-p2">
             The chakras, vital energy centers of the body, play a pivotal role
             in maintaining our overall well-being. Derived from the Sanskrit
             term for ‘wheels,’ chakras represent the rotating energy hubs that
@@ -80,12 +80,13 @@ const ChakraAnalysis = () => {
             chakra analysis.
           </p>
           <div className="book-session1">
+            <Information/>
             <p>Online Chakra Consultation INR 2000/-</p>
-            <button>BOOK SESSION</button>
+            <button disabled>BOOK SESSION</button>
           </div>
           <div className="book-session2">
             <p>In-person Chakra Consultation INR 2500/-</p>
-            <button>BOOK SESSION</button>
+            <button disabled>BOOK SESSION</button>
           </div>
         </section>
         <section className="sec4">
@@ -93,7 +94,7 @@ const ChakraAnalysis = () => {
           <Container>
             <Row>
               <Col lg="3" md="3" className="sec5-col">
-                <div className="img-div">
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg}
@@ -108,7 +109,7 @@ const ChakraAnalysis = () => {
                 </p>
               </Col>
               <Col lg="3" md="3" className="sec5-col">
-                <div className="img-div">
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg2}
@@ -125,7 +126,7 @@ const ChakraAnalysis = () => {
                 </p>
               </Col>
               <Col lg="3" md="3" className="sec5-col">
-                <div className="img-div">
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg3}
@@ -141,7 +142,7 @@ const ChakraAnalysis = () => {
                 </p>
               </Col>
               <Col lg="3" md="3" className="sec5-col">
-                <div className="img-div">
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg4}
@@ -158,8 +159,8 @@ const ChakraAnalysis = () => {
               </Col>
             </Row>
             <Row>
-              <Col lg="3" md="3" className="data">
-                <div className="img-div">
+              <Col lg="4" md="4" >
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg5}
@@ -187,8 +188,8 @@ const ChakraAnalysis = () => {
                   and develop psychic abilities. Its color is indigo.
                 </p>
               </Col>
-              <Col lg="3" md="3" className="data">
-                <div className="img-div">
+              <Col lg="4" md="4" >
+                <div className="img-div-sec4">
                   <img
                     className="chakra-img"
                     src={ChakraImg7} />

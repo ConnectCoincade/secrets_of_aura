@@ -1,13 +1,13 @@
 import React from "react";
 import { useState, useContext, useReducer, createContext } from 'react';
-import ChakraImg from '../../assets/Group8751.png';
-import ChakraImg2 from '../../assets/Group8767.png';
-import ChakraImg3 from '../../assets/Group8809.png';
-import ChakraImg4 from '../../assets/Group8805.png';
-import ChakraImg5 from '../../assets/Group8861.png';
-import ChakraImg6 from '../../assets/Group8862.png';
-import ChakraImg7 from '../../assets/Group8863.png';
-import ChakraImg8 from '../../assets/Group7.png';
+import ChakraImg from '../assets/Group8751.png';
+import ChakraImg2 from '../assets/Group8767.png';
+import ChakraImg3 from '../assets/Group8809.png';
+import ChakraImg4 from '../assets/Group8805.png';
+import ChakraImg5 from '../assets/Group8861.png';
+import ChakraImg6 from '../assets/Group8862.png';
+import ChakraImg7 from '../assets/Group8863.png';
+import ChakraImg8 from '../assets/Group7.png';
 
 
 

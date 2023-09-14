@@ -5,6 +5,7 @@ import { Button, Table } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useGlobalContext } from "../../context/QuestionContext";
+import logo2 from '../../assets/Group10.png'
 import {
   Document,
   Page,
@@ -176,7 +177,7 @@ const FeedbackInputModal = () => {
         <View>
           <Image
             style={styles.logo}
-            src="https://amber-creative-capybara-584.mypinata.cloud/ipfs/QmTeQAPJCuSc5oyJLWsahBVYsvd6ZEG8hFkDksXzoQuVUK/logo.png"
+            src={logo2}
           />
           <Text style={styles.title}>Secret Of Aura</Text>
           <Text style={styles.address}>

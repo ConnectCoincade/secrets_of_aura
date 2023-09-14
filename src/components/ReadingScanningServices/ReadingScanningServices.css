@@ -39,6 +39,16 @@
     color: #FFFFFF;
 }
 
+.btn-div button {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    border: #6D6FA7 1px solid;
+    color: white;
+    background: #6D6FA7;
+    font-size: 20px;
+    margin: 2rem;
+  }
+
 @media (max-width: 576px) {
     .header-text{
         margin-top: 96px;

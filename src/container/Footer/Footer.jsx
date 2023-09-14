@@ -24,7 +24,7 @@ const Footer = () => {
                 <NavLink to="/about">About Us</NavLink>
               </p>
               <p>
-                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/reading-n-scanning-service">Services</NavLink>
               </p>
               <p>
                 <a href="#/" target="_blank" rel="noreferrer">
