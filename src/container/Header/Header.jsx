@@ -3,6 +3,7 @@ import {Navbar, Nav, Container, Button, NavDropdown} from "react-bootstrap";
 import { NavLink, useLocation } from "react-router-dom";
 import logo2 from '../../assets/Group10.png';
 // import logo from "../../assets/logo.png";
+// import logo2 from '../../assets/Group 10.png';
 import "./Header.css";
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -84,7 +85,7 @@ function Header() {
           </Navbar.Brand>
           <Navbar.Toggle
             onClick={() => setExpanded(expanded ? false : "expanded")}
-            aria-controls="navbarScroll"
+            aria-controls=" responsive-navbar-nav navbarScroll"
             data-bs-toggle="collapse"
             data-bs-target="#navbarScroll"
           />

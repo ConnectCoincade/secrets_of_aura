@@ -1,7 +1,8 @@
 import React from 'react';
-
+import { Button } from 'react-bootstrap';
 import './Card.css';
 
+// var dis = document.getElementById("card-btn").disabled;
 const Card = (props) => {
   return (
     <div className="card-services">
@@ -14,11 +15,16 @@ const Card = (props) => {
         <p className="card-para">{props.para}</p>
         {/* <p className="card-readmore">Read More</p> */}
       </div>
-      <a href="https://calendly.com/yash-h10/test-meet" target="blank">
-        <button className="card-btn">
+      {/* <a href="https://calendly.com/yash-h10/test-meet" target="blank"> */}
+        <div className='card-btn-main'  >
+        <button  className="card-btn" disabled="true">
+        
           <span className="btn-text">BOOK SESSION</span>
         </button>
-      </a>
+        
+        </div>
+        
+        {/* </a> */}
     </div>
   );
 };

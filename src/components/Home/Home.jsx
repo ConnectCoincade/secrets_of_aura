@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 import home1 from '../../assets/Group8695.png';
 import img2 from '../../assets/lOGO_bLACK.png';
-import img3 from '../../assets/Group7.png';
+import img3 from '../../assets/Group7.png'
 import "./Home.css";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
