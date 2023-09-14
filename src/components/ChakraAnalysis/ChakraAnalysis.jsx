@@ -105,7 +105,7 @@ const ChakraAnalysis = () => {
                   Positioned at the base of the spine, this chakra is tied to
                   our basic survival instincts, stability, and grounding. It
                   governs our sense of security, physical health, and connection
-                  to the Earth. Its color is red.
+                  to the Earth. Its color is red
                 </p>
               </Col>
               <Col lg="3" md="3" className="sec5-col">
