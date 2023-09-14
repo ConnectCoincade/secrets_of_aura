@@ -8,7 +8,6 @@
 /.env
 .env
 
-/src/assets
 
 # testing
 /coverage

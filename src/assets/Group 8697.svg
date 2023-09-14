@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="346" height="127" viewBox="0 0 346 127">
+  <defs>
+    <filter id="Rectangle_101" x="0" y="0" width="346" height="127" filterUnits="userSpaceOnUse">
+      <feOffset dy="11" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_8697" data-name="Group 8697" transform="translate(-824 -802)">
+    <g transform="matrix(1, 0, 0, 1, 824, 802)" filter="url(#Rectangle_101)">
+      <rect id="Rectangle_101-2" data-name="Rectangle 101" width="280" height="61" rx="11" transform="translate(33 22)" fill="#5e59a3"/>
+    </g>
+    <text id="About_Naqqiya" data-name="About Naqqiya" transform="translate(893 865)" fill="#fff" font-size="27" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">About Naqqiya</tspan></text>
+  </g>
+</svg>
